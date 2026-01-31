@@ -1,0 +1,20 @@
+---
+---
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "{{ site.url }}/#business",
+    "name": {{ site.business.name | jsonify }},
+    "image": {{ site.business.image | absolute_url | jsonify }},
+    "telephone": {{ site.business.telephone | jsonify }},
+    "email": {{ site.business.email | jsonify }},
+    "priceRange": {{ site.business.priceRange | jsonify }},
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ site.business.address.streetAddress | jsonify }},
+        "addressLocality": {{ site.business.address.addressLocality | jsonify }},
+        "postalCode": {{ site.business.address.postalCode | jsonify }},
+        "addressCountry": {{ site.business.address.addressCountry | jsonify }}
+      },
+      "url": {{ site.business.url | jsonify }}
+    }

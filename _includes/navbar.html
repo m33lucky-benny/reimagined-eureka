@@ -1,0 +1,29 @@
+<nav class="navbar" aria-label="Primary navigation">
+    <div class="nav-container">
+
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <span class="brand-kieron">Consultant</span><span class="brand-play">Dev</span>
+        </a>
+
+        <!-- Back button -->
+        <a href="#" class="nav-back" id="navBack">← Back</a>
+
+        <!-- Hamburger toggle -->
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+            aria-controls="primary-nav">
+            <img src="{{ '/assets/icon/menu.svg' | relative_url }}" alt="" class="icon" width="24" height="24"
+                aria-hidden="true">
+        </button>
+
+        <div class="nav-links" id="primary-nav">
+            {% for item in site.data.settings.nav_items %}
+            <a class="nav-link" href="{{ item.url | relative_url }}">
+                {{ item.title }}
+            </a>
+            {% endfor %}
+        </div>
+
+    </div>
+</nav>
+
+<script src="{{ '/assets/js/nav-toggle.js' | relative_url }}" defer></script>

@@ -1,0 +1,23 @@
+html {
+  background: var(--color-dark-1);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-dark-1);
+  color: var(--color-text);
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+h1 {
+  text-align: center;
+}

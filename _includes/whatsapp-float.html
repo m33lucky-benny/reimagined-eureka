@@ -1,0 +1,19 @@
+{% if site.whatsapp.enabled and page.whatsapp != false %}
+<a
+  id="whatsapp-link"
+  class="whatsapp-float"
+  aria-label="Chat on WhatsApp"
+  target="_blank"
+  rel="noopener noreferrer"
+  data-wa-phone="{{ site.whatsapp.phone | escape }}"
+  data-wa-message-prefix="{{ page.whatsapp_message_prefix | default: 'Hi, I have a question about this:' | escape }}"
+>
+  <img
+    src="{{ '/assets/icon/wp.svg' | relative_url }}"
+    alt="WhatsApp"
+    width="50"
+    height="50"
+    loading="lazy"
+  />
+</a>
+{% endif %}

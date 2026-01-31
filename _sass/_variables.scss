@@ -1,0 +1,70 @@
+/* ======================================================
+   Brand Color Tokens (Single Source of Truth)
+   ====================================================== */
+
+/* ======================================================
+   CSS Custom Properties (runtime usage)
+   ====================================================== */
+
+   :root {
+    /* Core brand */
+    --color-dark-1: #0a0a0a;     /* background */
+    --color-dark-2: #1f2937;
+    --color-light: #f9fafb;
+  
+    --color-primary: #ff10f0;   /* neon pink */
+    --color-primary-2: #2563eb; /* blue accent */
+    --color-secondary: #ff006e; /* hot pink */
+  
+    /* Text */
+    --color-text: #f5f5f5;      /* off-white */
+    --color-muted: #888888;
+  
+    /* Surfaces */
+    --color-surface-1: #1a1a1a;
+    --color-surface-2: #2a2a2a;
+  
+    /* UI */
+    --color-border: #333333;
+  
+    /* Special / Partner brand (Kieron) */
+    --color-kieron-1: #32cd32; /* lime green */
+    --color-kieron-2: #ff00ff; /* neon pink */
+    --color-kieron-3: #00813d; /* subway green */
+    --color-kieron-4: #ffd100; /* subway yellow */
+  }
+  
+  /* ======================================================
+     SCSS Variables (compile-time usage)
+     ====================================================== */
+  
+  /* Core brand */
+  $dark-1: #0a0a0a;
+  $dark-2: #1f2937;
+  $light: #f9fafb;
+  
+  $primary: #ff10f0;     /* neon pink */
+  $primary-2: #2563eb;   /* blue accent */
+  $secondary: #ff006e;   /* hot pink */
+  
+  /* Text */
+  $color-text: #f5f5f5;  /* off-white */
+  $muted: #888888;
+  
+  /* Surfaces */
+  $surface-1: #1a1a1a;
+  $surface-2: #2a2a2a;
+  
+  /* UI */
+  $border: #333333;
+  
+  /* Partner / Special */
+  $kieron-1: #32cd32;
+  $kieron-2: #ff00ff;
+  $kieron-3: #00813d;
+  $kieron-4: #ffd100;
+  
+  /* Links */
+  $color-link: $secondary;
+  $color-link-hover: #ff4d94;
+  

@@ -1,0 +1,33 @@
+---
+---
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "{{ page.url | absolute_url }}#service",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "image": {{ site.business.image | absolute_url | jsonify }},
+  "telephone": {{ site.business.telephone | jsonify }},
+  "priceRange": {{ site.business.priceRange | jsonify }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.business.address.streetAddress | jsonify }},
+    "addressLocality": {{ site.business.address.addressLocality | jsonify }},
+    "postalCode": {{ site.business.address.postalCode | jsonify }},
+    "addressCountry": {{ site.business.address.addressCountry | jsonify }}
+  },
+  "provider": {
+    "@id": "{{ site.url }}/#business"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Singapore"
+  },
+  "serviceType": [
+    "SEO Audit",
+    "Technical SEO",
+    "Website Speed Optimization",
+    "PageSpeed Fix"
+  ]
+}

@@ -1,0 +1,13 @@
+# llms.txt
+# AI access policy for consultant.ebiya.sg
+
+User-agent: *
+Allow: /
+
+Usage:
+- Allowed: indexing, summarization, citation
+- Disallowed: full training, dataset extraction, resale
+
+Canonical: https://consultant.ebiya.sg/
+Contact: bennyyuen@consultant.com
+Purpose: SEO consulting and website performance services for Singapore businesses.

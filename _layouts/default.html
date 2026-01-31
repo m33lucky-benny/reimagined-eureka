@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- wa enabled: {{ site.whatsapp.enabled }} ; wa phone: {{ site.whatsapp.phone }} ; page.whatsapp: {{ page.whatsapp }} -->
+  {% include head.html %}
+</head>
+<body class="site-body">
+  {% include navbar.html %}
+
+  <main id="content" class="site-main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+  {% include whatsapp-float.html %}
+  
+<script src="{{ '/assets/js/nav-back.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/whatsapp-link.js' | relative_url }}" defer></script>
+</body>
+</html>

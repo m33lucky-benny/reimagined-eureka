@@ -1,0 +1,165 @@
+/* ===================================
+   Navbar component
+=================================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--color-surface-1);
+    border-bottom: 2px solid var(--color-border);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    /* Brand */
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--color-light);
+      z-index: 101;
+    }
+  
+    .brand-kieron {
+      color: var(--color-kieron-1);
+    }
+  
+    .brand-play {
+      color: var(--color-kieron-2);
+    }
+  
+    /* Hamburger button */
+    // .nav-toggle {
+    //   background: none;
+    //   border: none;
+    //   cursor: pointer;
+    //   padding: 12px;
+    //   min-width: 44px;
+    //   min-height: 44px;
+    //   z-index: 101;
+  
+    //   .hamburger {
+    //     width: 24px;
+    //     height: 2px;
+    //     background: var(--color-light);
+    //     position: relative;
+    //     transition: background 0.3s ease;
+  
+    //     &::before,
+    //     &::after {
+    //       content: "";
+    //       position: absolute;
+    //       width: 24px;
+    //       height: 2px;
+    //       background: var(--color-light);
+    //       transition: transform 0.3s ease;
+    //     }
+  
+    //     &::before {
+    //       top: -7px;
+    //     }
+  
+    //     &::after {
+    //       top: 7px;
+    //     }
+    //   }
+  
+    //   &[aria-expanded="true"] .hamburger {
+    //     background: transparent;
+  
+    //     &::before {
+    //       transform: rotate(45deg) translate(5px, 5px);
+    //     }
+  
+    //     &::after {
+    //       transform: rotate(-45deg) translate(5px, -5px);
+    //     }
+    //   }
+    // }
+  
+    /* Nav links – mobile first */
+    .nav-links {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      padding: 0.5rem 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-link {
+      padding: 0.75rem 1rem;
+      color: var(--color-light);
+      text-decoration: none;
+      border-radius: 4px;
+  
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+  
+      &.active {
+        background: rgba(255, 255, 255, 0.2);
+        font-weight: 600;
+      }
+    }
+  
+    /* Desktop */
+    @media (min-width: 769px) {
+      .nav-toggle {
+        display: none;
+      }
+  
+      .nav-links {
+        display: flex !important;
+        width: auto;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 0;
+      }
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: inline-flex;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  
+    .nav-links.is-open {
+      display: flex;
+    }
+  }
+
+  .nav-back {
+    display: none;        // hidden by default, JS will reveal if valid
+    color: #0ea5e9;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }

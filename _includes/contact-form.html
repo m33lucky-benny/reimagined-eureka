@@ -1,0 +1,76 @@
+<form
+  id="contact-form"
+  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd809W-5FtGoAQPut-3tId3AF6p_STEyvVQSjQhzeKaYrnn5A/formResponse"
+  method="POST"
+  target="hidden_iframe"
+  class="contact-form"
+  novalidate
+>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">
+        Name <span class="required">*</span>
+        <span class="sr-only">required</span>
+      </label>
+      <input type="text" id="name" name="entry.1655243000" autocomplete="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">
+        Email <span class="required">*</span>
+        <span class="sr-only">required</span>
+      </label>
+      <input type="email" id="email" name="entry.2083704905" autocomplete="email" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+      <fieldset class="checkbox-group-fieldset">
+        <legend class="form-label">Preferred contact method</legend>
+    
+        <label class="checkbox">
+          <input type="radio" name="entry.162991437" value="Email" checked>
+          <span class="checkbox-ui" aria-hidden="true"></span>
+          <span>Email</span>
+        </label>
+    
+        <label class="checkbox">
+          <input type="radio" name="entry.162991437" value="Whatsapp">
+          <span class="checkbox-ui" aria-hidden="true"></span>
+          <span>WhatsApp</span>
+        </label>
+      </fieldset>
+    </div>
+
+  <!-- <div class="form-group">
+    <label for="contact-method">Preferred contact method</label>
+    <select id="contact-method" name="entry.162991437">
+      <option value="Email">Email</option>
+      <option value="Whatsapp">WhatsApp</option> -->
+      <!-- <option value="instagram">Instagram</option>
+      <option value="tiktok">TikTok</option> -->
+    <!-- </select>
+  </div> -->
+
+  <div class="form-group">
+    <label for="message">
+      Message <span class="required">*</span>
+      <span class="sr-only">required</span>
+    </label>
+    <textarea id="message" name="entry.1755926505" rows="7" required></textarea>
+  </div>
+
+  <!-- <input type="hidden" name="_subject" value="New contact from ebiya.sg"> -->
+  <input type="text" name="_gotcha" class="honeypot">
+
+  <div class="form-actions">
+    <button type="submit" class="submit-btn">Send message</button>
+    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+  </div>
+</form>
+
+<iframe
+  name="hidden_iframe"
+  style="display:none"
+  aria-hidden="true"
+></iframe>

@@ -1,0 +1,21 @@
+.form-status {
+    display: none;
+    padding: 0.6rem 0.75rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+  
+    &.success {
+      display: block;
+      background: rgba(50, 205, 50, 0.1);
+      border: 1px solid $kieron-1;
+      color: $kieron-1;
+    }
+  
+    &.error {
+      display: block;
+      background: rgba(176, 0, 32, 0.1);
+      border: 1px solid #b00020;
+      color: #b00020;
+    }
+  }
+  

@@ -1,0 +1,78 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{ site.url }}/#organization",
+        "name": {{ site.business.name | jsonify }},
+        "url": {{ site.url | jsonify }},
+        "email": {{ site.business.email | jsonify }},
+        "logo": {{ site.business.image | absolute_url | jsonify }},
+        "sameAs": {{ site.business.sameAs | jsonify }}
+ 
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "{{ site.url }}/#local-business",
+        "name": {{ site.business.name | jsonify }},
+        "url": {{ site.url | jsonify }},
+        "image": {{ site.business.image | absolute_url | jsonify }},
+        "telephone": {{ site.business.telephone | jsonify }},
+        "email": {{ site.business.email | jsonify }},
+        "priceRange": {{ site.business.priceRange | jsonify }},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": {{ site.business.address.streetAddress | jsonify }},
+          "addressLocality": {{ site.business.address.addressLocality | jsonify }},
+          "addressRegion": {{ site.business.address.addressRegion | jsonify }},
+          "postalCode": {{ site.business.address.postalCode | jsonify }},
+          "addressCountry": {{ site.business.address.addressCountry | jsonify }}
+        },
+        "areaServed": { "@type": "Place", "name": "Singapore" },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "provider": { "@id": "{{ site.url }}/#organization" }
+      },
+      {
+        "@type": "Service",
+        "@id": "{{ site.url }}/#seo-service",
+        "name": "SEO & Website Consulting Services",
+        "description": "Professional SEO audits, website performance optimization, and technical fixes for Singapore businesses.",
+        "url": "{{ site.url }}/about",
+        "provider": { "@id": "{{ site.url }}/#organization" },
+        "areaServed": { "@type": "Place", "name": "Singapore" },
+        "serviceType": [
+          "SEO Consulting",
+          "Website Performance Optimization",
+          "Technical SEO",
+          "Website Diagnostics"
+        ],
+        "availableChannel": [
+  {
+    "@type": "ServiceChannel",
+    "serviceLocation": {
+      "@type": "Place",
+      "name": "Ebiya Consulting Office"
+    }
+  },
+  {
+    "@type": "ServiceChannel",
+    "serviceLocation": {
+      "@type": "VirtualLocation",
+      "url": "https://consultant.ebiya.sg"
+    }
+  }
+]
+        <!-- "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceLocation": { "@type": "Place", "name": "Online" }
+        } -->
+      }
+    ]
+  }
+  </script>
