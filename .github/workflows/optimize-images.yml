@@ -1,0 +1,64 @@
+name: Optimize Shrimp Images
+
+on:
+  push:
+    paths:
+      - "assets/shrimps/**"
+    branches:
+      - main
+      - master
+
+jobs:
+  optimize-images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: 🎨 Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          magick -version
+
+      - name: 🦐 Run optimization script
+        run: |
+          chmod +x optimize-shrimps.sh
+          ./optimize-shrimps.sh
+
+      - name: 📊 Check for changes
+        id: verify
+        run: |
+          if [[ -n $(git status -s assets/shrimps-optimized/) ]]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 💾 Commit and push optimized images
+        if: steps.verify.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add assets/shrimps-optimized/
+          git commit -m "🤖 Auto-optimize shrimp images [skip ci]"
+          git push
+
+      - name: ✅ Summary
+        if: steps.verify.outputs.changed == 'true'
+        run: |
+          echo "### ✨ Images Optimized Successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Optimized versions created in \`assets/shrimps-optimized/\`" >> $GITHUB_STEP_SUMMARY
+          ls -lh assets/shrimps-optimized/ | tail -n +2 >> $GITHUB_STEP_SUMMARY
+
+      - name: ⏭️ No changes detected
+        if: steps.verify.outputs.changed == 'false'
+        run: |
+          echo "### ℹ️ No New Images to Optimize" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "All images are already optimized." >> $GITHUB_STEP_SUMMARY

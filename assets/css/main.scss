@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "variables";
 @import "base";
 @import "layout";
@@ -13,3 +14,23 @@
 @import "services";
 @import "whatsapp";
 @import "contactus";
+@import "pages/tank-builder";
+@import "pages/membership";
+@import "pages/gallery-media";
+@import "pages/about";
+@import "pages/faq";
+@import "pages/blog";
+@import "pages/hero-tank-systems";
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#lightbox img {
+  max-width: 95%;
+  max-height: 95%;
+}

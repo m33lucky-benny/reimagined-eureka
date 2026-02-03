@@ -1,0 +1,457 @@
+// ============================================================================
+// Tank Builder Page Styles - Cloudflare CSP Compliant
+// File: _tank-builder.scss
+// ============================================================================
+
+// Brand color imports (ensure these are defined in your main variables file)
+// If not already imported, uncomment and adjust path:
+// @import '../variables';
+
+// Local color tokens for this component (fallback if not in main variables)
+$tank-bg-primary: $dark-1 !default; // #0a0a0a
+$tank-bg-secondary: $surface-1 !default; // #1a1a1a
+$tank-bg-card: $surface-2 !default; // #2a2a2a
+$tank-accent: $secondary !default; // #ff006e
+$tank-accent-soft: rgba(255, 0, 110, 0.15);
+$tank-accent-glow: rgba(255, 0, 110, 0.4);
+$tank-border: $border !default; // #333333
+$tank-text: $color-text !default; // #f5f5f5
+$tank-text-muted: $muted !default; // #888888
+
+// ============================================================================
+// Page Container
+// ============================================================================
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+// ============================================================================
+// Hero Section
+// ============================================================================
+.hero-subtitle {
+  color: rgba(245, 245, 245, 0.85); // Good contrast on dark bg
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+// ============================================================================
+// Tank Selection Cards
+// ============================================================================
+.tank-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.tank-card {
+  background: $tank-bg-card; // #2a2a2a - good contrast with white text
+  border: 2px solid $tank-accent-soft;
+  border-radius: 14px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: $tank-text;
+
+  &:hover {
+    border-color: $tank-accent;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(255, 0, 110, 0.2);
+  }
+
+  &.selected {
+    border-color: $tank-accent;
+    background: rgba(255, 0, 110, 0.08); // Slightly lighter for selected state
+    box-shadow: 0 4px 16px rgba(255, 0, 110, 0.25);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: $tank-text;
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+
+  .tag {
+    color: $tank-accent;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    display: block;
+    text-shadow: 0 0 8px $tank-accent-glow;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.75rem 0 0 0;
+
+    li {
+      padding: 0.35rem 0;
+      color: rgba(245, 245, 245, 0.9); // High contrast
+      font-size: 0.95rem;
+      line-height: 1.5;
+
+      strong {
+        color: $tank-accent;
+        font-weight: 700;
+      }
+
+      &:before {
+        content: "✓ ";
+        color: $tank-accent;
+        font-weight: 700;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+// ============================================================================
+// Build Output Section
+// ============================================================================
+.build-section {
+  display: none;
+  margin-top: 3rem;
+  background: $tank-bg-primary; // #0a0a0a
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid $tank-accent-soft;
+
+  &.active {
+    display: block;
+    animation: fadeInUp 0.4s ease-out;
+  }
+
+  h2 {
+    color: $tank-text;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    color: $tank-accent;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+// ============================================================================
+// Parameter Display Box
+// ============================================================================
+.param-box {
+  margin-top: 1.5rem;
+  background: rgba(255, 0, 110, 0.06); // Subtle tint
+  border: 1px solid $tank-accent-soft;
+  border-radius: 14px;
+  padding: 1.5rem;
+
+  h3 {
+    color: $tank-accent;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.param-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.param-item {
+  background: rgba(255, 255, 255, 0.04); // Subtle card effect
+  border: 1px solid rgba(255, 0, 110, 0.2);
+  border-radius: 10px;
+  padding: 0.75rem;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .k {
+    font-size: 0.875rem;
+    color: rgba(245, 245, 245, 0.75); // Good contrast for labels
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+
+  .v {
+    font-weight: 800;
+    color: $tank-text;
+    font-size: 1rem;
+  }
+}
+
+// ============================================================================
+// Equipment Section
+// ============================================================================
+.equipment-section {
+  margin-top: 2rem;
+
+  .recommendation-text {
+    color: rgba(245, 245, 245, 0.9); // High contrast
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+// ============================================================================
+// FAQ Quick Link
+// ============================================================================
+.faq-link-container {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.faq-btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background: $tank-accent;
+  color: $dark-1; // High contrast: dark text on bright pink
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(255, 0, 110, 0.3);
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 110, 0.4);
+    background: lighten($tank-accent, 5%);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// ============================================================================
+// Membership CTA
+// ============================================================================
+.membership-cta {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  border: 2px dashed $tank-accent;
+  border-radius: 16px;
+  text-align: center;
+  background: rgba(255, 0, 110, 0.03);
+  transition: all 0.3s ease;
+
+  &.highlight {
+    background: rgba(255, 0, 110, 0.08);
+    transform: scale(1.02);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: $tank-text;
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+
+    strong {
+      color: $tank-accent;
+      font-weight: 700;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.85rem 2rem;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  background: linear-gradient(180deg, lighten($tank-accent, 10%), $tank-accent);
+  color: $dark-1; // High contrast
+  box-shadow: 0 6px 20px rgba(255, 0, 110, 0.3);
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 0, 110, 0.4);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+// ============================================================================
+// Quick FAQ Section
+// ============================================================================
+.quick-faq {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: $tank-bg-card;
+  border-radius: 14px;
+  border: 1px solid $tank-border;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: $tank-text;
+    font-size: 1.375rem;
+  }
+
+  details {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+    padding-bottom: 1rem;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: $tank-accent;
+    padding: 0.5rem 0;
+    list-style: none;
+    transition: color 0.2s ease;
+    font-size: 1rem;
+
+    &:hover {
+      color: lighten($tank-accent, 10%);
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "▶ ";
+      display: inline-block;
+      transition: transform 0.2s ease;
+      margin-right: 0.5rem;
+    }
+  }
+
+  details[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    color: rgba(245, 245, 245, 0.85); // Good contrast
+    line-height: 1.6;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+// ============================================================================
+// Animations
+// ============================================================================
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ============================================================================
+// Accessibility Improvements
+// ============================================================================
+
+// Focus states for keyboard navigation
+.tank-card:focus,
+.faq-btn:focus,
+.cta-button:focus {
+  outline: 2px solid $tank-accent;
+  outline-offset: 4px;
+}
+
+summary:focus {
+  outline: 2px solid $tank-accent;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+// Reduced motion for accessibility
+@media (prefers-reduced-motion: reduce) {
+  .tank-card,
+  .build-section,
+  .faq-btn,
+  .cta-button,
+  .membership-cta {
+    transition: none;
+    animation: none;
+  }
+}
+
+// ============================================================================
+// Print Styles
+// ============================================================================
+@media print {
+  .tank-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .tank-card {
+    border: 1px solid #333;
+    page-break-inside: avoid;
+  }
+
+  .membership-cta,
+  .faq-btn {
+    display: none;
+  }
+}

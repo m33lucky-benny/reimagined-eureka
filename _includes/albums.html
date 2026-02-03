@@ -1,0 +1,13 @@
+<section class="albums">
+  {% for album in site.data.albums %}
+  <h3>{{ album[0] | capitalize }}</h3>
+  <div class="album-row">
+    {% for img in album[1] %}
+    <img
+      src="/assets/photos/{{ album[0] }}/{{ img }}"
+      onclick="openLightbox(this.src)"
+    />
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>

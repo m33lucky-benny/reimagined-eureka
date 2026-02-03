@@ -1,0 +1,324 @@
+// ======================================================
+// Shrimp Gallery Page Styles
+// Partial: _shrimp-gallery.scss
+// ======================================================
+
+// Import color variables (ensure these are defined in your main colors file)
+// Using your provided color palette with accessibility improvements
+
+.shrimp-gallery-page {
+  padding: 2.5rem 1rem 5rem;
+  background: $dark-1;
+  color: $color-text;
+  min-height: 100vh;
+
+  // Header Section
+  .gallery-header {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+
+  .gallery-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: $color-text;
+    background: linear-gradient(135deg, $primary, $secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+  }
+
+  .gallery-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: $muted;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .gallery-description {
+    font-size: 1rem;
+    color: rgba($color-text, 0.8);
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+
+  // Main Gallery Grid
+  .shrimp-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.5rem;
+    }
+  }
+
+  // Individual Shrimp Item
+  .shrimp-item {
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:focus-within {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+      border-radius: 0.875rem;
+    }
+
+    img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 0.875rem;
+      border: 1px solid rgba($color-text, 0.12);
+      background: $surface-1;
+      transition: all 0.25s ease;
+      display: block;
+
+      @media (max-width: 480px) {
+        height: 140px;
+      }
+    }
+
+    &:hover img {
+      transform: scale(1.03);
+      border-color: rgba($secondary, 0.4);
+      box-shadow:
+        0 0 0 2px rgba($secondary, 0.25),
+        0 8px 24px rgba($secondary, 0.2),
+        0 0 40px rgba($primary, 0.15);
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: $muted;
+      line-height: 1.3;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    &:hover figcaption {
+      color: rgba($color-text, 0.9);
+    }
+  }
+
+  // Lightbox Modal
+  .shrimp-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba($dark-1, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    animation: fadeIn 0.2s ease;
+
+    &.open {
+      display: flex;
+    }
+
+    img {
+      max-width: 92vw;
+      max-height: 92vh;
+      border-radius: 1rem;
+      box-shadow:
+        0 0 0 2px rgba($secondary, 0.3),
+        0 30px 80px rgba($dark-1, 0.8),
+        0 0 60px rgba($primary, 0.2);
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: rgba($surface-2, 0.9);
+      border: 1px solid rgba($color-text, 0.2);
+      color: $color-text;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      font-size: 2rem;
+      line-height: 1;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+
+      &:hover {
+        background: rgba($secondary, 0.3);
+        border-color: $secondary;
+        transform: scale(1.1);
+      }
+
+      &:focus {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
+      }
+
+      span {
+        display: block;
+        margin-top: -3px;
+      }
+    }
+
+    .lightbox-hint {
+      position: absolute;
+      bottom: 1.5rem;
+      font-size: 0.875rem;
+      color: rgba($color-text, 0.6);
+      text-align: center;
+      margin: 0;
+      pointer-events: none;
+
+      @media (max-width: 480px) {
+        font-size: 0.75rem;
+        bottom: 1rem;
+      }
+    }
+  }
+
+  // SEO Content Section
+  .gallery-info {
+    max-width: 800px;
+    margin: 4rem auto 0;
+    padding: 2rem;
+    background: rgba($surface-1, 0.5);
+    border-radius: 1rem;
+    border: 1px solid rgba($color-text, 0.1);
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: $color-text;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, $primary, $primary-2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+      color: rgba($color-text, 0.95);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: rgba($color-text, 0.85);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 1rem 0;
+
+      li {
+        padding: 0.5rem 0 0.5rem 1.5rem;
+        position: relative;
+        color: rgba($color-text, 0.85);
+        line-height: 1.6;
+
+        &::before {
+          content: "→";
+          position: absolute;
+          left: 0;
+          color: $secondary;
+          font-weight: 700;
+        }
+
+        strong {
+          color: $color-text;
+          font-weight: 600;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Accessibility improvements
+@media (prefers-reduced-motion: reduce) {
+  .shrimp-gallery-page {
+    .shrimp-item,
+    .shrimp-item img,
+    .shrimp-item figcaption,
+    .lightbox-close {
+      transition: none;
+    }
+
+    .shrimp-lightbox {
+      animation: none;
+    }
+  }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .shrimp-gallery-page {
+    .shrimp-item img {
+      border-width: 2px;
+    }
+
+    .shrimp-lightbox .lightbox-close {
+      border-width: 2px;
+    }
+  }
+}
+
+// Print styles
+@media print {
+  .shrimp-gallery-page {
+    .shrimp-lightbox,
+    .lightbox-close {
+      display: none !important;
+    }
+
+    .shrimp-gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

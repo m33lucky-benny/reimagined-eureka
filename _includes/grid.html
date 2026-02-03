@@ -1,0 +1,6 @@
+<section class="grid">
+  {% for file in site.static_files reversed %} {% if file.path contains
+  '/assets/photos/latest' %}
+  <img src="{{ file.path }}" onclick="openLightbox('{{ file.path }}')" />
+  {% endif %} {% endfor %}
+</section>

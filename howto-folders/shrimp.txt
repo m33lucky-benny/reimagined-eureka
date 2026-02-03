@@ -1,0 +1,231 @@
+---
+layout: page
+title: "🦐 Caridina Shrimp Photos Singapore | Gallery | ebiya.sg"
+tagline: "Singapore bred Caridina shrimp, photographed up close"
+description: "Real Taiwan Bee/Caridina shrimp photos bred in Singapore. King Kong, Crystal Red and premium grade shrimp gallery from ebiyaSG breeding tanks."
+permalink: /shrimp/
+tags:
+  - caridina
+  - taiwan-bee
+  - CRS
+  - CBS
+  - pinto
+  - shrimp-macro
+keywords:
+  - caridina shrimp photos
+  - shrimp gallery singapore
+  - taiwan bee shrimp
+  - crystal red shrimp
+  - crystal black shrimp
+  - blue bolt shrimp
+  - pinto shrimp
+  - shrimp macro photography
+excerpt: "Gallery of macro photographs of Caridina shrimp bred in Singapore: Taiwan Bee, Crystal Red/Black, Blue Bolt, Panda, Pinto and more rare varieties."
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🦐 Caridina Shrimp Photos Singapore | Gallery | ebiya.sg</title>
+
+  <style>
+    /* =========================================================
+       BASE
+    ========================================================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Arial, sans-serif;
+      background: #0b0d10;
+      color: #ffffff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    p {
+      text-align: center;
+      color: rgba(255,255,255,.65);
+      margin-bottom: 28px;
+    }
+
+    .page-wrapper {
+      padding: 40px 16px 80px;
+    }
+
+    .page-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* =========================================================
+       SHRIMP GALLERY
+    ========================================================= */
+
+    .shrimp-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+    }
+
+    .shrimp-item {
+      cursor: zoom-in;
+    }
+
+    .shrimp-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      transition: transform .2s ease, box-shadow .25s ease;
+    }
+
+    .shrimp-item:hover img {
+      transform: scale(1.03);
+      box-shadow:
+        0 0 0 2px rgba(255,47,146,.25),
+        0 0 22px rgba(255,47,146,.25);
+    }
+
+    .shrimp-item figcaption {
+      margin-top: 6px;
+      font-size: 0.85rem;
+      text-align: center;
+      color: rgba(255,255,255,.65);
+    }
+
+    /* =========================================================
+       LIGHTBOX
+    ========================================================= */
+
+    .shrimp-lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.85);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .shrimp-lightbox.open {
+      display: flex;
+    }
+
+    .shrimp-lightbox img {
+      max-width: 92vw;
+      max-height: 92vh;
+      border-radius: 16px;
+      box-shadow:
+        0 0 0 2px rgba(255,47,146,.25),
+        0 30px 80px rgba(0,0,0,.65);
+    }
+
+    .shrimp-lightbox::after {
+      content: "Tap anywhere to close";
+      position: absolute;
+      bottom: 24px;
+      font-size: 12px;
+      color: rgba(255,255,255,.55);
+    }
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 480px) {
+      .shrimp-item img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="page-wrapper">
+    <div class="page-container">
+      
+      <p>Real Caridina shrimp bred & kept by ebiyaSG</p>
+       {% if page.excerpt %}
+       <p>{{ page.excerpt }}</p>
+       {% endif %}
+
+      {% include share-buttons.html %}
+
+      <!-- AUTO-LOAD SHRIMPS -->
+      <div class="shrimp-gallery">
+        {% for image in site.static_files %}
+          {% if image.path contains '/assets/shrimps/' %}
+            {% assign filename = image.path | split: '/' | last %}
+            {% assign parts = filename | split: '.' %}
+            {% assign base_parts = parts | pop %}
+            {% assign name_only = base_parts | join: '.' | strip %}
+
+            <figure class="shrimp-item">
+               <picture>
+        <source
+          type="image/webp"
+          srcset="/assets/shrimps-optimized/{{ filename }}-320.webp 320w,
+                  /assets/shrimps-optimized/{{ filename }}-640.webp 640w"
+          sizes="(max-width: 480px) 45vw, 160px">
+        <img
+          src="/assets/shrimps-optimized/{{ filename }}-320.jpg"
+          srcset="/assets/shrimps-optimized/{{ filename }}-320.jpg 320w,
+                  /assets/shrimps-optimized/{{ filename }}-640.jpg 640w"
+          sizes="(max-width: 480px) 45vw, 160px"
+          width="160" height="160"
+          loading="lazy"
+          decoding="async"
+          alt="{{ filename }}">
+      </picture>
+              <img
+                src="{{ image.path | relative_url }}"
+                alt="{{ name_only }}"
+                loading="lazy"
+              >
+              <figcaption>
+                {{ name_only }}
+              </figcaption>
+            </figure>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="shrimp-lightbox" id="shrimpLightbox">
+    <img src="" alt="">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById("shrimpLightbox");
+    const lightboxImg = lightbox.querySelector("img");
+
+    document.addEventListener("click", e => {
+      if (e.target.matches(".shrimp-item img")) {
+        lightboxImg.src = e.target.src;
+        lightbox.classList.add("open");
+      } else if (e.target === lightbox) {
+        lightbox.classList.remove("open");
+      }
+    });
+  </script>
+
+</body>
+</html>

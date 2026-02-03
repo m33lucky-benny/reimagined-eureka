@@ -1,0 +1,913 @@
+// ============================================================================
+// About Page Styles - Cloudflare CSP Compliant
+// File: _about.scss
+// ============================================================================
+
+// Brand color tokens
+$about-bg: $dark-1 !default; // #0a0a0a
+$about-surface: $surface-2 !default; // #2a2a2a
+$about-surface-light: $surface-1 !default; // #1a1a1a
+$about-accent: $secondary !default; // #ff006e
+$about-accent-2: $primary !default; // #ff10f0
+$about-text: $color-text !default; // #f5f5f5
+$about-text-muted: $muted !default; // #888888
+$about-border: $border !default; // #333333
+
+// Specialty colors
+$gold-badge: #ffd100;
+$blue-badge: #2563eb;
+
+// ============================================================================
+// Hero Section
+// ============================================================================
+.about-hero {
+  text-align: center;
+  padding: 3rem 1.5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: $about-text;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    .brand-sg {
+      color: $about-accent;
+      font-weight: 900;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+    margin: 0;
+
+    strong {
+      color: $about-accent;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// ============================================================================
+// Journey Section
+// ============================================================================
+.journey-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem;
+  background: $about-surface;
+  border-radius: 16px;
+  border: 1px solid $about-border;
+
+  h2 {
+    color: $about-text;
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.journey-content {
+  position: relative;
+
+  .timeline-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 0, 110, 0.1);
+    border: 2px solid $about-accent;
+    border-radius: 12px;
+
+    .year {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $about-accent;
+
+      @media (max-width: 600px) {
+        font-size: 1.75rem;
+      }
+    }
+
+    .label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: rgba(245, 245, 245, 0.75);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .journey-text {
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: $about-text;
+      font-weight: 700;
+    }
+  }
+}
+
+// ============================================================================
+// Offerings Section
+// ============================================================================
+.offerings-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+
+  > h2 {
+    text-align: center;
+    color: $about-text;
+    font-size: 1.875rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.offering-block {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: $about-surface;
+  border-radius: 16px;
+  border: 1px solid $about-border;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    color: $about-accent;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+  }
+
+  .offering-intro {
+    color: rgba(245, 245, 245, 0.85);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+
+    strong {
+      color: $about-text;
+      font-weight: 700;
+    }
+  }
+}
+
+// ============================================================================
+// Shrimp Varieties
+// ============================================================================
+.shrimp-varieties {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.variety-card {
+  background: rgba(255, 0, 110, 0.05);
+  border: 2px solid rgba(255, 0, 110, 0.2);
+  border-radius: 14px;
+  padding: 1.75rem;
+  text-align: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $about-accent;
+    background: rgba(255, 0, 110, 0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(255, 0, 110, 0.2);
+  }
+
+  .variety-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  h4 {
+    color: $about-accent;
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem 0;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+  }
+
+  p {
+    color: rgba(245, 245, 245, 0.8);
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+}
+
+.quality-guarantee {
+  background: rgba(255, 16, 240, 0.05);
+  border: 1px solid rgba(255, 16, 240, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+
+  p {
+    margin: 0;
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+
+    strong {
+      color: $about-accent-2;
+      font-weight: 700;
+    }
+  }
+}
+
+// ============================================================================
+// Tank Options
+// ============================================================================
+.tank-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tank-option {
+  background: $about-surface-light;
+  border: 2px solid $about-border;
+  border-radius: 14px;
+  padding: 1.75rem;
+  position: relative;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $about-accent;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 0, 110, 0.15);
+  }
+
+  &.recommended {
+    border-color: $gold-badge;
+    background: linear-gradient(
+      135deg,
+      rgba(26, 26, 26, 1) 0%,
+      rgba(255, 209, 0, 0.03) 100%
+    );
+
+    &:hover {
+      border-color: $gold-badge;
+      box-shadow: 0 8px 20px rgba(255, 209, 0, 0.2);
+    }
+
+    .tank-badge {
+      background: linear-gradient(
+        135deg,
+        $gold-badge,
+        lighten($gold-badge, 10%)
+      );
+      color: #1a1a1a;
+    }
+  }
+
+  .tank-badge {
+    position: absolute;
+    top: -12px;
+    right: 1.5rem;
+    padding: 0.4rem 1rem;
+    background: $about-accent;
+    color: $dark-1;
+    font-weight: 800;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  h4 {
+    color: $about-text;
+    font-size: 1.375rem;
+    margin: 0.5rem 0 0.75rem 0;
+    font-weight: 700;
+  }
+
+  .tank-description {
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .tank-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0.5rem 0;
+      color: rgba(245, 245, 245, 0.8);
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:before {
+        content: "✓";
+        color: $about-accent;
+        font-weight: 700;
+        margin-right: 0.75rem;
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
+.tank-philosophy {
+  background: rgba(255, 0, 110, 0.03);
+  border: 1px solid rgba(255, 0, 110, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+
+  p {
+    margin: 0;
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+
+    strong {
+      color: $about-text;
+      font-weight: 700;
+    }
+
+    a {
+      color: $about-accent;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+
+      &:hover {
+        border-bottom-color: $about-accent;
+      }
+    }
+  }
+}
+
+// ============================================================================
+// Service Section
+// ============================================================================
+.service-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+
+  h2 {
+    text-align: center;
+    color: $about-text;
+    font-size: 1.875rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.service-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-card {
+  background: $about-surface;
+  border: 2px solid $about-border;
+  border-radius: 14px;
+  padding: 2rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $about-accent;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 0, 110, 0.15);
+  }
+
+  &.primary-method {
+    border-color: $about-accent;
+    background: linear-gradient(
+      135deg,
+      rgba(42, 42, 42, 1) 0%,
+      rgba(255, 0, 110, 0.05) 100%
+    );
+  }
+
+  &.vip-method {
+    border-color: $gold-badge;
+    background: linear-gradient(
+      135deg,
+      rgba(42, 42, 42, 1) 0%,
+      rgba(255, 209, 0, 0.03) 100%
+    );
+
+    &:hover {
+      border-color: $gold-badge;
+      box-shadow: 0 8px 20px rgba(255, 209, 0, 0.2);
+    }
+
+    .service-badge {
+      background: linear-gradient(
+        135deg,
+        $gold-badge,
+        lighten($gold-badge, 10%)
+      );
+      color: #1a1a1a;
+    }
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: $about-text;
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .service-badge {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    background: $about-accent;
+    color: $dark-1;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  > p {
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+
+    li {
+      padding: 0.5rem 0;
+      color: rgba(245, 245, 245, 0.8);
+      display: flex;
+      align-items: flex-start;
+      line-height: 1.5;
+
+      &:before {
+        content: "•";
+        color: $about-accent;
+        font-weight: 700;
+        margin-right: 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .service-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.25rem;
+    background: linear-gradient(135deg, $gold-badge, lighten($gold-badge, 10%));
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 209, 0, 0.3);
+    }
+  }
+}
+
+// ============================================================================
+// Mission Section
+// ============================================================================
+.mission-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(255, 0, 110, 0.08) 100%
+  );
+  border-radius: 20px;
+  border: 2px solid $about-accent;
+
+  h2 {
+    text-align: center;
+    color: $about-text;
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.mission-content {
+  .pain-points {
+    margin-bottom: 2rem;
+
+    .mission-intro {
+      color: rgba(245, 245, 245, 0.85);
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .frustration-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0.75rem 0 0.75rem 2rem;
+        color: rgba(245, 245, 245, 0.8);
+        line-height: 1.6;
+        position: relative;
+        border-bottom: 1px solid rgba(255, 0, 110, 0.1);
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:before {
+          content: "✗";
+          position: absolute;
+          left: 0;
+          color: $about-accent;
+          font-weight: 700;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .mission-statement {
+    margin: 2rem 0;
+
+    .mission-main {
+      font-size: 1.125rem;
+      color: $about-text;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      text-align: center;
+
+      strong {
+        color: $about-accent;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .mission-focus {
+    background: rgba(255, 0, 110, 0.05);
+    border: 1px solid rgba(255, 0, 110, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    h3 {
+      color: $about-accent;
+      font-size: 1.25rem;
+      margin: 0 0 0.75rem 0;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: rgba(245, 245, 245, 0.85);
+      line-height: 1.6;
+
+      strong {
+        color: $about-text;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .mission-commitment {
+    text-align: center;
+    margin: 2rem 0;
+
+    .focus-statement {
+      font-size: 1.125rem;
+      color: rgba(245, 245, 245, 0.9);
+      line-height: 1.7;
+      margin: 0;
+
+      strong {
+        color: $about-accent;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .truth-statement {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 16, 240, 0.05);
+    border: 1px dashed $about-accent-2;
+    border-radius: 12px;
+    margin-top: 2rem;
+
+    p {
+      margin: 0;
+      font-size: 1.125rem;
+      color: rgba(245, 245, 245, 0.9);
+      line-height: 1.7;
+
+      strong {
+        color: $about-accent-2;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// ============================================================================
+// Location Section
+// ============================================================================
+.location-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem 1.5rem;
+  background: $about-surface;
+  border-radius: 16px;
+  border: 1px solid $about-border;
+
+  h2 {
+    color: $about-text;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+
+  .location-info,
+  .contact-info {
+    h3 {
+      color: $about-accent;
+      font-size: 1.125rem;
+      margin: 0 0 1rem 0;
+      font-weight: 700;
+    }
+
+    p {
+      color: rgba(245, 245, 245, 0.85);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+
+      &.location-note {
+        font-size: 0.9rem;
+        color: rgba(245, 245, 245, 0.65);
+        font-style: italic;
+      }
+
+      strong {
+        color: $about-text;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .contact-methods {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0.75rem 0;
+      color: rgba(245, 245, 245, 0.85);
+      border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      strong {
+        color: $about-text;
+        font-weight: 700;
+      }
+
+      a {
+        color: $about-accent;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: lighten($about-accent, 10%);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// ============================================================================
+// CTA Section
+// ============================================================================
+.cta-section {
+  max-width: 900px;
+  margin: 4rem auto 2rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: $about-surface;
+  border-radius: 20px;
+  border: 2px solid $about-accent;
+
+  h2 {
+    color: $about-text;
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-intro {
+    color: rgba(245, 245, 245, 0.85);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-width: 240px;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+
+  &.primary-cta {
+    background: linear-gradient(
+      135deg,
+      $about-accent,
+      lighten($about-accent, 10%)
+    );
+    color: $dark-1;
+    box-shadow: 0 4px 12px rgba(255, 0, 110, 0.3);
+
+    &:hover {
+      box-shadow: 0 6px 20px rgba(255, 0, 110, 0.4);
+    }
+  }
+
+  &.secondary-cta {
+    background: $about-surface-light;
+    color: $about-text;
+    border: 2px solid $about-accent;
+    box-shadow: 0 4px 12px rgba(255, 0, 110, 0.15);
+
+    &:hover {
+      background: rgba(255, 0, 110, 0.05);
+      box-shadow: 0 6px 20px rgba(255, 0, 110, 0.25);
+    }
+  }
+
+  &.gold-cta {
+    background: linear-gradient(135deg, $gold-badge, lighten($gold-badge, 10%));
+    color: #1a1a1a;
+    box-shadow: 0 4px 12px rgba(255, 209, 0, 0.3);
+
+    &:hover {
+      box-shadow: 0 6px 20px rgba(255, 209, 0, 0.4);
+    }
+  }
+}
+
+.cta-benefits {
+  color: rgba(245, 245, 245, 0.75);
+  line-height: 1.6;
+  margin: 0;
+
+  a {
+    color: $about-accent;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-bottom-color: $about-accent;
+    }
+  }
+}
+
+// ============================================================================
+// Accessibility
+// ============================================================================
+.cta-button:focus,
+.service-link:focus {
+  outline: 2px solid $about-accent;
+  outline-offset: 4px;
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .variety-card,
+  .tank-option,
+  .service-card,
+  .cta-button {
+    transition: none;
+  }
+}
+
+// ============================================================================
+// Print Styles
+// ============================================================================
+@media print {
+  .cta-section,
+  .cta-buttons {
+    display: none;
+  }
+
+  .variety-card,
+  .tank-option,
+  .service-card {
+    page-break-inside: avoid;
+    border: 1px solid #333;
+  }
+}

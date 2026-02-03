@@ -1,0 +1,234 @@
+// _blog-index.scss
+// Blog index page styles for ebiya.sg
+// Caridina shrimp breeding guides and articles
+
+// ======================================================
+// Blog Index Container
+// ======================================================
+
+.blog-index {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  @media (min-width: 768px) {
+    padding: 3rem 2rem;
+  }
+}
+
+// ======================================================
+// Blog Header
+// ======================================================
+
+.blog-header {
+  margin-bottom: 3rem;
+  border-bottom: 2px solid $primary;
+  padding-bottom: 1.5rem;
+
+  h1 {
+    color: $light;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.blog-intro {
+  color: $color-text;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.blog-tagline {
+  color: $muted;
+  font-style: italic;
+  font-size: 0.95rem;
+  padding-top: 1rem;
+  border-top: 1px solid $border;
+  line-height: 1.5;
+}
+
+// ======================================================
+// Blog List
+// ======================================================
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+// ======================================================
+// Post Card
+// ======================================================
+
+.post-card {
+  background-color: $surface-1;
+  border: 2px solid $primary;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+
+  // Dotted border style (matching original design)
+  border-style: dotted;
+
+  &:hover {
+    border-color: $secondary;
+    background-color: $surface-2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($primary, 0.15);
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+// ======================================================
+// Post Title
+// ======================================================
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+
+  @media (min-width: 768px) {
+    font-size: 1.75rem;
+  }
+}
+
+.post-link {
+  color: $light;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $primary;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 2px solid $primary;
+    outline-offset: 4px;
+  }
+}
+
+// ======================================================
+// Post Meta
+// ======================================================
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: $muted;
+  font-size: 0.9rem;
+
+  time {
+    color: $muted;
+  }
+}
+
+.post-categories {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: $surface-2;
+  color: $primary;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid $border;
+  font-weight: 500;
+}
+
+// ======================================================
+// Post Excerpt
+// ======================================================
+
+.post-excerpt {
+  color: $color-text;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+// ======================================================
+// Read More Link
+// ======================================================
+
+.read-more {
+  color: $secondary;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: underline;
+    transform: translateX(4px);
+  }
+
+  &:focus {
+    outline: 2px solid $secondary;
+    outline-offset: 4px;
+  }
+}
+
+// ======================================================
+// Empty State (when no posts)
+// ======================================================
+
+.blog-list:empty::after {
+  content: "No articles published yet. Check back soon for Caridina shrimp breeding guides!";
+  display: block;
+  color: $muted;
+  font-style: italic;
+  text-align: center;
+  padding: 3rem 1rem;
+  border: 2px dotted $border;
+  border-radius: 8px;
+}
+
+// ======================================================
+// Accessibility & Focus States
+// ======================================================
+
+a:focus-visible {
+  outline: 2px solid $primary;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+// ======================================================
+// Print Styles
+// ======================================================
+
+@media print {
+  .post-card {
+    border: 1px solid #333;
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  .read-more {
+    display: none;
+  }
+}

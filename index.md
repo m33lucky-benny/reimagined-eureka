@@ -1,65 +1,79 @@
 ---
 layout: page
-title: SEO-First Websites Google Can Understand
-description: We design and maintain SEO-first websites that Google can easily crawl, index, and understand — built with clean structure, performance, and long-term growth in mind.
+title: Premium Caridina Shrimp Tank Systems & Breeding Racks Singapore | ebiya.sg
+description: Custom-built Caridina shrimp breeding tanks, professional rack systems, and RO water setups for Singapore. Nano tanks to commercial breeding systems. Expert-engineered for stable water parameters and successful shrimp keeping.
+keywords: caridina shrimp tank Singapore, shrimp breeding rack system, RO water setup shrimp, nano shrimp tank, commercial shrimp breeding, neocaridina tank system, shrimp rack Singapore, aquarium RO system
+permalink: /
+schema_type: Product
 ---
 
-<div class="index-hero center container">
-  <p class="index-intro">
-    We build and maintain SEO-first websites with clean structure, strong
-    technical foundations, and content Google can reliably crawl, index,
-    and understand.
+<div class="container hero-section">
+
+  <!-- Primary Heading for SEO -->
+  <h1 class="hero-title">
+    Caridina Shrimp Tank Systems Singapore
+  </h1>
+
+  <!-- Value Proposition Subheadline -->
+  <p class="hero-subtitle">
+    Premium shrimp breeding tanks and rack systems designed for stability,
+    growth, and long-term success.
+    From nano shrimp tanks to professional breeder rack systems —
+    engineered by shrimp breeders in Singapore.
   </p>
 
-  <div class="button-container-index">
-   <a href="/contact/" class="button button--primary">
-      Request a quote
+  <!-- Call-to-Action Buttons -->
+  <div class="hero-cta-row">
+    <a class="btn btn-primary" href="/tank-builder/" aria-label="Start designing your custom shrimp tank system">
+      Design Your Shrimp Tank
     </a>
-    <a href="/about/" class="button button--secondary">
-      View services
+    <a class="btn btn-ghost" href="/shrimp/" aria-label="View available live shrimp for sale">
+      Browse Live Shrimp
     </a>
-  
   </div>
+
+  <!-- SEO-Enhanced Description -->
+  <div class="hero-seo-content">
+    <p>
+      ebiya.sg designs and builds professional shrimp tank systems for Caridina and
+      Neocaridina breeders throughout Singapore. Our custom solutions include nano tanks, 
+      breeding rack systems, RO-based water filtration, and modular shrimp setups 
+      optimized for home hobbyists and commercial breeding operations.
+    </p>
+    <p>
+      <strong>Specialized in:</strong> Crystal Red Shrimp (CRS), Taiwan Bee shrimp, 
+      Shadow Panda, Blue Bolt, and all Caridina species requiring precise water parameters 
+      and stable TDS control.
+    </p>
+  </div>
+
 </div>
 
-<hr />
-
-<div class="container">
-  <h2 id="services">Services</h2>
-
-  <ul class="service-list">
-    <li>
-      <strong>New website builds</strong><br>
-      SEO-friendly architecture, clean HTML, and scalable layouts.
-    </li>
-    <li>
-      <strong>Website maintenance</strong><br>
-      Fixes, performance checks, and ongoing improvements.
-    </li>
-    <li>
-      <strong>Technical SEO</strong><br>
-      Crawlability, indexing, canonicals, and Core Web Vitals.
-    </li>
-    <li>
-      <strong>On-page SEO</strong><br>
-      Titles, headings, internal linking, and content structure.
-    </li>
-  </ul>
-
-  <h2>Why SEO-first matters</h2>
-
-  <ul>
-    <li>Clear information architecture Google can interpret.</li>
-    <li>Fast load times and strong mobile usability.</li>
-    <li>Content designed around search intent, not guesswork.</li>
-  </ul>
-
-  <h2>How projects run</h2>
-
-  <ol class="process-list">
-    <li>Initial audit and requirements review</li>
-    <li>Technical and content planning</li>
-    <li>Implementation and validation</li>
-    <li>Tracking, monitoring, and iteration</li>
-  </ol>
-</div>
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Caridina Shrimp Tank Systems",
+  "description": "Custom-built shrimp breeding tanks and rack systems for Caridina and Neocaridina species in Singapore",
+  "brand": {
+    "@type": "Brand",
+    "name": "ebiya.sg"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "SGD",
+    "availability": "https://schema.org/InStock"
+  },
+  "category": "Aquarium Systems",
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "ebiya.sg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SG",
+      "addressRegion": "Singapore"
+    }
+  }
+}
+</script>

@@ -1,0 +1,820 @@
+// ============================================================================
+// Membership Page Styles - Cloudflare CSP Compliant
+// File: _membership.scss
+// ============================================================================
+
+// Brand color tokens (ensure these are imported from main variables)
+$membership-bg: $dark-1 !default; // #0a0a0a
+$membership-surface: $surface-2 !default; // #2a2a2a
+$membership-accent: $secondary !default; // #ff006e
+$membership-accent-2: $primary !default; // #ff10f0
+$membership-text: $color-text !default; // #f5f5f5
+$membership-text-muted: $muted !default; // #888888
+$membership-border: $border !default; // #333333
+
+// Additional colors for membership tiers
+$standard-color: #9ca3af; // Silver/gray for standard
+$gold-color: #ffd100; // Gold yellow
+$gold-glow: rgba(255, 209, 0, 0.3);
+
+// ============================================================================
+// Hero Section
+// ============================================================================
+.membership-hero {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .hero-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: $membership-text;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(245, 245, 245, 0.9);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
+    strong {
+      color: $membership-accent;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    color: rgba(245, 245, 245, 0.75);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+// ============================================================================
+// Problem Section
+// ============================================================================
+.problem-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 2rem 1.5rem;
+  background: $membership-surface;
+  border-radius: 16px;
+  border: 1px solid $membership-border;
+
+  h2 {
+    text-align: center;
+    color: $membership-text;
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  > p {
+    text-align: center;
+    color: rgba(245, 245, 245, 0.85);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .problem-conclusion {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    color: rgba(245, 245, 245, 0.9);
+
+    strong {
+      color: $membership-accent;
+      font-weight: 700;
+    }
+  }
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.problem-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 0, 110, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: $membership-accent;
+    transform: translateY(-2px);
+  }
+
+  .problem-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: $membership-accent;
+    font-size: 1.125rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+  }
+
+  p {
+    color: rgba(245, 245, 245, 0.85);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+// ============================================================================
+// Solution Section
+// ============================================================================
+.solution-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 2rem 1.5rem;
+
+  h2 {
+    text-align: center;
+    color: $membership-text;
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .solution-intro {
+    text-align: center;
+    color: rgba(245, 245, 245, 0.85);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .solution-conclusion {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    color: rgba(245, 245, 245, 0.9);
+
+    strong {
+      color: $membership-accent;
+      font-weight: 700;
+    }
+  }
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.solution-item {
+  background: rgba(255, 0, 110, 0.05);
+  border: 1px solid rgba(255, 0, 110, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 0, 110, 0.08);
+    border-color: $membership-accent;
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    color: $membership-accent;
+    font-size: 1.125rem;
+    margin: 0 0 0.75rem 0;
+    font-weight: 700;
+  }
+
+  p {
+    color: rgba(245, 245, 245, 0.85);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+}
+
+// ============================================================================
+// Membership Plans Section
+// ============================================================================
+.membership-plans {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+
+    .gold-plan {
+      grid-column: 1 / -1; // Gold takes full width on desktop
+    }
+
+    .gold-regular-plan {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+// ============================================================================
+// Plan Cards
+// ============================================================================
+.plan-card {
+  background: $membership-surface;
+  border-radius: 16px;
+  border: 2px solid $membership-border;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:hover:not(.disabled-plan) {
+    border-color: $membership-accent;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(255, 0, 110, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+}
+
+// Standard Plan
+.standard-plan {
+  .plan-badge {
+    background: linear-gradient(
+      135deg,
+      $standard-color,
+      lighten($standard-color, 10%)
+    );
+  }
+}
+
+// Gold Plan (Featured)
+.gold-plan {
+  border-color: $gold-color;
+  background: linear-gradient(
+    135deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(42, 42, 42, 0.95) 50%,
+    rgba(255, 209, 0, 0.05) 100%
+  );
+
+  &:hover {
+    border-color: $gold-color;
+    box-shadow: 0 12px 32px $gold-glow;
+  }
+
+  .plan-badge {
+    background: linear-gradient(135deg, $gold-color, lighten($gold-color, 10%));
+  }
+}
+
+.featured-plan {
+  .featured-badge {
+    position: absolute;
+    top: -12px;
+    right: 1.5rem;
+    background: linear-gradient(
+      135deg,
+      $membership-accent,
+      $membership-accent-2
+    );
+    color: $dark-1;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 0.875rem;
+    box-shadow: 0 4px 12px rgba(255, 0, 110, 0.3);
+  }
+}
+
+// Disabled Plan
+.disabled-plan {
+  opacity: 0.6;
+  pointer-events: none;
+
+  .plan-badge {
+    background: $standard-color;
+  }
+}
+
+// ============================================================================
+// Plan Header
+// ============================================================================
+.plan-header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .plan-badge {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    color: $dark-1; // High contrast
+    font-weight: 800;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .plan-name {
+    font-size: 1.75rem;
+    color: $membership-text;
+    margin: 0 0 1.5rem 0;
+    font-weight: 800;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .plan-tagline {
+    color: rgba(245, 245, 245, 0.75);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+// ============================================================================
+// Pricing Display
+// ============================================================================
+.plan-price {
+  margin: 1.5rem 0;
+
+  .currency {
+    font-size: 1.25rem;
+    color: rgba(245, 245, 245, 0.75);
+    font-weight: 600;
+  }
+
+  .amount {
+    font-size: 3rem;
+    color: $membership-text;
+    font-weight: 900;
+    margin: 0 0.25rem;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .period {
+    font-size: 1.125rem;
+    color: rgba(245, 245, 245, 0.75);
+    font-weight: 600;
+  }
+}
+
+.promo-price {
+  .price-strikethrough {
+    margin-bottom: 0.5rem;
+
+    .old-price {
+      font-size: 1.25rem;
+      color: $membership-text-muted;
+      text-decoration: line-through;
+      font-weight: 600;
+    }
+  }
+
+  .current-price {
+    color: $gold-color;
+
+    .currency,
+    .amount,
+    .period {
+      color: $gold-color;
+    }
+  }
+
+  .savings {
+    margin-top: 0.5rem;
+    color: $membership-accent;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+// ============================================================================
+// Promo Alert
+// ============================================================================
+.promo-alert {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 209, 0, 0.1);
+  border: 2px dashed $gold-color;
+  border-radius: 12px;
+
+  .promo-badge {
+    display: inline-block;
+    padding: 0.4rem 0.85rem;
+    background: linear-gradient(135deg, #ffd100, #ffed4e);
+    color: #1a1a1a; // High contrast
+    font-weight: 800;
+    font-size: 0.875rem;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .promo-text {
+    margin: 0.5rem 0 0 0;
+    color: rgba(245, 245, 245, 0.9);
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    strong {
+      color: $gold-color;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+// ============================================================================
+// Limited Slots Info
+// ============================================================================
+.limited-slots-info {
+  background: rgba(255, 209, 0, 0.05);
+  border: 1px solid rgba(255, 209, 0, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  h3 {
+    color: $gold-color;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+  }
+
+  p {
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: rgba(245, 245, 245, 0.85);
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+// ============================================================================
+// Plan Features
+// ============================================================================
+.plan-features {
+  margin: 2rem 0;
+
+  h3 {
+    color: $membership-text;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 0.75rem 0;
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .check-icon {
+      color: $membership-accent;
+      margin-right: 0.75rem;
+      font-size: 1.125rem;
+      flex-shrink: 0;
+    }
+
+    strong {
+      color: $membership-text;
+      font-weight: 700;
+    }
+  }
+}
+
+// Premium Features (Gold)
+.premium-feature {
+  background: rgba(255, 209, 0, 0.03);
+  border: 1px solid rgba(255, 209, 0, 0.2);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    color: $gold-color;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .feature-list li {
+    border-bottom-color: rgba(255, 209, 0, 0.1);
+  }
+}
+
+// ============================================================================
+// Plan Footer / CTA
+// ============================================================================
+.plan-footer {
+  margin-top: 2rem;
+  text-align: center;
+
+  .plan-note {
+    color: rgba(245, 245, 245, 0.65);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+}
+
+// ============================================================================
+// CTA Buttons
+// ============================================================================
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  min-width: 280px;
+
+  @media (max-width: 600px) {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.standard-cta {
+  background: linear-gradient(
+    135deg,
+    $standard-color,
+    lighten($standard-color, 10%)
+  );
+  color: $dark-1; // High contrast
+  box-shadow: 0 4px 12px rgba(156, 163, 175, 0.3);
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(156, 163, 175, 0.4);
+    background: linear-gradient(
+      135deg,
+      lighten($standard-color, 5%),
+      lighten($standard-color, 15%)
+    );
+  }
+}
+
+.gold-cta {
+  background: linear-gradient(135deg, $gold-color, lighten($gold-color, 10%));
+  color: #1a1a1a; // High contrast on gold
+  box-shadow: 0 6px 20px $gold-glow;
+
+  &:hover {
+    box-shadow: 0 8px 28px rgba(255, 209, 0, 0.5);
+    background: linear-gradient(
+      135deg,
+      lighten($gold-color, 5%),
+      lighten($gold-color, 15%)
+    );
+  }
+}
+
+.promo-cta {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+.disabled-cta {
+  background: #555555;
+  color: $membership-text-muted;
+  cursor: not-allowed;
+  opacity: 0.6;
+
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+// ============================================================================
+// Transparency Section
+// ============================================================================
+.transparency-section {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem 1.5rem;
+  background: rgba(255, 0, 110, 0.03);
+  border: 1px solid rgba(255, 0, 110, 0.2);
+  border-radius: 16px;
+
+  h2 {
+    color: $membership-text;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+.transparency-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 0.75rem 0 0.75rem 2rem;
+    color: rgba(245, 245, 245, 0.85);
+    line-height: 1.6;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 0, 110, 0.1);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0.75rem;
+      color: $membership-accent;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+  }
+}
+
+// ============================================================================
+// Final CTA Section
+// ============================================================================
+.final-cta {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(255, 0, 110, 0.05) 100%
+  );
+  border-radius: 20px;
+  border: 2px solid $membership-accent;
+
+  h2 {
+    color: $membership-text;
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .final-message {
+    font-size: 1.25rem;
+    color: rgba(245, 245, 245, 0.9);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+    strong {
+      color: $membership-accent;
+      font-weight: 700;
+    }
+  }
+
+  .final-question {
+    font-size: 1.125rem;
+    color: rgba(245, 245, 245, 0.85);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+
+    strong {
+      color: $membership-accent;
+      font-weight: 700;
+    }
+  }
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+// ============================================================================
+// Animations
+// ============================================================================
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 6px 20px $gold-glow;
+  }
+  50% {
+    box-shadow: 0 8px 32px rgba(255, 209, 0, 0.5);
+  }
+}
+
+// ============================================================================
+// Accessibility
+// ============================================================================
+.cta-button:focus,
+.plan-card:focus {
+  outline: 2px solid $membership-accent;
+  outline-offset: 4px;
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .plan-card,
+  .problem-item,
+  .solution-item,
+  .cta-button,
+  .promo-cta {
+    transition: none;
+    animation: none;
+  }
+}
+
+// ============================================================================
+// Print Styles
+// ============================================================================
+@media print {
+  .membership-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-card {
+    page-break-inside: avoid;
+    border: 1px solid #333;
+  }
+
+  .cta-button {
+    display: none;
+  }
+
+  .promo-alert,
+  .featured-badge {
+    display: none;
+  }
+}

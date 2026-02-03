@@ -1,0 +1,422 @@
+// ============================================================================
+// Hero Section Styles - Tank Systems
+// Caridina Shrimp Tank Systems - ebiya.sg
+// ============================================================================
+
+// Import color variables if needed
+// @import 'variables';
+
+// ============================================================================
+// Hero Container & Layout
+// ============================================================================
+
+.hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 80px 40px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 100px 60px;
+  }
+}
+
+// ============================================================================
+// Hero Title (H1)
+// ============================================================================
+
+.hero-title {
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1.2;
+  color: $primary; // #FF10F0 - neon pink
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+
+  // Gradient text effect (optional enhancement)
+  background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  // Fallback for browsers that don't support background-clip
+  @supports not (background-clip: text) {
+    background: none;
+    color: $primary;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 3.5em;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 4em;
+    margin-bottom: 32px;
+  }
+}
+
+// ============================================================================
+// Hero Subtitle
+// ============================================================================
+
+.hero-subtitle {
+  font-size: 1.2em;
+  line-height: 1.7;
+  color: $color-text; // #f5f5f5 - high contrast
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-weight: 400;
+  opacity: 0.95;
+
+  @media (min-width: 768px) {
+    font-size: 1.4em;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.5em;
+    margin-bottom: 56px;
+  }
+}
+
+// ============================================================================
+// CTA Button Row
+// ============================================================================
+
+.hero-cta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+}
+
+// ============================================================================
+// Button Styles
+// ============================================================================
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid transparent;
+  min-width: 200px;
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    padding: 16px 40px;
+    font-size: 1.1em;
+    min-width: 220px;
+  }
+
+  // Focus state for accessibility
+  &:focus {
+    outline: 3px solid $primary;
+    outline-offset: 3px;
+  }
+
+  // Active state
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// Primary Button (neon pink)
+.btn-primary {
+  background: $primary; // #FF10F0
+  color: $dark-1; // #0a0a0a - high contrast
+  border-color: $primary;
+  box-shadow: 0 4px 16px rgba(255, 16, 240, 0.3);
+
+  &:hover,
+  &:focus-visible {
+    background: $secondary; // #FF006E
+    border-color: $secondary;
+    box-shadow: 0 6px 24px rgba(255, 0, 110, 0.4);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 16, 240, 0.3);
+  }
+}
+
+// Ghost Button (outlined)
+.btn-ghost {
+  background: transparent;
+  color: $color-text; // #f5f5f5
+  border-color: $primary; // #FF10F0
+  box-shadow: 0 0 0 rgba(255, 16, 240, 0);
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(255, 16, 240, 0.1);
+    border-color: $secondary; // #FF006E
+    color: $primary;
+    box-shadow: 0 4px 16px rgba(255, 16, 240, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    background: rgba(255, 16, 240, 0.15);
+  }
+}
+
+// ============================================================================
+// SEO Content Section
+// ============================================================================
+
+.hero-seo-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  background: $surface-1; // #1a1a1a
+  border-radius: 12px;
+  border: 1px solid $border; // #333333
+  text-align: left;
+
+  @media (min-width: 768px) {
+    padding: 40px 48px;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: $color-text; // #f5f5f5
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.05em;
+      line-height: 1.9;
+    }
+  }
+
+  strong {
+    color: $primary; // #FF10F0
+    font-weight: 700;
+  }
+
+  // Optional: Can be hidden if you want this purely for SEO
+  &.visually-hidden-desktop {
+    @media (min-width: 1024px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  }
+}
+
+// ============================================================================
+// Animation Enhancements (Optional)
+// ============================================================================
+
+// Fade-in animation for hero content
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Apply animations (can be toggled with JS)
+.hero-section.animated {
+  .hero-title {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .hero-subtitle {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+
+  .hero-cta-row {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+  }
+
+  .hero-seo-content {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+  }
+}
+
+// ============================================================================
+// Responsive Design - Mobile Optimization
+// ============================================================================
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 40px 16px;
+  }
+
+  .hero-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1em;
+    margin-bottom: 32px;
+  }
+
+  .hero-cta-row {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 24px;
+  }
+
+  .hero-seo-content {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75em;
+  }
+
+  .hero-subtitle {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 0.95em;
+  }
+}
+
+// ============================================================================
+// Accessibility Enhancements
+// ============================================================================
+
+// Reduced motion for users who prefer it
+@media (prefers-reduced-motion: reduce) {
+  .hero-section.animated {
+    .hero-title,
+    .hero-subtitle,
+    .hero-cta-row,
+    .hero-seo-content {
+      animation: none;
+    }
+  }
+
+  .btn {
+    transition: none;
+
+    &:hover,
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .hero-title {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: $primary;
+  }
+
+  .btn {
+    border-width: 3px;
+  }
+
+  .btn-primary {
+    color: #000000; // Maximum contrast
+  }
+
+  .hero-seo-content {
+    border-width: 2px;
+  }
+}
+
+// ============================================================================
+// Dark Mode Support (if needed)
+// ============================================================================
+
+@media (prefers-color-scheme: light) {
+  // If you want to support light mode, add overrides here
+  // Currently optimized for dark theme
+}
+
+// ============================================================================
+// Print Styles
+// ============================================================================
+
+@media print {
+  .hero-section {
+    padding: 20px;
+  }
+
+  .hero-cta-row {
+    display: none; // Hide buttons in print
+  }
+
+  .hero-title {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #000000;
+  }
+
+  .hero-subtitle,
+  .hero-seo-content p {
+    color: #000000;
+  }
+
+  .hero-seo-content {
+    background: transparent;
+    border: 1px solid #000000;
+  }
+}
+
+// ============================================================================
+// Loading State (Optional)
+// ============================================================================
+
+.hero-section.loading {
+  .hero-title,
+  .hero-subtitle,
+  .hero-cta-row,
+  .hero-seo-content {
+    opacity: 0;
+  }
+}

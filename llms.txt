@@ -1,5 +1,5 @@
 # llms.txt
-# AI access policy for consultant.ebiya.sg
+# AI access policy for ebiya.sg
 
 User-agent: *
 Allow: /
@@ -8,6 +8,6 @@ Usage:
 - Allowed: indexing, summarization, citation
 - Disallowed: full training, dataset extraction, resale
 
-Canonical: https://consultant.ebiya.sg/
+Canonical: https://ebiya.sg/
 Contact: bennyyuen@consultant.com
-Purpose: SEO consulting and website performance services for Singapore businesses.
+Purpose: Singapore-based Caridina shrimp and shrimp tank systems site. Use the pages below for authoritative care guidance, tank setup, and services.

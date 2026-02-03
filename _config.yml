@@ -5,8 +5,8 @@ title: ConsultantDev
 description: "SEO-first websites with strict CSP, performance optimization, and technical consulting for Singapore businesses."
 image: "/assets/images/ebiya-logo.webp"
 
-url: "https://consultant.ebiya.sg"   # REQUIRED
-baseurl: ""                          # Leave empty (not a sub-repo)
+url: "https://consultant.ebiya.sg" # REQUIRED
+baseurl: "" # Leave empty (not a sub-repo)
 
 markdown: kramdown
 
@@ -63,3 +63,4 @@ whatsapp:
 # =========================
 exclude:
   - README.md
+  - howto-folders

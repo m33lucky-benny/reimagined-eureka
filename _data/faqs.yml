@@ -1,0 +1,100 @@
+- title: About Caridina shrimp Care
+  questions:
+    - id: q1
+      question: What are Caridina shrimp and why are they popular in Singapore?
+      answer: >
+        Caridina shrimp are premium freshwater dwarf shrimp known for their vivid
+        colors and patterns, including Crystal Red Shrimp (CRS), Crystal Black Shrimp (CBS),
+        and Taiwan Bee varieties. In Singapore, they are popular due to their beauty,
+        peaceful nature, and strong breeding potential.
+
+    - id: q2
+      question: Can Caridina shrimp survive in Singapore without a chiller?
+      answer: >
+        Yes, but long-term success is difficult. Caridina shrimp thrive at 20–24°C,
+        while Singapore’s ambient temperature often exceeds 28°C. Air-conditioning or
+        aquarium cooling fans can help, but most serious shrimp keepers use a chiller
+        for stable breeding and longevity.
+
+    - id: q3
+      question: Why do Caridina shrimp die after molting?
+      answer: >
+        Molting deaths are usually caused by unstable water parameters. Common reasons
+        include incorrect GH, calcium deficiency, high KH, or sudden changes in TDS,
+        pH, or temperature.
+
+    - id: q4
+      question: What are the ideal water parameters for Caridina shrimp?
+      answer: >
+        pH 6.0–6.8, TDS 100–200 ppm, GH 4–6, KH 0–2, Temperature 20–24°C.
+        Stability is more important than chasing exact numbers.
+
+    - id: q5
+      question: How long should I cycle a tank before adding Caridina shrimp?
+      answer: >
+        A minimum of 4–8 weeks is recommended to allow beneficial bacteria, active soil
+        stabilization, and biofilm development. Ammonia and nitrite should be 0 ppm
+        before adding shrimp.
+
+    - id: q6
+      question: How many Caridina shrimp should I start with?
+      answer: >
+        Start with at least 20 shrimp. Larger groups improve breeding success and
+        reduce losses due to stress.
+
+    - id: q7
+      question: What should I feed Caridina shrimp?
+      answer: >
+        Feed high-quality shrimp food 2–3 times per week. Supplement with blanched
+        vegetables, biofilm enhancers, and limited protein treats.
+
+    - id: q8
+      question: How do I know if my Caridina shrimp are healthy?
+      answer: >
+        Healthy shrimp are active grazers with strong coloration and regular molting.
+        Signs of stress include lethargy, pale color, and failed molts.
+
+- title: Tank & setup
+  questions:
+    - id: t1
+      question: What makes a good Caridina shrimp tank?
+      answer: >
+        A good Caridina tank prioritizes stable water parameters, active soil,
+        gentle filtration, and a mature biological balance.
+
+    - id: t2
+      question: What tank size is best for beginners?
+      answer: >
+        Tanks between 45–60 cm are ideal. Larger volumes are more stable and easier
+        for beginners to manage in Singapore’s climate.
+
+    - id: t3
+      question: What equipment is essential for a Caridina shrimp tank?
+      answer: >
+        Essential equipment includes active shrimp soil, gentle filtration
+        (UGF or sponge filter), reliable cooling (chiller or AC),
+        and an RO water system.
+
+    - id: t4
+      question: What is the benefit of a custom shrimp tank setup?
+      answer: >
+        Custom tanks are designed specifically for Caridina shrimp, reducing
+        trial-and-error and improving long-term survival and breeding success.
+
+    - id: t5
+      question: Can existing tanks be upgraded for Caridina shrimp?
+      answer: >
+        Yes. Filtration, substrate, and cooling systems can be upgraded to make most
+        tanks Caridina-compatible.
+
+    - id: t6
+      question: Proper acclimation process?
+      answer: >
+        Drip acclimation over 1–2 hours is recommended. Never pour bag water directly
+        into the tank.
+
+    - id: t7
+      question: Can I keep Caridina shrimp with fish?
+      answer: >
+        Species-only tanks are best. Safe tankmates include Otos, small rasboras,
+        and pygmy cories.

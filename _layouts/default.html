@@ -1,20 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- wa enabled: {{ site.whatsapp.enabled }} ; wa phone: {{ site.whatsapp.phone }} ; page.whatsapp: {{ page.whatsapp }} -->
-  {% include head.html %}
-</head>
-<body class="site-body">
-  {% include navbar.html %}
+  <head>
+    <!-- wa enabled: {{ site.whatsapp.enabled }} ; wa phone: {{ site.whatsapp.phone }} ; page.whatsapp: {{ page.whatsapp }} -->
+    {% include head.html %}
+  </head>
+  <body class="site-body">
+    {% include navbar.html %}
 
-  <main id="content" class="site-main">
-    {{ content }}
-  </main>
+    <main id="content" class="site-main">{{ content }}</main>
 
-  {% include footer.html %}
-  {% include whatsapp-float.html %}
-  
-<script src="{{ '/assets/js/nav-back.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/whatsapp-link.js' | relative_url }}" defer></script>
-</body>
+    {% include footer.html %} {% include whatsapp-float.html %} {% if page.url
+    == '/tank-builder/' %}
+    <script
+      src="{{ '/assets/js/tank-builder.js' | relative_url }}"
+      defer
+    ></script>
+    {% endif %} {% if page.url == '/membership/' %}
+    <script
+      src="{{ '/assets/js/membership.js' | relative_url }}"
+      defer
+    ></script>
+    {% endif %} {% if page.schema_type == 'FAQPage' %}
+    <script src="{{ '/assets/js/faq.js' | relative_url }}" defer></script>
+    {% endif %} {% if page.schema_type == 'Product' %}
+    <script
+      src="{{ '/assets/js/hero-tank-systems.js' | relative_url }}"
+      defer
+    ></script>
+    {% endif %} {% if page.permalink == '/shrimp/' %}
+    <script src="{{ '/assets/js/shrimp.js' | relative_url }}"></script>
+    {% endif %}
+
+    <script src="{{ '/assets/js/nav-back.js' | relative_url }}" defer></script>
+    <script
+      src="{{ '/assets/js/whatsapp-link.js' | relative_url }}"
+      defer
+    ></script>
+  </body>
 </html>
