@@ -24,8 +24,8 @@ permalink: /contact/
 
   </div>
 
-{% include c2.html %}
+{% include contact-form.html %}
 
 </div>
 
-<!-- <script src="{{ '/assets/js/contact-form.js' | relative_url }}" defer></script> -->
+<script src="{{ '/assets/js/contact-form.js' | relative_url }}" defer></script>

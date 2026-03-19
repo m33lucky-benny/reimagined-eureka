@@ -5,8 +5,6 @@
     if (!form || !status) return;
 
     const btn = form.querySelector('.submit-btn');
-    const originalText = btn.textContent;
-
     form.addEventListener('submit', () => {
         // UI feedback
         btn.textContent = 'Sending…';
@@ -16,7 +14,7 @@
         status.textContent = 'Sending your message…';
 
         // Store follow-up data for thank-you page
-        const contactMethod = form.querySelector('#contact-method')?.value || '';
+        const contactMethod = form.querySelector('input[name="entry.162991437"]:checked')?.value || '';
         const name = form.querySelector('#name')?.value || '';
 
         sessionStorage.setItem(
