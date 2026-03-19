@@ -1,11 +1,11 @@
 # =========================
 # 🌐 SITE METADATA
 # =========================
-title: ConsultantDev
+title: Ebiya.sg
 description: "SEO-first websites with strict CSP, performance optimization, and technical consulting for Singapore businesses."
 image: "/assets/images/ebiya-logo.webp"
 
-url: "https://consultant.ebiya.sg" # REQUIRED
+url: "https://ebiya.sg" # REQUIRED
 baseurl: "" # Leave empty (not a sub-repo)
 
 markdown: kramdown
@@ -22,7 +22,7 @@ sass:
 # =========================
 business:
   name: "Ebiya.SG"
-  url: "https://consultant.ebiya.sg"
+  url: "https://ebiya.sg"
   image: "/assets/images/ebiya-logo.webp"
   telephone: "+65 8900 2228"
   email: "bennyyuen@consultant.com"
