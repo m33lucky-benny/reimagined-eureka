@@ -16,7 +16,7 @@ export default function ContactPage() {
         <h1>Contact Us</h1>
         <p className="contact-intro">
           Have questions about shrimp, tank setups, or membership? We&apos;d love to hear from you.
-          Fill in the form below or reach us directly on WhatsApp.
+          Reach us directly on WhatsApp for the fastest response.
         </p>
       </FadeIn>
 
@@ -26,17 +26,13 @@ export default function ContactPage() {
         </a>
       </FadeIn>
 
-      {/* Google Forms embed — CSP allows frame-src https://docs.google.com */}
-      <FadeIn delay={0.2} className="contact-form-wrapper">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSf_placeholder/viewform?embedded=true"
-          width="100%"
-          height="800"
-          title="Contact form"
-          style={{ border: 'none' }}
-        >
-          Loading form…
-        </iframe>
+      <FadeIn delay={0.2} className="contact-details">
+        <div className="contact-info">
+          <p><strong>Phone / WhatsApp:</strong> +65 8900 2228</p>
+          <p><strong>Email:</strong> <a href={`mailto:${siteConfig.business.email}`}>{siteConfig.business.email}</a></p>
+          <p><strong>Address:</strong> {siteConfig.business.address}</p>
+          <p><strong>Hours:</strong> {siteConfig.business.openingHours}</p>
+        </div>
       </FadeIn>
     </div>
   );
