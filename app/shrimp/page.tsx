@@ -17,22 +17,21 @@ export const metadata: Metadata = {
 };
 
 function getShrimpImages() {
-  const optimizedDir = path.join(process.cwd(), 'public', 'assets', 'shrimps-optimized');
-  if (!fs.existsSync(optimizedDir)) return [];
+  const dir = path.join(process.cwd(), 'public', 'assets', 'shrimps');
+  if (!fs.existsSync(dir)) return [];
 
-  const files = fs.readdirSync(optimizedDir);
-  // Find all unique base names (e.g. "ebiya-logo") from -320.jpg files
-  const baseNames = [...new Set(
-    files
-      .filter((f) => f.endsWith('-320.jpg'))
-      .map((f) => f.replace(/-320\.jpg$/, ''))
-  )];
-
-  return baseNames.map((base) => ({
-    src: `/assets/shrimps-optimized/${base}-320.jpg`,
-    alt: `${base.replace(/-/g, ' ')} — Premium Caridina shrimp bred in Singapore by ebiya.sg`,
-    name: base.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
-  }));
+  return fs
+    .readdirSync(dir)
+    .filter((f) => /\.(jpe?g|webp|png)$/i.test(f))
+    .map((f) => {
+      const base = f.replace(/\.[^.]+$/, ''); // strip extension
+      const name = base.replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+      return {
+        src: `/assets/shrimps/${f}`,
+        alt: `${name} — Premium Caridina shrimp bred in Singapore by ebiya.sg`,
+        name,
+      };
+    });
 }
 
 export default function ShrimpPage() {
