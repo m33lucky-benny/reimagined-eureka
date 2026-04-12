@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+}
+
+.site-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content grows to fill space */
+.site-main {
+  flex: 1 0 auto;
+  padding: 2rem;
+}
+
+/* Footer stays at bottom */
+.site-footer {
+  flex-shrink: 0;
+}
+
+.index-intro {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.index-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+  .index-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-main {
+    padding: 1rem;
+  }
+  
+}

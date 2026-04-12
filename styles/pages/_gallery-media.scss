@@ -1,0 +1,39 @@
+// _layout-media.scss
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system;
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+// Hero
+.hero {
+  img {
+    height: 60vh;
+    object-fit: cover;
+  }
+}
+
+// Grid layouts
+.grid,
+.album-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+  padding: 12px;
+}
+
+// Tablet+
+@media (min-width: 768px) {
+  .hero {
+    img {
+      height: 70vh;
+    }
+  }
+}

@@ -27,11 +27,18 @@ Thumbs.db
 .env
 .env.*
 
-# Node (if you later add tooling)
+# Node
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Next.js
+.next/
+out/
+
+# Netlify
+.netlify/
 
 # Cloudflare (optional, if using wrangler later)
 .wrangler/

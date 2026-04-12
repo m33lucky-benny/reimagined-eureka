@@ -1,0 +1,402 @@
+// Variables (via @use — replaces implicit @import chain from Jekyll)
+@use '../variables' as *;
+
+// _blog-index.scss
+// Blog index page styles for ebiya.sg
+// Caridina shrimp breeding guides and articles
+
+// ======================================================
+// Blog Index Container
+// ======================================================
+
+.blog-index {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  @media (min-width: 768px) {
+    padding: 3rem 2rem;
+  }
+}
+
+// ======================================================
+// Blog Header
+// ======================================================
+
+.blog-header {
+  margin-bottom: 3rem;
+  border-bottom: 2px solid $primary;
+  padding-bottom: 1.5rem;
+
+  h1 {
+    color: $light;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.blog-intro {
+  color: $color-text;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.blog-tagline {
+  color: $muted;
+  font-style: italic;
+  font-size: 0.95rem;
+  padding-top: 1rem;
+  border-top: 1px solid $border;
+  line-height: 1.5;
+}
+
+// ======================================================
+// Blog List
+// ======================================================
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+// ======================================================
+// Post Card
+// ======================================================
+
+.post-card {
+  background-color: $surface-1;
+  border: 2px solid $primary;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+
+  // Dotted border style (matching original design)
+  border-style: dotted;
+
+  &:hover {
+    border-color: $secondary;
+    background-color: $surface-2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($primary, 0.15);
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+// ======================================================
+// Post Title
+// ======================================================
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+
+  @media (min-width: 768px) {
+    font-size: 1.75rem;
+  }
+}
+
+.post-link {
+  color: $light;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $primary;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 2px solid $primary;
+    outline-offset: 4px;
+  }
+}
+
+// ======================================================
+// Post Meta
+// ======================================================
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: $muted;
+  font-size: 0.9rem;
+
+  time {
+    color: $muted;
+  }
+}
+
+.post-categories {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: $surface-2;
+  color: $primary;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid $border;
+  font-weight: 500;
+}
+
+// ======================================================
+// Post Excerpt
+// ======================================================
+
+.post-excerpt {
+  color: $color-text;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+// ======================================================
+// Read More Link
+// ======================================================
+
+.read-more {
+  color: $secondary;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: underline;
+    transform: translateX(4px);
+  }
+
+  &:focus {
+    outline: 2px solid $secondary;
+    outline-offset: 4px;
+  }
+}
+
+// ======================================================
+// Empty State (when no posts)
+// ======================================================
+
+.blog-list:empty::after {
+  content: "No articles published yet. Check back soon for Caridina shrimp breeding guides!";
+  display: block;
+  color: $muted;
+  font-style: italic;
+  text-align: center;
+  padding: 3rem 1rem;
+  border: 2px dotted $border;
+  border-radius: 8px;
+}
+
+// ======================================================
+// Accessibility & Focus States
+// ======================================================
+
+a:focus-visible {
+  outline: 2px solid $primary;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+// ======================================================
+// Print Styles
+// ======================================================
+
+@media print {
+  .post-card {
+    border: 1px solid #333;
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  .read-more {
+    display: none;
+  }
+}
+
+// ======================================================
+// Post Article (single post page)
+// ======================================================
+
+.post-article {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  @media (min-width: 768px) {
+    padding: 3rem 2rem;
+  }
+}
+
+.post-article__back {
+  margin-bottom: 2rem;
+}
+
+.post-article__back-link {
+  color: $secondary;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}
+
+.post-article__header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid $primary;
+}
+
+.post-article__title {
+  color: $light;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+}
+
+.post-article__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: $muted;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-article__meta-sep {
+  color: $border;
+}
+
+.post-article__author {
+  color: $muted;
+}
+
+.post-article__description {
+  color: $muted;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.post-article__body {
+  color: $color-text;
+  line-height: 1.8;
+  font-size: 1rem;
+
+  h2 {
+    color: $light;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 2rem 0 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid $border;
+
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  h3 {
+    color: $light;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  a {
+    color: $secondary;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  strong {
+    color: $light;
+    font-weight: 700;
+  }
+
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  blockquote {
+    border-left: 4px solid $primary;
+    margin: 1.5rem 0;
+    padding: 0.75rem 1rem;
+    background-color: $surface-1;
+    border-radius: 0 6px 6px 0;
+    color: $color-text;
+    font-style: italic;
+  }
+
+  code {
+    background-color: $surface-2;
+    border: 1px solid $border;
+    border-radius: 4px;
+    padding: 0.15em 0.4em;
+    font-size: 0.9em;
+    color: $primary;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid $border;
+    margin: 2rem 0;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+}
+
+.post-article__footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $border;
+}

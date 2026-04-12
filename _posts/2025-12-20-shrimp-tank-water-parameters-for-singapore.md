@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2025-12-20-shrimp-tank-water-parameters-for-singapore"
+title: "Shrimp Tank Water Parameters for Caridina in Singapore"
 tagline: "Stop Guessing Water Parameters — Get Caridina Right in Singapore"
 description: "Learn the correct shrimp tank water parameters for Caridina shrimp in Singapore. Beginner-friendly guide covering pH, GH, TDS, temperature, RO water vs tap water, and realistic care time."
 keywords:

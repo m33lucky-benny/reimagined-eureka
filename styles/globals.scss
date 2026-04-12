@@ -1,0 +1,54 @@
+// ============================================================
+// globals.scss — Next.js entry point (replaces assets/css/main.scss)
+// Uses @use instead of deprecated @import
+// ============================================================
+
+@use 'variables';
+@use 'base';
+@use 'layout';
+@use 'navbar';
+@use 'components';
+@use 'utilities';
+@use 'button';
+@use 'forms';
+@use 'status';
+@use 'footer';
+@use 'services';
+@use 'whatsapp';
+@use 'contactus';
+@use 'gallery';
+@use 'pages/tank-builder';
+@use 'pages/membership';
+@use 'pages/gallery-media';
+@use 'pages/about';
+@use 'pages/faq';
+@use 'pages/blog';
+@use 'pages/shrimp';
+@use 'pages/hero-tank-systems';
+
+// Lightbox (was inline in main.scss)
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+#lightbox img {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+// Motion entrance initial state — set by CSS so no FOUC if JS is slow
+[data-motion-entrance] {
+  opacity: 0;
+  transform: translateY(24px);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-motion-entrance] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

@@ -1,0 +1,40 @@
+/* ======================================================
+   Site Footer
+   ====================================================== */
+
+   .site-footer {
+    background: var(--color-dark-1);
+    color: var(--color-text);
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-icon {
+    width: 18px;
+    height: 18px;
+    pointer-events: auto;
+  }
+  
+  .footer-copy {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.2;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+  }
+  

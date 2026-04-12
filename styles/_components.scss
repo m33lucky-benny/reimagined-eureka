@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+// ============================================================
+// Base card
+// ============================================================
+
+.card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+// ============================================================
+// Glassmorphism card
+// ============================================================
+
+.card--glass {
+  background: $color-surface-glass;
+  border: 1px solid $color-border-glass;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  // Graceful fallback when backdrop-filter isn't supported
+  @supports not (backdrop-filter: blur(1px)) {
+    background: var(--color-surface-1);
+    border-color: var(--color-border);
+  }
+}
+
+// ============================================================
+// Gradient text utility
+// ============================================================
+
+.text-gradient {
+  background: linear-gradient(135deg, $primary 0%, $secondary 60%, $primary-2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  @supports not (background-clip: text) {
+    color: $primary;
+  }
+}
+
+// ============================================================
+// Section divider
+// ============================================================
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    $color-border-glass 20%,
+    rgba($primary, 0.3) 50%,
+    $color-border-glass 80%,
+    transparent
+  );
+  margin: 3rem auto;
+  max-width: 600px;
+}
