@@ -6,7 +6,7 @@ export function proxy(request: NextRequest) {
 
   const csp = [
     `default-src 'self'`,
-    `script-src 'self' 'nonce-${nonce}'`,
+    `script-src 'self' 'nonce-${nonce}' 'unsafe-eval'`,
     `style-src 'self' 'nonce-${nonce}'`,
     `font-src 'self'`, // next/font self-hosts Montserrat — no external CDN needed
     `img-src 'self' data: blob:`,
