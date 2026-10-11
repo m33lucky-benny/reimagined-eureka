@@ -36,7 +36,7 @@ canonical_url: https://ebiya.sg/tank-builder/
 
 <div class="page-container">
   <div class="hero-subtitle">
-    This tool helps you select the right tank size, cooling approach, filtration system, and water parameters for keeping Caridina (Taiwan bee) shrimp successfully in Singapore's tropical climate.
+    This tool helps you select the right tank size, cooling approach, filtration system, and water parameters for keeping Caridina shrimp successfully in Singapore's tropical climate.
   </div>
 
   <p>
