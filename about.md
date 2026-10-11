@@ -291,7 +291,7 @@ canonical_url: https://ebiya.sg/about/
         </li>
         <li>
           <strong>TikTok:</strong> 
-          <a href="https://tiktok.com/@fish_ah_gong" target="_blank" rel="noopener">@fish_ah_gong</a>
+          <a href="https://tiktok.com/@ebiya.sg" target="_blank" rel="noopener">@ebiya.sg</a>
         </li>
       </ul>
     </div>
@@ -389,7 +389,7 @@ canonical_url: https://ebiya.sg/about/
   },
   "sameAs": [
     "https://instagram.com/ebiyaSG",
-    "https://tiktok.com/@fish_ah_gong"
+    "https://tiktok.com/@ebiya.sg"
   ],
   "knowsAbout": [
     "Caridina shrimp breeding",

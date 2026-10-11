@@ -389,7 +389,7 @@ canonical_url: https://ebiya.sg/membership/
   },
   "sameAs": [
     "https://instagram.com/ebiyaSG",
-    "https://tiktok.com/@fish_ah_gong"
+    "https://tiktok.com/@ebiya.sg"
   ]
 }
 </script>
