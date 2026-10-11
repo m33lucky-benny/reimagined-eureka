@@ -2,18 +2,19 @@
 layout: page
 title: "About ebiyaSG – Singapore Caridina Shrimp Specialist & Custom Tank Builder | Expert Breeder"
 permalink: /about/
-description: "Professional Caridina shrimp breeder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties. Custom breeding tanks designed for maximum shrimplet survival rates. Located at 55 Changi Road, #B1-01, Singapore. About 3 years old: a hobby that became a business."
+description: "Professional Caridina shrimp breeder in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. Custom breeding tanks designed for maximum shrimplet survival rates. Located at 55 Changi Road, #B1-01, Singapore. About 3 years old: a hobby that became a business."
 author: ebiyaSG
 image: /assets/images/green-tiger.png
 keywords:
   - caridina shrimp breeder Singapore
   - shrimp specialist Singapore
   - custom shrimp tank builder
-  - BOA shrimp Singapore
-  - GALAXY shrimp breeder
-  - BLUE KING KONG shrimp
+  - fancy red tiger shrimp Singapore
+  - white spectra shrimp
+  - blue king kong shrimp
+  - orange boa shrimp
   - caridina breeding Singapore
-  - high-grade caridina shrimp
+  - caridina shrimp Singapore
   - shrimplet survival expert
   - Changi Road shrimp Singapore
   - Singapore aquarium specialist
@@ -22,7 +23,7 @@ keywords:
 
 # Open Graph
 og_title: "About ebiyaSG – Singapore's Caridina Shrimp Breeding Specialist"
-og_description: "Singapore Caridina breeder, about 3 years old: a hobby that became a business. Specializing in BOA, GALAXY, BLUE KING KONG. Custom breeding tanks engineered for shrimplet survival. At 55 Changi Road, #B1-01, Singapore."
+og_description: "Singapore Caridina breeder, about 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. Custom breeding tanks engineered for shrimplet survival. At 55 Changi Road, #B1-01, Singapore."
 og_type: website
 og_url: https://ebiya.sg/about/
 og_image: https://ebiya.sg/assets/images/green-tiger.png
@@ -31,7 +32,7 @@ og_image_alt: "ebiyaSG Caridina shrimp breeding specialist Singapore"
 # Twitter Card
 twitter_card: summary_large_image
 twitter_title: "About ebiyaSG – Singapore Caridina Shrimp Specialist"
-twitter_description: "Professional breeder specializing in BOA, GALAXY, BLUE KING KONG. Custom tanks for maximum shrimplet survival. About 3 years old: a hobby that became a business."
+twitter_description: "Breeder of fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. Custom tanks for maximum shrimplet survival. About 3 years old: a hobby that became a business."
 twitter_image: https://ebiya.sg/assets/images/green-tiger.png
 
 # Schema.org metadata
@@ -78,26 +79,42 @@ canonical_url: https://ebiya.sg/about/
   <div class="offering-block">
     <h3>🦐 Premium Caridina Shrimp</h3>
     <p class="offering-intro">
-      ebiyaSG specializes in high-grade Caridina varieties bred for <strong>health and stability</strong>:
+      ebiyaSG breeds these types:
     </p>
     
     <div class="shrimp-varieties">
       <div class="variety-card">
         <div class="variety-icon">🎯</div>
-        <h4>BOA</h4>
-        <p>Bold, distinctive patterns with striking contrast</p>
-      </div>
-      
-      <div class="variety-card">
-        <div class="variety-icon">✨</div>
-        <h4>GALAXY</h4>
-        <p>Striking celestial markings that shimmer under light</p>
+        <h4>Fancy red tigers</h4>
+        <p>Red and white banding with bold, irregular stripes across the body.</p>
       </div>
       
       <div class="variety-card">
         <div class="variety-icon">💙</div>
-        <h4>BLUE KING KONG</h4>
-        <p>Vibrant blue coloration with excellent health</p>
+        <h4>Blue king kong</h4>
+        <p>Black body with white bands that have a blue tint.</p>
+      </div>
+      
+      <div class="variety-card">
+        <div class="variety-icon">🔴</div>
+        <h4>Red devils</h4>
+        <p>Solid red body with large white eyes. Not for sale yet.</p>
+      </div>
+      
+      <div class="variety-card">
+        <div class="variety-icon">✨</div>
+        <h4>White spectra</h4>
+        <p>Pale, cream-white body.</p>
+      </div>
+      
+      <div class="variety-card">
+        <div class="variety-icon">🟠</div>
+        <h4>Orange boa</h4>
+      </div>
+      
+      <div class="variety-card">
+        <div class="variety-icon">🦐</div>
+        <h4>Neocaridina</h4>
       </div>
     </div>
     
@@ -331,14 +348,14 @@ canonical_url: https://ebiya.sg/about/
 <meta property="og:url" content="https://ebiya.sg/about/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="About ebiyaSG – Singapore's Premier Caridina Shrimp Breeding Specialist" />
-<meta property="og:description" content="Singapore Caridina breeder, about 3 years old: a hobby that became a business. Specializing in BOA, GALAXY, BLUE KING KONG varieties. Custom breeding tanks engineered for maximum shrimplet survival. At 55 Changi Road, #B1-01, Singapore." />
+<meta property="og:description" content="Singapore Caridina breeder, about 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. Custom breeding tanks engineered for maximum shrimplet survival. At 55 Changi Road, #B1-01, Singapore." />
 <meta property="og:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 <meta property="og:image:alt" content="ebiyaSG premium Caridina shrimp" />
 <meta property="og:site_name" content="ebiyaSG - Singapore Shrimp Specialists" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="About ebiyaSG – Singapore Caridina Shrimp Specialist" />
-<meta name="twitter:description" content="About 3 years old: a hobby that became a business. BOA, GALAXY, BLUE KING KONG. Custom tanks for shrimplet survival. At 55 Changi Road, #B1-01, Singapore." />
+<meta name="twitter:description" content="About 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. Custom tanks for shrimplet survival. At 55 Changi Road, #B1-01, Singapore." />
 <meta name="twitter:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
@@ -354,7 +371,7 @@ canonical_url: https://ebiya.sg/about/
   "@id": "https://ebiya.sg/#organization",
   "name": "ebiyaSG",
   "image": "https://ebiya.sg/assets/images/green-tiger.png",
-  "description": "Professional Caridina shrimp breeder and custom tank builder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties. About 3 years old: a hobby that became a business.",
+  "description": "Professional Caridina shrimp breeder and custom tank builder in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. About 3 years old: a hobby that became a business.",
   "url": "https://ebiya.sg/",
   "telephone": "",
   "address": {
@@ -435,7 +452,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "What Caridina shrimp varieties does ebiyaSG breed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ebiyaSG specializes in three high-grade Caridina varieties: BOA (bold distinctive patterns), GALAXY (striking celestial markings), and BLUE KING KONG (vibrant blue coloration). All shrimp are bred in-house using proven systems optimized for Singapore conditions."
+        "text": "ebiyaSG breeds Caridina shrimp: fancy red tigers (red and white banding with bold, irregular stripes across the body), blue king kong (black body with white bands that have a blue tint), white spectra (pale, cream-white body) and orange boa, plus Neocaridina. Red devils are not for sale yet."
       }
     },
     {
