@@ -25,6 +25,11 @@ schema_type: ImageGallery
 
 <section class="shrimp-gallery-page">
   <div class="gallery-header">
+    <img class="gallery-logo"
+         src="/assets/shrimps-optimized/ebiya-logo-320.jpg"
+         srcset="/assets/shrimps-optimized/ebiya-logo-320.jpg 320w, /assets/shrimps-optimized/ebiya-logo-640.jpg 640w"
+         sizes="96px" width="96" height="96" decoding="async"
+         alt="ebiya.sg logo">
     <h1 class="gallery-title">Our Shrimp</h1>
     <p class="gallery-subtitle">Caridina shrimp bred in Singapore, plus Neocaridina</p>
     <p class="gallery-description">{{ page.excerpt }}</p>

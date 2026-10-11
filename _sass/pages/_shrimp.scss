@@ -19,6 +19,15 @@
     text-align: center;
   }
 
+  .gallery-logo {
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
   .gallery-title {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
