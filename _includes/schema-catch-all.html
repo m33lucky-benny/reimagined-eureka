@@ -7,6 +7,7 @@
           "@id": "{{ site.url }}/#organization",
           "name": {{ site.business.name | jsonify }},
           "url": {{ site.url | jsonify }},
+          "description": "Singapore Caridina shrimp breeder, about 3 years old: a hobby that became a business. Collection at the shop at 55 Changi Road, #B1-01, by appointment.",
           "email": {{ site.business.email | jsonify }},
           "logo": {{ site.business.image | absolute_url | jsonify }},
           "sameAs": {{ site.business.sameAs | jsonify }}
@@ -18,6 +19,7 @@
           "name": {{ site.business.name | jsonify }},
           "url": {{ site.url | jsonify }},
           "image": {{ site.business.image | absolute_url | jsonify }},
+          "description": "Singapore Caridina shrimp breeder, about 3 years old: a hobby that became a business. Collection at the shop at 55 Changi Road, #B1-01, by appointment.",
           "telephone": {{ site.business.telephone | jsonify }},
           "email": {{ site.business.email | jsonify }},
           "priceRange": {{ site.business.priceRange | jsonify }},
@@ -32,9 +34,9 @@
           "areaServed": { "@type": "Place", "name": "Singapore" },
           "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
+            "dayOfWeek": {{ site.business.openingHours.days | jsonify }},
+            "opens": {{ site.business.openingHours.opens | jsonify }},
+            "closes": {{ site.business.openingHours.closes | jsonify }}
           },
           "provider": { "@id": "{{ site.url }}/#organization" }
         },
