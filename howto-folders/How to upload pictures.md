@@ -1,50 +1,44 @@
-# 📝 How add shrimp pictures
+# How to add a shrimp picture (WhatsApp)
 
-All posts are stored in the following directory:
+Send the photo to the ebiya.sg WhatsApp number. The site is updated for you.
 
-```
-/assets/shrimps
-```
+1. Send the photo with a short caption (this becomes the caption on the site).
+2. The bot replies "Got your photo. Which type is it?" with a numbered list.
+   Reply with the number.
+3. The bot replies "Got it: <type> "<caption>". Reply YES to publish, or NO to cancel."
+   Reply `yes`.
+4. The bot replies "Published, it will show in a few minutes."
 
-📌 Example: Adding a new shrimp photo
+The photo shows on the shrimp page after the site rebuilds (a minute or two).
+Reply `no` at step 3 to cancel.
 
-1️⃣ Upload photo to:
+## What happens behind the scenes
 
-assets/shrimp/
+- Zernio sends the WhatsApp message to the Cloudflare Worker `whatsapp-gallery`
+  (https://whatsapp-gallery.bennywithtv.workers.dev/webhook).
+- The Worker saves the photo to the `incoming` branch of this repo.
+- After you reply YES it triggers the GitHub workflow "Publish photo from
+  WhatsApp" (`.github/workflows/publish-photo.yml`), which runs
+  `scripts/publish_photo.py`.
+- The script strips the photo's metadata, makes the full-size, 320 px and 640 px
+  copies in `assets/shrimps/` and `assets/shrimps-optimized/`, and adds an entry
+  to `_data/gallery.yml`.
 
-Example file:
+## Types
 
-galaxy-fishbone.png
+The numbered list comes from the types in `_data/gallery_types.yml`:
+Fancy red tigers, Blue king kong, White spectra, Orange boa, Neocaridina,
+Red devils. A photo's type decides which gallery section it appears in.
 
-2️⃣ Add this to _data/shrimp.yml:
+## Fix or remove a photo
 
-- file: galaxy-fishbone.png
-  name: Galaxy Fishbone Shrimp
+Edit or delete its entry in `_data/gallery.yml` (and its files in
+`assets/shrimps/` and `assets/shrimps-optimized/`), then push to GitHub.
+Set `published: false` to hide a photo without deleting it.
 
-3️⃣ Push to GitHub
+## If nothing happens
 
-Gallery updates automatically ✅
-
-⸻
-
-⚠️ Important rules (avoid breaking the site)
-	•	Use spaces, not tabs
-	•	- must align exactly
-	•	File name must match exactly (case-sensitive)
-	•	.png, .jpg, .webp all OK
-
-⸻
-
-🦐 Pro tip for ebiyaSG
-
-Use SEO-friendly names:
-
-- file: caridina-crystal-red-shrimp.png
-  name: Caridina Crystal Red Shrimp
-
-If you want, I can:
-	•	Auto-generate this YAML for you
-	•	Add optional fields like category, grade, price
-	•	Split into multiple galleries later
-
-Just say the word 👍
+- No reply from the bot: check the webhook "whatsapp gallery" at Zernio is
+  active and its Secret Key matches the Worker's `ZERNIO_WEBHOOK_SECRET`.
+- Replied YES but nothing published: check the Actions tab of the repo for a
+  failed "Publish photo from WhatsApp" run.
