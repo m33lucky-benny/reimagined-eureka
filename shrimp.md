@@ -25,8 +25,8 @@ schema_type: ImageGallery
 
 <section class="shrimp-gallery-page">
   <div class="gallery-header">
-    <h1 class="gallery-title">Premium Caridina Shrimp Gallery</h1>
-    <p class="gallery-subtitle">Singapore-bred Taiwan Bee, Crystal & Specialty Shrimp</p>
+    <h1 class="gallery-title">Our Shrimp</h1>
+    <p class="gallery-subtitle">Caridina shrimp bred in Singapore, plus Neocaridina</p>
     <p class="gallery-description">{{ page.excerpt }}</p>
   </div>
 {%- comment -%}
@@ -56,7 +56,7 @@ schema_type: ImageGallery
               height="160"
               loading="lazy"
               decoding="async"
-              alt="{{ shrimp_name }} - Premium Caridina shrimp bred in Singapore by ebiya.sg">
+              alt="{{ shrimp_name }} - ebiya.sg, Singapore">
           </picture>
           <figcaption>{{ shrimp_name }}</figcaption>
         </figure>
@@ -74,21 +74,24 @@ schema_type: ImageGallery
     <p class="lightbox-hint">Click anywhere to close</p>
   </div>
 
-  <!-- SEO Content Section -->
+  <!-- Shrimp information -->
   <div class="gallery-info">
-    <h2>About Our Caridina Shrimp Collection</h2>
-    <p>ebiya.sg specializes in breeding premium-grade Caridina shrimp in Singapore, including rare Taiwan Bee varieties, Crystal Red Shrimp (CRS), Crystal Black Shrimp (CBS), Blue Bolt, King Kong, Panda, and exclusive Pinto patterns. All shrimp are bred in custom-designed breeding tanks optimized for water parameters and genetics.</p>
-    
-    <h3>Featured Shrimp Varieties</h3>
+    <h2>About Our Shrimp</h2>
+    <p>ebiya.sg is a shrimp-breeding business in Singapore. We breed and sell Caridina shrimp, and we also sell Neocaridina.</p>
+
+    <h3>What We Breed and Sell</h3>
     <ul>
-      <li><strong>Taiwan Bee Shrimp:</strong> King Kong, Panda, Blue Bolt premium grades</li>
-      <li><strong>Crystal Shrimp:</strong> Crystal Red (CRS) and Crystal Black (CBS) in SS-SSS grades</li>
-      <li><strong>Pinto Shrimp:</strong> Rare pattern variations with high coloration</li>
-      <li><strong>Specialty Varieties:</strong> Custom-bred lines exclusive to Singapore</li>
+      <li><strong>Fancy red tigers:</strong> Red and white banding with bold, irregular stripes across the body. From S$60 each.</li>
+      <li><strong>Blue king kong:</strong> Black body with white bands that have a blue tint. From S$40 each.</li>
+      <li><strong>White spectra:</strong> Pale, cream-white body. From S$60 each.</li>
+      <li><strong>Orange boa</strong></li>
+      <li><strong>Neocaridina</strong></li>
+      <li><strong>Red devils:</strong> Solid red body with large white eyes. Not for sale yet.</li>
     </ul>
 
-    <h3>Custom Breeding Tanks Available</h3>
-    <p>Interested in starting your own Caridina breeding program? We offer custom shrimp tanks designed specifically for breeding sensitive Caridina species, with optimized filtration, substrate, and water parameter control systems.</p>
+    <h3>Prices and Collection</h3>
+    <p>Prices are per piece, and the price varies by individual shrimp. There is no minimum order. We are not GST-registered, so prices have no GST.</p>
+    <p>Payment is on collection, by PayNow or cash. Collection is at 55 Changi Road, #B1-01, on Tuesday and Thursday from 1pm to 6pm, by appointment. Message us on WhatsApp at <a href="https://wa.me/6589002228">+65 8900 2228</a> to book a time.</p>
 
   </div>
 </section>
