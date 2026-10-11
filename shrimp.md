@@ -84,7 +84,7 @@ schema_type: ImageGallery
       <li><strong>Fancy red tigers:</strong> Red and white banding with bold, irregular stripes across the body. From S$60 each.</li>
       <li><strong>Blue king kong:</strong> Black body with white bands that have a blue tint. From S$40 each.</li>
       <li><strong>White spectra:</strong> Pale, cream-white body. From S$60 each.</li>
-      <li><strong>Orange boa</strong></li>
+      <li><strong>Orange boa:</strong> From S$60 each.</li>
       <li><strong>Neocaridina</strong></li>
       <li><strong>Red devils:</strong> Solid red body with large white eyes. Not for sale yet.</li>
     </ul>
