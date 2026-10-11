@@ -2,7 +2,7 @@
 layout: page
 title: "About ebiyaSG – Singapore Caridina Shrimp Specialist & Custom Tank Builder | Expert Breeder"
 permalink: /about/
-description: "Professional Caridina shrimp breeder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties. Custom breeding tanks designed for maximum shrimplet survival rates. Located near Old Airport Road. About 3 years old: a hobby that became a business."
+description: "Professional Caridina shrimp breeder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties. Custom breeding tanks designed for maximum shrimplet survival rates. Located at 55 Changi Road, #B1-01, Singapore. About 3 years old: a hobby that became a business."
 author: ebiyaSG
 image: /assets/images/green-tiger.png
 keywords:
@@ -15,14 +15,14 @@ keywords:
   - caridina breeding Singapore
   - high-grade caridina shrimp
   - shrimplet survival expert
-  - Old Airport Road shrimp
+  - Changi Road shrimp Singapore
   - Singapore aquarium specialist
   - Taiwan bee shrimp Singapore
   - crystal red shrimp breeder
 
 # Open Graph
 og_title: "About ebiyaSG – Singapore's Caridina Shrimp Breeding Specialist"
-og_description: "Singapore Caridina breeder, about 3 years old: a hobby that became a business. Specializing in BOA, GALAXY, BLUE KING KONG. Custom breeding tanks engineered for shrimplet survival. Near Old Airport Road."
+og_description: "Singapore Caridina breeder, about 3 years old: a hobby that became a business. Specializing in BOA, GALAXY, BLUE KING KONG. Custom breeding tanks engineered for shrimplet survival. At 55 Changi Road, #B1-01, Singapore."
 og_type: website
 og_url: https://ebiya.sg/about/
 og_image: https://ebiya.sg/assets/images/green-tiger.png
@@ -64,7 +64,7 @@ canonical_url: https://ebiya.sg/about/
     </p>
     
     <p class="journey-text">
-      Located conveniently <strong>near Old Airport Road Food Centre</strong>, the operation focuses 
+      Located at <strong>55 Changi Road, #B1-01, Singapore</strong>, the operation focuses 
       on what truly matters: <strong>keeping shrimp alive and breeding consistently</strong>.
     </p>
   </div>
@@ -170,14 +170,14 @@ canonical_url: https://ebiya.sg/about/
       <h3>In-Store Pickup</h3>
       <p class="service-badge">Preferred Method</p>
       <p>
-        Personal consultation and quality assurance at our location near Old Airport Road. 
+        Personal consultation and quality assurance at our shop at 55 Changi Road, #B1-01. 
         Get expert advice, inspect your shrimp, and ask questions face-to-face.
       </p>
       <ul>
         <li>Direct consultation with breeder</li>
         <li>Visual inspection before purchase</li>
         <li>Acclimation guidance provided</li>
-        <li>Local to Old Airport Road area</li>
+        <li>At 55 Changi Road, #B1-01, Singapore</li>
       </ul>
     </div>
     
@@ -274,8 +274,7 @@ canonical_url: https://ebiya.sg/about/
     <div class="location-info">
       <h3>Find Us</h3>
       <p>
-        Conveniently located <strong>near Old Airport Road Food Centre</strong> 
-        in Singapore's vibrant Kallang area.
+        Located at <strong>55 Changi Road, #B1-01, Singapore</strong>.
       </p>
       <p class="location-note">
         Exact address and appointment details provided upon inquiry or membership signup.
@@ -332,14 +331,14 @@ canonical_url: https://ebiya.sg/about/
 <meta property="og:url" content="https://ebiya.sg/about/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="About ebiyaSG – Singapore's Premier Caridina Shrimp Breeding Specialist" />
-<meta property="og:description" content="Singapore Caridina breeder, about 3 years old: a hobby that became a business. Specializing in BOA, GALAXY, BLUE KING KONG varieties. Custom breeding tanks engineered for maximum shrimplet survival. Near Old Airport Road." />
+<meta property="og:description" content="Singapore Caridina breeder, about 3 years old: a hobby that became a business. Specializing in BOA, GALAXY, BLUE KING KONG varieties. Custom breeding tanks engineered for maximum shrimplet survival. At 55 Changi Road, #B1-01, Singapore." />
 <meta property="og:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 <meta property="og:image:alt" content="ebiyaSG premium Caridina shrimp" />
 <meta property="og:site_name" content="ebiyaSG - Singapore Shrimp Specialists" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="About ebiyaSG – Singapore Caridina Shrimp Specialist" />
-<meta name="twitter:description" content="About 3 years old: a hobby that became a business. BOA, GALAXY, BLUE KING KONG. Custom tanks for shrimplet survival. Near Old Airport Road." />
+<meta name="twitter:description" content="About 3 years old: a hobby that became a business. BOA, GALAXY, BLUE KING KONG. Custom tanks for shrimplet survival. At 55 Changi Road, #B1-01, Singapore." />
 <meta name="twitter:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
@@ -363,7 +362,7 @@ canonical_url: https://ebiya.sg/about/
     "addressLocality": "Singapore",
     "addressRegion": "SG",
     "addressCountry": "SG",
-    "streetAddress": "Near Old Airport Road Food Centre"
+    "streetAddress": "55 Changi Road, #B1-01"
   },
   "geo": {
     "@type": "GeoCoordinates",
@@ -444,7 +443,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "Where is ebiyaSG located?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ebiyaSG is conveniently located near Old Airport Road Food Centre in Singapore's Kallang area. Exact address and appointment details are provided upon inquiry or membership signup."
+        "text": "ebiyaSG is located at 55 Changi Road, #B1-01, Singapore."
       }
     },
     {
