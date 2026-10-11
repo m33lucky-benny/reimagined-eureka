@@ -2,7 +2,6 @@ export const navItems = [
   { title: 'About', url: '/about' },
   { title: 'Quick Help', url: '/faq' },
   { title: 'Shrimps', url: '/shrimp' },
-  { title: 'Tank Builder', url: '/tank-builder' },
   { title: 'Blog', url: '/blog' },
   { title: 'Membership', url: '/membership' },
   { title: 'Contact Us', url: '/contact' },

@@ -148,8 +148,7 @@ export default function AboutPage() {
           </StaggerList>
           <div className="tank-philosophy">
             <p>
-              Every tank is built with <strong>Singapore&apos;s tropical climate in mind</strong>.{' '}
-              <Link href="/tank-builder">Use the Tank Builder</Link> to find your ideal setup.
+              Every tank is built with <strong>Singapore&apos;s tropical climate in mind</strong>.
             </p>
           </div>
         </FadeIn>
@@ -182,9 +181,6 @@ export default function AboutPage() {
             that fits your goals and budget.
           </p>
           <div className="cta-buttons">
-            <Link className="cta-button primary-cta" href="/tank-builder">
-              Build My Tank Setup
-            </Link>
             <Link className="cta-button secondary-cta" href="/shrimp">
               Browse Available Shrimp
             </Link>

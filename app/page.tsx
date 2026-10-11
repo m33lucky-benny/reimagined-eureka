@@ -58,13 +58,6 @@ export default function HomePage() {
 
         <HeroCTA className="hero-cta-row">
           <Link
-            className="btn btn-primary"
-            href="/tank-builder"
-            aria-label="Start designing your custom shrimp tank system"
-          >
-            Design Your Shrimp Tank
-          </Link>
-          <Link
             className="btn btn-ghost"
             href="/shrimp"
             aria-label="View available live shrimp for sale"
