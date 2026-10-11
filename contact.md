@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Contact Ebiya - Premium Caridina Shrimp & Custom Breeding Tanks Singapore
-description: Get in touch with Ebiya for premium Caridina shrimp, custom aquarium setups, and professional breeding tank solutions in Singapore. Expert advice for Crystal Red, Taiwan Bee, and specialty shrimp.
-keywords: caridina shrimp Singapore, custom shrimp tanks, aquarium breeding setup, Crystal Red Shrimp, Taiwan Bee shrimp, shrimp tank Singapore
+title: Contact Ebiya.sg
+description: Contact Ebiya.sg, a Singapore breeder of Caridina and Neocaridina shrimp. Collection at 55 Changi Road by appointment. Message us on WhatsApp +65 8900 2228 to book.
+keywords: caridina shrimp Singapore, neocaridina shrimp Singapore, shrimp breeder Singapore, Ebiya.sg, shrimp collection Changi Road
 permalink: /contact/
 ---
 
