@@ -1,34 +1,25 @@
 ---
 layout: page
-title: "Premium Caridina Shrimp Gallery Singapore | Taiwan Bee & Crystal Shrimp Photos"
-tagline: "Singapore-bred Caridina shrimp macro photography collection"
-description: "Explore our comprehensive gallery of premium Caridina shrimp bred in Singapore. High-quality photos of Taiwan Bee, Crystal Red (CRS), Crystal Black (CBS), Blue Bolt, King Kong, Panda and Pinto shrimp varieties from ebiya.sg breeding tanks."
+title: "Shrimp Bred in Singapore: Fancy Red Tigers, Blue King Kong, White Spectra"
+tagline: "Caridina shrimp bred in Singapore, plus Neocaridina"
+description: "Caridina shrimp bred in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. Prices from S$40 each. Collection by appointment."
 permalink: /shrimp/
 tags:
   - caridina-shrimp-singapore
-  - taiwan-bee-shrimp
-  - crystal-red-shrimp
-  - crystal-black-shrimp
-  - pinto-shrimp
-  - blue-bolt-shrimp
-  - king-kong-shrimp
-  - shrimp-macro-photography
-  - caridina-breeding-singapore
+  - fancy-red-tiger-shrimp
+  - blue-king-kong-shrimp
+  - white-spectra-shrimp
+  - orange-boa-shrimp
+  - neocaridina-singapore
 keywords:
-  - caridina shrimp photos singapore
-  - taiwan bee shrimp gallery
-  - crystal red shrimp CRS
-  - crystal black shrimp CBS
-  - blue bolt shrimp breeding
-  - pinto shrimp singapore
-  - king kong shrimp
-  - panda shrimp
-  - caridina breeding tank
-  - premium shrimp singapore
-  - shrimp macro photography
-  - freshwater shrimp gallery
+  - caridina shrimp singapore
+  - fancy red tiger shrimp
+  - blue king kong shrimp
+  - white spectra shrimp
+  - orange boa shrimp
+  - neocaridina singapore
   - ebiya singapore
-excerpt: "Professional macro photography gallery showcasing premium Caridina shrimp varieties bred in Singapore. Features Taiwan Bee, Crystal Red/Black, Blue Bolt, King Kong, Panda, and rare Pinto shrimp from ebiya.sg's specialized breeding program."
+excerpt: "Caridina shrimp bred in Singapore by ebiya.sg: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. Prices are per piece. Collection at 55 Changi Road by appointment."
 schema_type: ImageGallery
 ---
 
