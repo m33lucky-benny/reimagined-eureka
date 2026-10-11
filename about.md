@@ -1,14 +1,13 @@
 ---
 layout: page
-title: "About ebiyaSG – Singapore Caridina Shrimp Specialist & Custom Tank Builder | Expert Breeder"
+title: "About ebiyaSG – a Singapore-based Caridina Shrimp Breeder"
 permalink: /about/
-description: "Professional Caridina shrimp breeder in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. Custom breeding tanks designed for maximum shrimplet survival rates. Located at 55 Changi Road, #B1-01, Singapore. About 3 years old: a hobby that became a business."
+description: "Professional Caridina shrimp breeder in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. Tanks come in two sizes: 60 x 30 cm and 45 x 30 cm. Located at 55 Changi Road, #B1-01, Singapore. About 3 years old: a hobby that became a business."
 author: ebiyaSG
 image: /assets/images/green-tiger.png
 keywords:
   - caridina shrimp breeder Singapore
   - shrimp specialist Singapore
-  - custom shrimp tank builder
   - fancy red tiger shrimp Singapore
   - white spectra shrimp
   - blue king kong shrimp
@@ -23,7 +22,7 @@ keywords:
 
 # Open Graph
 og_title: "About ebiyaSG – Singapore's Caridina Shrimp Breeding Specialist"
-og_description: "Singapore Caridina breeder, about 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. Custom breeding tanks engineered for shrimplet survival. At 55 Changi Road, #B1-01, Singapore."
+og_description: "Singapore Caridina breeder, about 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. At 55 Changi Road, #B1-01, Singapore."
 og_type: website
 og_url: https://ebiya.sg/about/
 og_image: https://ebiya.sg/assets/images/green-tiger.png
@@ -32,7 +31,7 @@ og_image_alt: "ebiyaSG Caridina shrimp breeding specialist Singapore"
 # Twitter Card
 twitter_card: summary_large_image
 twitter_title: "About ebiyaSG – Singapore Caridina Shrimp Specialist"
-twitter_description: "Breeder of fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. Custom tanks for maximum shrimplet survival. About 3 years old: a hobby that became a business."
+twitter_description: "Breeder of fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. About 3 years old: a hobby that became a business."
 twitter_image: https://ebiya.sg/assets/images/green-tiger.png
 
 # Schema.org metadata
@@ -42,7 +41,7 @@ canonical_url: https://ebiya.sg/about/
 <div class="about-hero">
   <h1>About ebiya<span class="brand-sg">.SG</span></h1>
   <p class="hero-subtitle">
-    Singapore-based Caridina shrimp specialist and custom tank builder dedicated to helping 
+    A Singapore-based Caridina shrimp breeder dedicated to helping 
     shrimp keepers <strong>succeed where others struggle</strong>.
   </p>
 </div>
@@ -59,8 +58,8 @@ canonical_url: https://ebiya.sg/about/
     
     <p class="journey-text">
       What started as a hobby about 3 years ago has become a business, a professional breeding operation 
-      built on <strong>years of hands-on experience</strong>. As a solo-run business partnered with 
-      a skilled tank-building team, ebiyaSG combines the precision of specialist breeding with the 
+      built on <strong>years of hands-on experience</strong>. As a solo-run business, 
+      ebiyaSG combines the precision of specialist breeding with the 
       practical knowledge gained from countless trial-and-error cycles.
     </p>
     
@@ -117,63 +116,14 @@ canonical_url: https://ebiya.sg/about/
         <h4>Neocaridina</h4>
       </div>
     </div>
-    
-    <div class="quality-guarantee">
-      <p>
-        <strong>All shrimp are bred in-house</strong> using the same tank systems available to customers, 
-        ensuring proven performance under Singapore tropical conditions.
-      </p>
-    </div>
   </div>
   
-  <!-- Custom Tanks -->
+  <!-- Tanks -->
   <div class="offering-block">
-    <h3>🔧 Custom Breeding Tanks</h3>
+    <h3>🔧 Tanks</h3>
     <p class="offering-intro">
-      Two meticulously designed tank sizes engineered specifically to 
-      <strong>maximize shrimplet survival rates</strong>:
+      Tanks come in two sizes: 60 x 30 cm (recommended for beginners due to higher water stability) and 45 x 30 cm (compact option for experienced keepers). Message us on WhatsApp at +65 8900 2228 for details.
     </p>
-    
-    <div class="tank-options">
-      <div class="tank-option recommended">
-        <div class="tank-badge">Recommended</div>
-        <h4>60×30cm Tank</h4>
-        <p class="tank-description">
-          Ideal for beginners due to higher water volume stability. 
-          Better buffering capacity and more forgiving parameter fluctuations.
-        </p>
-        <ul class="tank-features">
-          <li>Greater water stability</li>
-          <li>Better pH buffering</li>
-          <li>Higher shrimplet survival</li>
-          <li>Easier maintenance</li>
-        </ul>
-      </div>
-      
-      <div class="tank-option">
-        <div class="tank-badge">Compact</div>
-        <h4>45×30cm Tank</h4>
-        <p class="tank-description">
-          Compact option for experienced keepers who understand parameter management. 
-          Space-efficient without sacrificing breeding potential.
-        </p>
-        <ul class="tank-features">
-          <li>Space-efficient footprint</li>
-          <li>Lower cooling costs</li>
-          <li>Advanced keeper option</li>
-          <li>Proven breeding success</li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="tank-philosophy">
-      <p>
-        These aren't aesthetic showpieces—they're <strong>functional breeding systems designed 
-        from a breeder's perspective</strong>. For detailed explanations of the design philosophy 
-        and engineering principles, explore our comprehensive 
-        <a href="/tank-builder/">Tank Builder guide</a> and <a href="/blog/">blog articles</a>.
-      </p>
-    </div>
   </div>
 </section>
 
@@ -332,14 +282,14 @@ canonical_url: https://ebiya.sg/about/
 <meta property="og:url" content="https://ebiya.sg/about/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="About ebiyaSG – Singapore's Premier Caridina Shrimp Breeding Specialist" />
-<meta property="og:description" content="Singapore Caridina breeder, about 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. Custom breeding tanks engineered for maximum shrimplet survival. At 55 Changi Road, #B1-01, Singapore." />
+<meta property="og:description" content="Singapore Caridina breeder, about 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. At 55 Changi Road, #B1-01, Singapore." />
 <meta property="og:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 <meta property="og:image:alt" content="ebiyaSG premium Caridina shrimp" />
 <meta property="og:site_name" content="ebiyaSG - Singapore Shrimp Specialists" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="About ebiyaSG – Singapore Caridina Shrimp Specialist" />
-<meta name="twitter:description" content="About 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. Custom tanks for shrimplet survival. At 55 Changi Road, #B1-01, Singapore." />
+<meta name="twitter:description" content="About 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. At 55 Changi Road, #B1-01, Singapore." />
 <meta name="twitter:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
@@ -355,7 +305,7 @@ canonical_url: https://ebiya.sg/about/
   "@id": "https://ebiya.sg/#organization",
   "name": "ebiyaSG",
   "image": "https://ebiya.sg/assets/images/green-tiger.png",
-  "description": "Professional Caridina shrimp breeder and custom tank builder in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. About 3 years old: a hobby that became a business.",
+  "description": "Professional Caridina shrimp breeder in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. About 3 years old: a hobby that became a business.",
   "url": "https://ebiya.sg/",
   "telephone": "",
   "address": {
@@ -393,7 +343,6 @@ canonical_url: https://ebiya.sg/about/
   ],
   "knowsAbout": [
     "Caridina shrimp breeding",
-    "Custom aquarium design",
     "Shrimplet survival optimization",
     "Water parameter management",
     "Aquarium filtration systems"
@@ -460,7 +409,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "What tank sizes do you recommend for Caridina breeding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ebiyaSG offers two custom breeding tank sizes: 60×30cm (recommended for beginners due to higher water stability) and 45×30cm (compact option for experienced keepers). Both are engineered specifically to maximize shrimplet survival rates under Singapore tropical conditions."
+        "text": "Tanks come in two sizes: 60 x 30 cm (recommended for beginners due to higher water stability) and 45 x 30 cm (compact option for experienced keepers). Message us on WhatsApp at +65 8900 2228 for details."
       }
     }
   ]
