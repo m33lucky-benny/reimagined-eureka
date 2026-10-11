@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false
 title: "Caridina Shrimp Tank Builder Singapore | Free Interactive Setup Guide | ebiya.sg"
 tagline: "Step-by-step guidance for building a stable Caridina shrimp tank under Singapore tropical conditions"
 description: "Free interactive Caridina shrimp tank builder for Singapore aquarists. Get personalized equipment recommendations, water parameters, soil selection, filtration systems, and stocking guidance for shrimp success."
