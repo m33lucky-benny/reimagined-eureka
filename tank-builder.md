@@ -171,14 +171,14 @@ canonical_url: https://ebiya.sg/tank-builder/
 <meta property="og:url" content="https://ebiya.sg/tank-builder/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Caridina Shrimp Tank Builder Singapore | Free Interactive Setup Guide" />
-<meta property="og:description" content="Interactive Caridina Taiwan bee shrimp tank builder for Singapore: personalized tank size, stocking guidance, soil selection, filtration systems, and UGF setup recommendations." />
+<meta property="og:description" content="Interactive Caridina shrimp tank builder for Singapore: personalized tank size, stocking guidance, soil selection, filtration systems, and UGF setup recommendations." />
 <meta property="og:image" content="https://ebiya.sg/assets/images/caridina-tank-builder-hero.jpg" />
 <meta property="og:image:alt" content="Caridina shrimp tank builder guide for Singapore tropical conditions" />
 <meta property="og:site_name" content="ebiyaSG - Singapore Shrimp Specialists" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Caridina Shrimp Tank Builder Singapore | Free Interactive Tool" />
-<meta name="twitter:description" content="Build a stable Caridina Taiwan bee tank in Singapore: personalized equipment, filtration & parameter recommendations for tropical success." />
+<meta name="twitter:description" content="Build a stable Caridina tank in Singapore: personalized equipment, filtration & parameter recommendations for tropical success." />
 <meta name="twitter:image" content="https://ebiya.sg/assets/images/caridina-tank-builder-hero.jpg" />
 
 <!-- SEO Robots -->
@@ -234,7 +234,7 @@ canonical_url: https://ebiya.sg/tank-builder/
   "@id": "https://ebiya.sg/tank-builder/#webpage",
   "url": "https://ebiya.sg/tank-builder/",
   "name": "Caridina Shrimp Tank Builder Singapore | Interactive Setup Guide",
-  "description": "Interactive Caridina Taiwan bee shrimp tank builder for Singapore. Get personalized recommendations for tank size, soil depth, filtration, UGF setup, and stable water parameters for tropical climate success.",
+  "description": "Interactive Caridina shrimp tank builder for Singapore. Get personalized recommendations for tank size, soil depth, filtration, UGF setup, and stable water parameters for tropical climate success.",
   "isPartOf": {
     "@type": "WebSite",
     "@id": "https://ebiya.sg/#website",
@@ -271,6 +271,6 @@ canonical_url: https://ebiya.sg/tank-builder/
   "publisher": {
     "@id": "https://ebiya.sg/#organization"
   },
-  "description": "An interactive builder that recommends tank size, active shrimp soil, filtration systems, UGF setup, and stocking guidance for Caridina Taiwan bee shrimp in Singapore's tropical climate."
+  "description": "An interactive builder that recommends tank size, active shrimp soil, filtration systems, UGF setup, and stocking guidance for Caridina shrimp in Singapore's tropical climate."
 }
 </script>
