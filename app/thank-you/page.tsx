@@ -19,8 +19,7 @@ export default function ThankYouPage() {
         </p>
         <p>
           In the meantime, feel free to explore our{' '}
-          <Link href="/faq">FAQ</Link> or{' '}
-          <Link href="/tank-builder">Tank Builder</Link>.
+          <Link href="/faq">FAQ</Link>.
         </p>
         <Link className="button button--primary" href="/">
           Back to Home
