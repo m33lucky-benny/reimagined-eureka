@@ -6,7 +6,6 @@ description: "Free interactive Caridina shrimp tank builder for Singapore aquari
 keywords:
   - Caridina tank builder Singapore
   - shrimp tank setup guide
-  - Taiwan bee shrimp tank
   - Caridina cantonensis setup
   - aquarium shrimp soil
   - shrimp tank filtration Singapore
