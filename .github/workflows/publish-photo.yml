@@ -1,0 +1,72 @@
+# Publishes one photo that arrived through the WhatsApp Worker.
+# Copy to .github/workflows/ in the site repo, together with
+# scripts/publish_photo.py. The Worker triggers it with a repository_dispatch
+# event "publish-photo" carrying client_payload.id.
+name: Publish photo from WhatsApp
+
+on:
+  repository_dispatch:
+    types: [publish-photo]
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Photo id, like 20261012-030405-a1b2c3"
+        required: true
+
+permissions:
+  contents: write
+
+# One at a time, so two publishes never race on _data/gallery.yml.
+concurrency:
+  group: publish-photo
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Check out the incoming branch
+        uses: actions/checkout@v4
+        with:
+          ref: incoming
+          path: incoming-branch
+
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+
+      - name: Publish
+        env:
+          PHOTO_ID: ${{ github.event.client_payload.id || inputs.id }}
+        run: python3 scripts/publish_photo.py --id "$PHOTO_ID" --incoming-dir incoming-branch/incoming
+
+      - name: Commit to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/shrimps assets/shrimps-optimized _data/gallery.yml
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "Add photo via WhatsApp"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Remove the incoming files from the incoming branch
+        working-directory: incoming-branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A incoming
+          if git diff --cached --quiet; then
+            echo "Nothing to remove"
+          else
+            git commit -m "Remove published incoming photo"
+            git pull --rebase origin incoming
+            git push origin HEAD:incoming
+          fi
