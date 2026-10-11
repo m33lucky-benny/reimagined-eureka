@@ -261,10 +261,6 @@ canonical_url: https://ebiya.sg/about/
       🦐 Browse Available Shrimp
     </a>
     
-    <a href="/tank-builder/" class="cta-button secondary-cta">
-      🔧 Explore Custom Tank Systems
-    </a>
-    
     <a href="/membership/" class="cta-button gold-cta">
       🥇 Join VIP Membership
     </a>
