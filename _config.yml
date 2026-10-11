@@ -2,7 +2,7 @@
 # 🌐 SITE METADATA
 # =========================
 title: Ebiya.sg
-description: "SEO-first websites with strict CSP, performance optimization, and technical consulting for Singapore businesses."
+description: "Caridina and Neocaridina shrimp bred in Singapore. Collection at 55 Changi Road by appointment."
 image: "/assets/images/ebiya-logo.webp"
 
 url: "https://ebiya.sg" # REQUIRED
@@ -37,12 +37,13 @@ business:
 
   areaServed: "Singapore"
   openingHours:
-    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    opens: "09:00"
+    days: ["Tuesday", "Thursday"]
+    opens: "13:00"
     closes: "18:00"
 
   sameAs:
     - "https://instagram.com/ebiyasg"
+    - "https://tiktok.com/@ebiya.sg"
 
 # =========================
 # 🔌 PLUGINS (SAFE FOR GITHUB PAGES)

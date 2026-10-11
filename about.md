@@ -1,28 +1,28 @@
 ---
 layout: page
-title: "About ebiyaSG – Singapore Caridina Shrimp Specialist & Custom Tank Builder | Expert Breeder"
+title: "About ebiyaSG – a Singapore-based Caridina Shrimp Breeder"
 permalink: /about/
-description: "Professional Caridina shrimp breeder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties. Custom breeding tanks designed for maximum shrimplet survival rates. Located near Old Airport Road, serving passionate shrimp keepers since 2018."
+description: "Professional Caridina shrimp breeder in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. Tanks come in two sizes: 60 x 30 cm and 45 x 30 cm. Located at 55 Changi Road, #B1-01, Singapore. About 3 years old: a hobby that became a business."
 author: ebiyaSG
 image: /assets/images/green-tiger.png
 keywords:
   - caridina shrimp breeder Singapore
   - shrimp specialist Singapore
-  - custom shrimp tank builder
-  - BOA shrimp Singapore
-  - GALAXY shrimp breeder
-  - BLUE KING KONG shrimp
+  - fancy red tiger shrimp Singapore
+  - white spectra shrimp
+  - blue king kong shrimp
+  - orange boa shrimp
   - caridina breeding Singapore
-  - high-grade caridina shrimp
+  - caridina shrimp Singapore
   - shrimplet survival expert
-  - Old Airport Road shrimp
+  - Changi Road shrimp Singapore
   - Singapore aquarium specialist
   - Taiwan bee shrimp Singapore
   - crystal red shrimp breeder
 
 # Open Graph
 og_title: "About ebiyaSG – Singapore's Caridina Shrimp Breeding Specialist"
-og_description: "Professional Caridina breeder since 2018. Specializing in BOA, GALAXY, BLUE KING KONG. Custom breeding tanks engineered for shrimplet survival. Near Old Airport Road."
+og_description: "Singapore Caridina breeder, about 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. At 55 Changi Road, #B1-01, Singapore."
 og_type: website
 og_url: https://ebiya.sg/about/
 og_image: https://ebiya.sg/assets/images/green-tiger.png
@@ -31,7 +31,7 @@ og_image_alt: "ebiyaSG Caridina shrimp breeding specialist Singapore"
 # Twitter Card
 twitter_card: summary_large_image
 twitter_title: "About ebiyaSG – Singapore Caridina Shrimp Specialist"
-twitter_description: "Professional breeder specializing in BOA, GALAXY, BLUE KING KONG. Custom tanks for maximum shrimplet survival since 2018."
+twitter_description: "Breeder of fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. About 3 years old: a hobby that became a business."
 twitter_image: https://ebiya.sg/assets/images/green-tiger.png
 
 # Schema.org metadata
@@ -41,7 +41,7 @@ canonical_url: https://ebiya.sg/about/
 <div class="about-hero">
   <h1>About ebiya<span class="brand-sg">.SG</span></h1>
   <p class="hero-subtitle">
-    Singapore-based Caridina shrimp specialist and custom tank builder dedicated to helping 
+    A Singapore-based Caridina shrimp breeder dedicated to helping 
     shrimp keepers <strong>succeed where others struggle</strong>.
   </p>
 </div>
@@ -52,19 +52,19 @@ canonical_url: https://ebiya.sg/about/
   
   <div class="journey-content">
     <div class="timeline-marker">
-      <span class="year">2018</span>
-      <span class="label">Started</span>
+      <span class="year">About 3</span>
+      <span class="label">Years old</span>
     </div>
     
     <p class="journey-text">
-      What started as a personal passion in 2018 has evolved into a professional breeding operation 
-      built on <strong>years of hands-on experience</strong>. As a solo-run business partnered with 
-      a skilled tank-building team, ebiyaSG combines the precision of specialist breeding with the 
+      What started as a hobby about 3 years ago has become a business, a professional breeding operation 
+      built on <strong>years of hands-on experience</strong>. As a solo-run business, 
+      ebiyaSG combines the precision of specialist breeding with the 
       practical knowledge gained from countless trial-and-error cycles.
     </p>
     
     <p class="journey-text">
-      Located conveniently <strong>near Old Airport Road Food Centre</strong>, the operation focuses 
+      Located at <strong>55 Changi Road, #B1-01, Singapore</strong>, the operation focuses 
       on what truly matters: <strong>keeping shrimp alive and breeding consistently</strong>.
     </p>
   </div>
@@ -78,85 +78,52 @@ canonical_url: https://ebiya.sg/about/
   <div class="offering-block">
     <h3>🦐 Premium Caridina Shrimp</h3>
     <p class="offering-intro">
-      ebiyaSG specializes in high-grade Caridina varieties bred for <strong>health and stability</strong>:
+      ebiyaSG breeds these types:
     </p>
     
     <div class="shrimp-varieties">
       <div class="variety-card">
         <div class="variety-icon">🎯</div>
-        <h4>BOA</h4>
-        <p>Bold, distinctive patterns with striking contrast</p>
-      </div>
-      
-      <div class="variety-card">
-        <div class="variety-icon">✨</div>
-        <h4>GALAXY</h4>
-        <p>Striking celestial markings that shimmer under light</p>
+        <h4>Fancy red tigers</h4>
+        <p>Red and white banding with bold, irregular stripes across the body.</p>
       </div>
       
       <div class="variety-card">
         <div class="variety-icon">💙</div>
-        <h4>BLUE KING KONG</h4>
-        <p>Vibrant blue coloration with excellent health</p>
+        <h4>Blue king kong</h4>
+        <p>Black body with white bands that have a blue tint.</p>
       </div>
-    </div>
-    
-    <div class="quality-guarantee">
-      <p>
-        <strong>All shrimp are bred in-house</strong> using the same tank systems available to customers, 
-        ensuring proven performance under Singapore tropical conditions.
-      </p>
+      
+      <div class="variety-card">
+        <div class="variety-icon">🔴</div>
+        <h4>Red devils</h4>
+        <p>Solid red body with large white eyes. Not for sale yet.</p>
+      </div>
+      
+      <div class="variety-card">
+        <div class="variety-icon">✨</div>
+        <h4>White spectra</h4>
+        <p>Pale, cream-white body.</p>
+      </div>
+      
+      <div class="variety-card">
+        <div class="variety-icon">🟠</div>
+        <h4>Orange boa</h4>
+      </div>
+      
+      <div class="variety-card">
+        <div class="variety-icon">🦐</div>
+        <h4>Neocaridina</h4>
+      </div>
     </div>
   </div>
   
-  <!-- Custom Tanks -->
+  <!-- Tanks -->
   <div class="offering-block">
-    <h3>🔧 Custom Breeding Tanks</h3>
+    <h3>🔧 Tanks</h3>
     <p class="offering-intro">
-      Two meticulously designed tank sizes engineered specifically to 
-      <strong>maximize shrimplet survival rates</strong>:
+      Tanks come in two sizes: 60 x 30 cm (recommended for beginners due to higher water stability) and 45 x 30 cm (compact option for experienced keepers). Message us on WhatsApp at +65 8900 2228 for details.
     </p>
-    
-    <div class="tank-options">
-      <div class="tank-option recommended">
-        <div class="tank-badge">Recommended</div>
-        <h4>60×30cm Tank</h4>
-        <p class="tank-description">
-          Ideal for beginners due to higher water volume stability. 
-          Better buffering capacity and more forgiving parameter fluctuations.
-        </p>
-        <ul class="tank-features">
-          <li>Greater water stability</li>
-          <li>Better pH buffering</li>
-          <li>Higher shrimplet survival</li>
-          <li>Easier maintenance</li>
-        </ul>
-      </div>
-      
-      <div class="tank-option">
-        <div class="tank-badge">Compact</div>
-        <h4>45×30cm Tank</h4>
-        <p class="tank-description">
-          Compact option for experienced keepers who understand parameter management. 
-          Space-efficient without sacrificing breeding potential.
-        </p>
-        <ul class="tank-features">
-          <li>Space-efficient footprint</li>
-          <li>Lower cooling costs</li>
-          <li>Advanced keeper option</li>
-          <li>Proven breeding success</li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="tank-philosophy">
-      <p>
-        These aren't aesthetic showpieces—they're <strong>functional breeding systems designed 
-        from a breeder's perspective</strong>. For detailed explanations of the design philosophy 
-        and engineering principles, explore our comprehensive 
-        <a href="/tank-builder/">Tank Builder guide</a> and <a href="/blog/">blog articles</a>.
-      </p>
-    </div>
   </div>
 </section>
 
@@ -167,51 +134,31 @@ canonical_url: https://ebiya.sg/about/
   <div class="service-methods">
     <div class="service-card primary-method">
       <div class="service-icon">🏪</div>
-      <h3>In-Store Pickup</h3>
-      <p class="service-badge">Preferred Method</p>
+      <h3>Collection at the Shop</h3>
+      <p class="service-badge">By Appointment</p>
       <p>
-        Personal consultation and quality assurance at our location near Old Airport Road. 
-        Get expert advice, inspect your shrimp, and ask questions face-to-face.
+        Collect at the shop at 55 Changi Road, #B1-01, Singapore, by appointment. 
+        Message us on WhatsApp at +65 8900 2228 to arrange a time.
       </p>
-      <ul>
-        <li>Direct consultation with breeder</li>
-        <li>Visual inspection before purchase</li>
-        <li>Acclimation guidance provided</li>
-        <li>Local to Old Airport Road area</li>
-      </ul>
     </div>
     
     <div class="service-card vip-method">
       <div class="service-icon">🥇</div>
-      <h3>VIP Gold Delivery</h3>
+      <h3>Delivery for Members</h3>
       <p class="service-badge">Members Only</p>
       <p>
-        Enjoy delivery privileges as part of your Gold membership benefits. 
-        Priority handling and direct-to-door convenience.
+        Delivery is for members. Everyone else collects at the shop.
       </p>
-      <ul>
-        <li>Exclusive to Gold members</li>
-        <li>Careful packaging and handling</li>
-        <li>Scheduled delivery slots</li>
-        <li>Priority support included</li>
-      </ul>
       <a href="/membership/" class="service-link">Learn about VIP Membership</a>
     </div>
     
     <div class="service-card">
       <div class="service-icon">📦</div>
-      <h3>Shipping</h3>
-      <p class="service-badge">By Inquiry</p>
+      <h3>No Shipping</h3>
+      <p class="service-badge">Not Offered</p>
       <p>
-        Available for customers outside the immediate area. 
-        Contact us for availability and shipping details.
+        We do not ship.
       </p>
-      <ul>
-        <li>Available upon request</li>
-        <li>Secure packaging protocols</li>
-        <li>Weather-dependent scheduling</li>
-        <li>Inquiry for rates and timing</li>
-      </ul>
     </div>
   </div>
 </section>
@@ -274,11 +221,10 @@ canonical_url: https://ebiya.sg/about/
     <div class="location-info">
       <h3>Find Us</h3>
       <p>
-        Conveniently located <strong>near Old Airport Road Food Centre</strong> 
-        in Singapore's vibrant Kallang area.
+        Located at <strong>55 Changi Road, #B1-01, Singapore</strong>.
       </p>
       <p class="location-note">
-        Exact address and appointment details provided upon inquiry or membership signup.
+        Collection is by appointment, Tuesday and Thursday, 1pm to 6pm. Message us on WhatsApp at +65 8900 2228 first.
       </p>
     </div>
     
@@ -290,8 +236,12 @@ canonical_url: https://ebiya.sg/about/
           <a href="https://instagram.com/ebiyaSG" target="_blank" rel="noopener">@ebiyaSG</a>
         </li>
         <li>
+          <strong>WhatsApp:</strong> 
+          <a href="https://wa.me/6589002228" target="_blank" rel="noopener">+65 8900 2228</a>
+        </li>
+        <li>
           <strong>TikTok:</strong> 
-          <a href="https://tiktok.com/@fish_ah_gong" target="_blank" rel="noopener">@fish_ah_gong</a>
+          <a href="https://tiktok.com/@ebiya.sg" target="_blank" rel="noopener">@ebiya.sg</a>
         </li>
       </ul>
     </div>
@@ -332,14 +282,14 @@ canonical_url: https://ebiya.sg/about/
 <meta property="og:url" content="https://ebiya.sg/about/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="About ebiyaSG – Singapore's Premier Caridina Shrimp Breeding Specialist" />
-<meta property="og:description" content="Professional Caridina breeder since 2018 specializing in BOA, GALAXY, BLUE KING KONG varieties. Custom breeding tanks engineered for maximum shrimplet survival. Near Old Airport Road." />
+<meta property="og:description" content="Singapore Caridina breeder, about 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. At 55 Changi Road, #B1-01, Singapore." />
 <meta property="og:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 <meta property="og:image:alt" content="ebiyaSG premium Caridina shrimp" />
 <meta property="og:site_name" content="ebiyaSG - Singapore Shrimp Specialists" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="About ebiyaSG – Singapore Caridina Shrimp Specialist" />
-<meta name="twitter:description" content="Professional breeder since 2018. BOA, GALAXY, BLUE KING KONG. Custom tanks for shrimplet survival. Near Old Airport Road." />
+<meta name="twitter:description" content="About 3 years old: a hobby that became a business. Fancy red tigers, blue king kong, white spectra, orange boa and Neocaridina. At 55 Changi Road, #B1-01, Singapore." />
 <meta name="twitter:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
@@ -355,7 +305,7 @@ canonical_url: https://ebiya.sg/about/
   "@id": "https://ebiya.sg/#organization",
   "name": "ebiyaSG",
   "image": "https://ebiya.sg/assets/images/green-tiger.png",
-  "description": "Professional Caridina shrimp breeder and custom tank builder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties since 2018.",
+  "description": "Professional Caridina shrimp breeder in Singapore: fancy red tigers, blue king kong, white spectra and orange boa, plus Neocaridina. About 3 years old: a hobby that became a business.",
   "url": "https://ebiya.sg/",
   "telephone": "",
   "address": {
@@ -363,7 +313,7 @@ canonical_url: https://ebiya.sg/about/
     "addressLocality": "Singapore",
     "addressRegion": "SG",
     "addressCountry": "SG",
-    "streetAddress": "Near Old Airport Road Food Centre"
+    "streetAddress": "55 Changi Road, #B1-01"
   },
   "geo": {
     "@type": "GeoCoordinates",
@@ -372,13 +322,13 @@ canonical_url: https://ebiya.sg/about/
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "00:00",
-    "closes": "23:59",
+    "dayOfWeek": ["Tuesday", "Thursday"],
+    "opens": "13:00",
+    "closes": "18:00",
     "description": "By appointment only"
   },
   "priceRange": "$$",
-  "paymentAccepted": "Cash, PayNow, Bank Transfer",
+  "paymentAccepted": "PayNow, Cash",
   "areaServed": {
     "@type": "Country",
     "name": "Singapore"
@@ -387,14 +337,12 @@ canonical_url: https://ebiya.sg/about/
     "@type": "Person",
     "name": "ebiyaSG"
   },
-  "foundingDate": "2018",
   "sameAs": [
     "https://instagram.com/ebiyaSG",
-    "https://tiktok.com/@fish_ah_gong"
+    "https://tiktok.com/@ebiya.sg"
   ],
   "knowsAbout": [
     "Caridina shrimp breeding",
-    "Custom aquarium design",
     "Shrimplet survival optimization",
     "Water parameter management",
     "Aquarium filtration systems"
@@ -437,7 +385,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "What Caridina shrimp varieties does ebiyaSG breed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ebiyaSG specializes in three high-grade Caridina varieties: BOA (bold distinctive patterns), GALAXY (striking celestial markings), and BLUE KING KONG (vibrant blue coloration). All shrimp are bred in-house using proven systems optimized for Singapore conditions."
+        "text": "ebiyaSG breeds Caridina shrimp: fancy red tigers (red and white banding with bold, irregular stripes across the body), blue king kong (black body with white bands that have a blue tint), white spectra (pale, cream-white body) and orange boa, plus Neocaridina. Red devils are not for sale yet."
       }
     },
     {
@@ -445,7 +393,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "Where is ebiyaSG located?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ebiyaSG is conveniently located near Old Airport Road Food Centre in Singapore's Kallang area. Exact address and appointment details are provided upon inquiry or membership signup."
+        "text": "ebiyaSG is located at 55 Changi Road, #B1-01, Singapore."
       }
     },
     {
@@ -453,7 +401,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "Do you offer delivery for shrimp and tanks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In-store pickup is the preferred method. VIP Gold members enjoy delivery privileges as part of their membership benefits. Shipping is available for customers outside the immediate area upon inquiry."
+        "text": "Collection is at the shop at 55 Changi Road, #B1-01, by appointment: message us on WhatsApp at +65 8900 2228. Delivery is for members. We do not ship."
       }
     },
     {
@@ -461,7 +409,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "What tank sizes do you recommend for Caridina breeding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ebiyaSG offers two custom breeding tank sizes: 60×30cm (recommended for beginners due to higher water stability) and 45×30cm (compact option for experienced keepers). Both are engineered specifically to maximize shrimplet survival rates under Singapore tropical conditions."
+        "text": "Tanks come in two sizes: 60 x 30 cm (recommended for beginners due to higher water stability) and 45 x 30 cm (compact option for experienced keepers). Message us on WhatsApp at +65 8900 2228 for details."
       }
     }
   ]
