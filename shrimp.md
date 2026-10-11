@@ -33,36 +33,58 @@ schema_type: ImageGallery
 {% include share-buttons.html %}
 {%- endcomment -%}
 
-  <!-- Shrimp Gallery Grid -->
-  <div class="shrimp-gallery" id="shrimpGallery">
-    {% for image in site.static_files %}
-      {% if image.path contains '/assets/shrimps/' %}
-        {% assign basename = image.basename %}
-        {% assign shrimp_name = basename | replace: '-', ' ' | replace: '_', ' ' | capitalize %}
-
-        <figure class="shrimp-item" data-full-src="{{ image.path | relative_url }}">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="/assets/shrimps-optimized/{{ basename }}-320.webp 320w,
-                      /assets/shrimps-optimized/{{ basename }}-640.webp 640w"
-              sizes="(max-width: 480px) 45vw, 160px">
+  <!-- Shrimp Gallery: Latest row, then one section per type -->
+  {% assign published_photos = site.data.gallery | where: "published", true | sort: "date" | reverse %}
+  <div id="shrimpGallery">
+    {% if published_photos.size > 0 %}
+    <section class="gallery-section gallery-section--latest" aria-labelledby="gallery-latest">
+      <h2 class="gallery-section-title" id="gallery-latest">Latest</h2>
+      <div class="shrimp-gallery shrimp-gallery--latest">
+        {% for entry in published_photos limit: 8 %}
+          <figure class="shrimp-item" data-full-src="{{ '/assets/shrimps/' | append: entry.file | append: '.jpg' | relative_url }}">
             <img
-              src="/assets/shrimps-optimized/{{ basename }}-320.jpg"
-              srcset="/assets/shrimps-optimized/{{ basename }}-320.jpg 320w,
-                      /assets/shrimps-optimized/{{ basename }}-640.jpg 640w"
-              sizes="(max-width: 480px) 45vw, 160px"
+              src="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-320.jpg' | relative_url }}"
+              srcset="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-320.jpg' | relative_url }} 320w,
+                      {{ '/assets/shrimps-optimized/' | append: entry.file | append: '-640.jpg' | relative_url }} 640w"
+              sizes="(max-width: 480px) 30vw, 160px"
               width="160"
               height="160"
               loading="lazy"
               decoding="async"
-              alt="{{ shrimp_name }} - ebiya.sg, Singapore">
-          </picture>
-          <figcaption>{{ shrimp_name }}</figcaption>
-        </figure>
+              alt="{{ entry.caption }} - ebiya.sg, Singapore">
+            <figcaption>{{ entry.caption }}</figcaption>
+          </figure>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    {% for type in site.data.gallery_types %}
+      {% assign type_photos = published_photos | where: "type", type.slug %}
+      {% if type_photos.size > 0 %}
+      <section class="gallery-section" id="type-{{ type.slug }}" aria-labelledby="heading-{{ type.slug }}">
+        <h2 class="gallery-section-title" id="heading-{{ type.slug }}">{{ type.name }}</h2>
+        {% if type.note != "" %}<p class="gallery-section-note">{{ type.note }}</p>{% endif %}
+        <div class="shrimp-gallery">
+          {% for entry in type_photos %}
+          <figure class="shrimp-item" data-full-src="{{ '/assets/shrimps/' | append: entry.file | append: '.jpg' | relative_url }}">
+            <img
+              src="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-320.jpg' | relative_url }}"
+              srcset="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-320.jpg' | relative_url }} 320w,
+                      {{ '/assets/shrimps-optimized/' | append: entry.file | append: '-640.jpg' | relative_url }} 640w"
+              sizes="(max-width: 480px) 30vw, 160px"
+              width="160"
+              height="160"
+              loading="lazy"
+              decoding="async"
+              alt="{{ entry.caption }} - ebiya.sg, Singapore">
+            <figcaption>{{ entry.caption }}</figcaption>
+          </figure>
+          {% endfor %}
+        </div>
+      </section>
       {% endif %}
     {% endfor %}
-
   </div>
 
   <!-- Lightbox Modal -->
