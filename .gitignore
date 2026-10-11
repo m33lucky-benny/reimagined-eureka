@@ -42,3 +42,4 @@ out/
 
 # Cloudflare (optional, if using wrangler later)
 .wrangler/
+.cloudflare/
