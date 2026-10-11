@@ -2,7 +2,7 @@
 layout: page
 title: "About ebiyaSG – Singapore Caridina Shrimp Specialist & Custom Tank Builder | Expert Breeder"
 permalink: /about/
-description: "Professional Caridina shrimp breeder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties. Custom breeding tanks designed for maximum shrimplet survival rates. Located near Old Airport Road, serving passionate shrimp keepers since 2018."
+description: "Professional Caridina shrimp breeder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties. Custom breeding tanks designed for maximum shrimplet survival rates. Located near Old Airport Road. About 3 years old: a hobby that became a business."
 author: ebiyaSG
 image: /assets/images/green-tiger.png
 keywords:
@@ -22,7 +22,7 @@ keywords:
 
 # Open Graph
 og_title: "About ebiyaSG – Singapore's Caridina Shrimp Breeding Specialist"
-og_description: "Professional Caridina breeder since 2018. Specializing in BOA, GALAXY, BLUE KING KONG. Custom breeding tanks engineered for shrimplet survival. Near Old Airport Road."
+og_description: "Singapore Caridina breeder, about 3 years old: a hobby that became a business. Specializing in BOA, GALAXY, BLUE KING KONG. Custom breeding tanks engineered for shrimplet survival. Near Old Airport Road."
 og_type: website
 og_url: https://ebiya.sg/about/
 og_image: https://ebiya.sg/assets/images/green-tiger.png
@@ -31,7 +31,7 @@ og_image_alt: "ebiyaSG Caridina shrimp breeding specialist Singapore"
 # Twitter Card
 twitter_card: summary_large_image
 twitter_title: "About ebiyaSG – Singapore Caridina Shrimp Specialist"
-twitter_description: "Professional breeder specializing in BOA, GALAXY, BLUE KING KONG. Custom tanks for maximum shrimplet survival since 2018."
+twitter_description: "Professional breeder specializing in BOA, GALAXY, BLUE KING KONG. Custom tanks for maximum shrimplet survival. About 3 years old: a hobby that became a business."
 twitter_image: https://ebiya.sg/assets/images/green-tiger.png
 
 # Schema.org metadata
@@ -52,12 +52,12 @@ canonical_url: https://ebiya.sg/about/
   
   <div class="journey-content">
     <div class="timeline-marker">
-      <span class="year">2018</span>
-      <span class="label">Started</span>
+      <span class="year">About 3</span>
+      <span class="label">Years old</span>
     </div>
     
     <p class="journey-text">
-      What started as a personal passion in 2018 has evolved into a professional breeding operation 
+      What started as a hobby about 3 years ago has become a business, a professional breeding operation 
       built on <strong>years of hands-on experience</strong>. As a solo-run business partnered with 
       a skilled tank-building team, ebiyaSG combines the precision of specialist breeding with the 
       practical knowledge gained from countless trial-and-error cycles.
@@ -332,14 +332,14 @@ canonical_url: https://ebiya.sg/about/
 <meta property="og:url" content="https://ebiya.sg/about/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="About ebiyaSG – Singapore's Premier Caridina Shrimp Breeding Specialist" />
-<meta property="og:description" content="Professional Caridina breeder since 2018 specializing in BOA, GALAXY, BLUE KING KONG varieties. Custom breeding tanks engineered for maximum shrimplet survival. Near Old Airport Road." />
+<meta property="og:description" content="Singapore Caridina breeder, about 3 years old: a hobby that became a business. Specializing in BOA, GALAXY, BLUE KING KONG varieties. Custom breeding tanks engineered for maximum shrimplet survival. Near Old Airport Road." />
 <meta property="og:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 <meta property="og:image:alt" content="ebiyaSG premium Caridina shrimp" />
 <meta property="og:site_name" content="ebiyaSG - Singapore Shrimp Specialists" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="About ebiyaSG – Singapore Caridina Shrimp Specialist" />
-<meta name="twitter:description" content="Professional breeder since 2018. BOA, GALAXY, BLUE KING KONG. Custom tanks for shrimplet survival. Near Old Airport Road." />
+<meta name="twitter:description" content="About 3 years old: a hobby that became a business. BOA, GALAXY, BLUE KING KONG. Custom tanks for shrimplet survival. Near Old Airport Road." />
 <meta name="twitter:image" content="https://ebiya.sg/assets/images/green-tiger.png" />
 
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
@@ -355,7 +355,7 @@ canonical_url: https://ebiya.sg/about/
   "@id": "https://ebiya.sg/#organization",
   "name": "ebiyaSG",
   "image": "https://ebiya.sg/assets/images/green-tiger.png",
-  "description": "Professional Caridina shrimp breeder and custom tank builder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties since 2018.",
+  "description": "Professional Caridina shrimp breeder and custom tank builder in Singapore specializing in BOA, GALAXY, and BLUE KING KONG varieties. About 3 years old: a hobby that became a business.",
   "url": "https://ebiya.sg/",
   "telephone": "",
   "address": {
@@ -387,7 +387,6 @@ canonical_url: https://ebiya.sg/about/
     "@type": "Person",
     "name": "ebiyaSG"
   },
-  "foundingDate": "2018",
   "sameAs": [
     "https://instagram.com/ebiyaSG",
     "https://tiktok.com/@fish_ah_gong"
