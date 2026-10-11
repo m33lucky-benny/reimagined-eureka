@@ -39,37 +39,6 @@
             "closes": {{ site.business.openingHours.closes | jsonify }}
           },
           "provider": { "@id": "{{ site.url }}/#organization" }
-        },
-        {
-          "@type": "Service",
-          "@id": "{{ site.url }}/#seo-service",
-          "name": "SEO & Website Consulting Services",
-          "description": "Professional SEO audits, website performance optimization, and technical fixes for Singapore businesses.",
-          "url": "{{ site.url }}/about",
-          "provider": { "@id": "{{ site.url }}/#organization" },
-          "areaServed": { "@type": "Place", "name": "Singapore" },
-          "serviceType": [
-            "SEO Consulting",
-            "Website Performance Optimization",
-            "Technical SEO",
-            "Website Diagnostics"
-          ],
-          "availableChannel": [
-    {
-      "@type": "ServiceChannel",
-      "serviceLocation": {
-        "@type": "Place",
-        "name": "Ebiya Consulting Office"
-      }
-    },
-    {
-      "@type": "ServiceChannel",
-      "serviceLocation": {
-        "@type": "VirtualLocation",
-        "url": "https://ebiya.sg"
-      }
-    }
-  ]
         }
       ]
     }
