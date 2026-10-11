@@ -322,13 +322,13 @@ canonical_url: https://ebiya.sg/about/
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "00:00",
-    "closes": "23:59",
+    "dayOfWeek": ["Tuesday", "Thursday"],
+    "opens": "13:00",
+    "closes": "18:00",
     "description": "By appointment only"
   },
   "priceRange": "$$",
-  "paymentAccepted": "Cash, PayNow, Bank Transfer",
+  "paymentAccepted": "PayNow, Cash",
   "areaServed": {
     "@type": "Country",
     "name": "Singapore"
