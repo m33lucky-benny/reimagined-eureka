@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Caridina Shrimp Tank Builder Singapore | Free Interactive Setup Guide | ebiya.sg"
-tagline: "Step-by-step guidance for building a stable Caridina Taiwan bee shrimp tank under Singapore tropical conditions"
-description: "Free interactive Caridina shrimp tank builder for Singapore aquarists. Get personalized equipment recommendations, water parameters, soil selection, filtration systems, and stocking guidance for Taiwan bee shrimp success."
+tagline: "Step-by-step guidance for building a stable Caridina shrimp tank under Singapore tropical conditions"
+description: "Free interactive Caridina shrimp tank builder for Singapore aquarists. Get personalized equipment recommendations, water parameters, soil selection, filtration systems, and stocking guidance for shrimp success."
 keywords:
   - Caridina tank builder Singapore
   - shrimp tank setup guide
@@ -18,7 +18,7 @@ author: ebiyaSG
 
 # Open Graph (Social Sharing)
 og_title: "Caridina Shrimp Tank Builder Singapore | Free Interactive Tool"
-og_description: "Build a stable Caridina Taiwan bee shrimp tank in Singapore. Interactive tool provides equipment, water parameters & stocking recommendations tailored for tropical climate success."
+og_description: "Build a stable Caridina shrimp tank in Singapore. Interactive tool provides equipment, water parameters & stocking recommendations tailored for tropical climate success."
 og_type: website
 og_url: https://ebiya.sg/tank-builder/
 og_image: https://ebiya.sg/assets/images/caridina-tank-builder-hero.jpg
@@ -27,7 +27,7 @@ og_image_alt: "Caridina shrimp tank builder interactive guide for Singapore aqua
 # Twitter Card
 twitter_card: summary_large_image
 twitter_title: "Caridina Shrimp Tank Builder Singapore | Free Tool"
-twitter_description: "Build a stable Caridina Taiwan bee tank in Singapore with personalized equipment, filtration & parameter recommendations."
+twitter_description: "Build a stable Caridina tank in Singapore with personalized equipment, filtration & parameter recommendations."
 twitter_image: https://ebiya.sg/assets/images/caridina-tank-builder-hero.jpg
 
 # Schema.org metadata
