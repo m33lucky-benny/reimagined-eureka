@@ -97,7 +97,7 @@ canonical_url: https://ebiya.sg/tank-builder/
         </div>
         <div class="param-item">
           <div class="k">Temperature (Critical in SG)</div>
-          <div class="v">20 – 23°C</div>
+          <div class="v">22 – 25°C</div>
         </div>
         <div class="param-item">
           <div class="k">Ammonia / Nitrite</div>
@@ -151,7 +151,7 @@ canonical_url: https://ebiya.sg/tank-builder/
     </details>
     <details>
       <summary>Is cooling necessary for Caridina shrimp in Singapore?</summary>
-      <p>Absolutely essential. Singapore's ambient temperature (28-32°C) is lethal for Caridina. A chiller maintaining 20-23°C is non-negotiable for success.</p>
+      <p>Absolutely essential. Singapore's ambient temperature (28-32°C) is lethal for Caridina. A chiller maintaining 22-25°C is non-negotiable for success.</p>
     </details>
     <details>
       <summary>Can I use tap water for Caridina tanks?</summary>
