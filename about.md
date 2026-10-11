@@ -184,51 +184,31 @@ canonical_url: https://ebiya.sg/about/
   <div class="service-methods">
     <div class="service-card primary-method">
       <div class="service-icon">🏪</div>
-      <h3>In-Store Pickup</h3>
-      <p class="service-badge">Preferred Method</p>
+      <h3>Collection at the Shop</h3>
+      <p class="service-badge">By Appointment</p>
       <p>
-        Personal consultation and quality assurance at our shop at 55 Changi Road, #B1-01. 
-        Get expert advice, inspect your shrimp, and ask questions face-to-face.
+        Collect at the shop at 55 Changi Road, #B1-01, Singapore, by appointment. 
+        Message us on WhatsApp at +65 8900 2228 to arrange a time.
       </p>
-      <ul>
-        <li>Direct consultation with breeder</li>
-        <li>Visual inspection before purchase</li>
-        <li>Acclimation guidance provided</li>
-        <li>At 55 Changi Road, #B1-01, Singapore</li>
-      </ul>
     </div>
     
     <div class="service-card vip-method">
       <div class="service-icon">🥇</div>
-      <h3>VIP Gold Delivery</h3>
+      <h3>Delivery for Members</h3>
       <p class="service-badge">Members Only</p>
       <p>
-        Enjoy delivery privileges as part of your Gold membership benefits. 
-        Priority handling and direct-to-door convenience.
+        Delivery is for members. Everyone else collects at the shop.
       </p>
-      <ul>
-        <li>Exclusive to Gold members</li>
-        <li>Careful packaging and handling</li>
-        <li>Scheduled delivery slots</li>
-        <li>Priority support included</li>
-      </ul>
       <a href="/membership/" class="service-link">Learn about VIP Membership</a>
     </div>
     
     <div class="service-card">
       <div class="service-icon">📦</div>
-      <h3>Shipping</h3>
-      <p class="service-badge">By Inquiry</p>
+      <h3>No Shipping</h3>
+      <p class="service-badge">Not Offered</p>
       <p>
-        Available for customers outside the immediate area. 
-        Contact us for availability and shipping details.
+        We do not ship.
       </p>
-      <ul>
-        <li>Available upon request</li>
-        <li>Secure packaging protocols</li>
-        <li>Weather-dependent scheduling</li>
-        <li>Inquiry for rates and timing</li>
-      </ul>
     </div>
   </div>
 </section>
@@ -294,7 +274,7 @@ canonical_url: https://ebiya.sg/about/
         Located at <strong>55 Changi Road, #B1-01, Singapore</strong>.
       </p>
       <p class="location-note">
-        Exact address and appointment details provided upon inquiry or membership signup.
+        Collection is by appointment, Tuesday and Thursday, 1pm to 6pm. Message us on WhatsApp at +65 8900 2228 first.
       </p>
     </div>
     
@@ -304,6 +284,10 @@ canonical_url: https://ebiya.sg/about/
         <li>
           <strong>Instagram:</strong> 
           <a href="https://instagram.com/ebiyaSG" target="_blank" rel="noopener">@ebiyaSG</a>
+        </li>
+        <li>
+          <strong>WhatsApp:</strong> 
+          <a href="https://wa.me/6589002228" target="_blank" rel="noopener">+65 8900 2228</a>
         </li>
         <li>
           <strong>TikTok:</strong> 
@@ -468,7 +452,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "Do you offer delivery for shrimp and tanks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In-store pickup is the preferred method. VIP Gold members enjoy delivery privileges as part of their membership benefits. Shipping is available for customers outside the immediate area upon inquiry."
+        "text": "Collection is at the shop at 55 Changi Road, #B1-01, by appointment: message us on WhatsApp at +65 8900 2228. Delivery is for members. We do not ship."
       }
     },
     {
