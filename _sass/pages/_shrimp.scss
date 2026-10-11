@@ -60,10 +60,42 @@
       gap: 0.75rem;
     }
 
+    // Phones: exactly 3 columns
     @media (max-width: 480px) {
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 0.5rem;
     }
+  }
+
+  // "Latest" strip: exactly one row, however many items fit.
+  // Extra items fall into implicit rows of height 0 and are clipped.
+  .shrimp-gallery--latest {
+    grid-template-rows: auto;
+    grid-auto-rows: 0;
+    row-gap: 0;
+    overflow: hidden;
+  }
+
+  // Sections (Latest, then one per type)
+  .gallery-section {
+    max-width: 1000px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .gallery-section-title {
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    font-weight: 700;
+    color: $color-text;
+    margin: 0 0 0.75rem;
+    text-align: left;
+  }
+
+  .gallery-section-note {
+    margin: -0.25rem 0 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $muted;
+    text-align: left;
   }
 
   // Individual Shrimp Item
@@ -94,7 +126,8 @@
       display: block;
 
       @media (max-width: 480px) {
-        height: 140px;
+        height: auto;
+        aspect-ratio: 1 / 1;
       }
     }
 
