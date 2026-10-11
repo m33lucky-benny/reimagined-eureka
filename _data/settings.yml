@@ -11,8 +11,6 @@ nav_items:
     url: /faq
   - title: Shrimps
     url: /shrimp
-  - title: Tank Builder
-    url: /tank-builder
   - title: Blog
     url: /blog
   - title: Membership
