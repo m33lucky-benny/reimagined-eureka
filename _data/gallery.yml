@@ -1,0 +1,7 @@
+# One entry per photo. file = base name of a .jpg in assets/shrimps/
+# (the 320 and 640 versions are in assets/shrimps-optimized/).
+- file: blue-king-kong-2026-10-11
+  type: blue-king-kong
+  caption: "Blue King Kong"
+  date: 2026-10-11
+  published: true
