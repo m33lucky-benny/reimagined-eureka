@@ -1,21 +1,29 @@
 ---
 layout: page
-title: Contact Ebiya - Premium Caridina Shrimp & Custom Breeding Tanks Singapore
-description: Get in touch with Ebiya for premium Caridina shrimp, custom aquarium setups, and professional breeding tank solutions in Singapore. Expert advice for Crystal Red, Taiwan Bee, and specialty shrimp.
-keywords: caridina shrimp Singapore, custom shrimp tanks, aquarium breeding setup, Crystal Red Shrimp, Taiwan Bee shrimp, shrimp tank Singapore
+title: Contact Ebiya.sg
+description: Contact Ebiya.sg, a Singapore breeder of Caridina and Neocaridina shrimp. Collection at 55 Changi Road by appointment. Message us on WhatsApp +65 8900 2228 to book.
+keywords: caridina shrimp Singapore, neocaridina shrimp Singapore, shrimp breeder Singapore, Ebiya.sg, shrimp collection Changi Road
 permalink: /contact/
 ---
 
 <div class="contact-wrap">
   <div class="contact-intro">
-    <h1 class="contact-title">Start Your Caridina Shrimp Journey</h1>
+    <h1 class="contact-title">Get in touch with Ebiya.sg</h1>
     
     <p class="contact-lead">
-      Premium <strong>Caridina shrimp</strong> and <strong>custom breeding tanks</strong> designed for successful shrimp keeping in Singapore. Whether you're starting your first colony or upgrading your breeding setup, we're here to help.
+      We breed <strong>Caridina</strong> and <strong>Neocaridina</strong> shrimp in Singapore. To buy, message us on WhatsApp and we will arrange a time to collect.
     </p>
 
     <p class="contact-description">
-      At Ebiya.sg, we specialize in high-grade Caridina shrimp including Crystal Red Shrimp (CRS), Crystal Black Shrimp (CBS), Taiwan Bee varieties, and custom-built aquarium systems optimized for breeding success. Our tanks feature precise filtration, optimal water parameters, and professional-grade equipment.
+      <strong>WhatsApp:</strong> <a href="https://wa.me/6589002228">+65 8900 2228</a><br>
+      <strong>Instagram:</strong> <a href="https://instagram.com/ebiyasg">@ebiyasg</a><br>
+      <strong>TikTok:</strong> <a href="https://tiktok.com/@ebiya.sg">@ebiya.sg</a>
+    </p>
+
+    <p class="contact-description">
+      <strong>Collection:</strong> 55 Changi Road, #B1-01, Singapore. Tuesday and Thursday, 1pm to 6pm, by appointment. Please message us on WhatsApp first to book a time.<br>
+      <strong>Payment:</strong> on collection, by PayNow or cash.<br>
+      <strong>Delivery:</strong> for members.
     </p>
 
     <p class="contact-note">
