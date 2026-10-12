@@ -32,11 +32,7 @@
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: $color-text;
-    background: linear-gradient(135deg, $primary, $secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $primary;
     line-height: 1.2;
   }
 
@@ -145,8 +141,8 @@
       border-color: rgba($secondary, 0.4);
       box-shadow:
         0 0 0 2px rgba($secondary, 0.25),
-        0 8px 24px rgba($secondary, 0.2),
-        0 0 40px rgba($primary, 0.15);
+        0 8px 24px rgba(0, 0, 0, 0.45),
+        0 0 40px rgba(0, 0, 0, 0.45);
     }
 
     figcaption {
@@ -189,7 +185,7 @@
       box-shadow:
         0 0 0 2px rgba($secondary, 0.3),
         0 30px 80px rgba($dark-1, 0.8),
-        0 0 60px rgba($primary, 0.2);
+        0 0 60px rgba(0, 0, 0, 0.45);
       object-fit: contain;
     }
 
@@ -257,12 +253,8 @@
 
     h2 {
       font-size: clamp(1.5rem, 3vw, 2rem);
-      color: $color-text;
+      color: $primary;
       margin-bottom: 1rem;
-      background: linear-gradient(135deg, $primary, $primary-2);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
 
     h3 {

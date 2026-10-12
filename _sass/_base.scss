@@ -21,3 +21,41 @@ a {
 h1 {
   text-align: center;
 }
+
+/* Skip link: first tab stop, visible only on focus */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  z-index: 1000;
+  padding: 0.6rem 1rem;
+  background: $color-text;
+  color: $dark-1;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: top 0.15s ease-out;
+
+  &:focus {
+    top: 0.75rem;
+  }
+}
+
+/* Reading measure: keep prose lines near 70 characters */
+.hero-subtitle,
+.hero-seo-content p,
+.gallery-description,
+.journey-text,
+.offering-intro,
+.mission-focus p,
+.gallery-info p,
+.faq-answer p,
+.post-excerpt {
+  max-width: 62ch;
+}
+
+.hero-subtitle,
+.hero-seo-content p,
+.gallery-description {
+  margin-left: auto;
+  margin-right: auto;
+}

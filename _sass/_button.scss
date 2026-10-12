@@ -28,9 +28,7 @@
 
   &:focus-visible {
     outline: none;
-    box-shadow:
-      0 0 0 3px rgba($primary, 0.35),
-      0 0 20px rgba($primary, 0.6);
+    box-shadow: 0 0 0 3px rgba($primary, 0.55);
   }
 
   &:disabled,
@@ -50,8 +48,8 @@
     background: $primary;
     color: $dark-1;
     box-shadow:
-      0 0 18px rgba($primary, 0.9),
-      0 0 36px rgba($secondary, 0.6);
+      0 4px 14px rgba(0, 0, 0, 0.45),
+      0 10px 28px rgba(0, 0, 0, 0.45);
     transform: translateY(-2px);
   }
 }
@@ -64,7 +62,7 @@
     background: $primary-2;
     color: $light;
     box-shadow:
-      0 0 16px rgba($primary-2, 0.8);
+      0 4px 14px rgba(0, 0, 0, 0.45);
     transform: translateY(-2px);
   }
 }
@@ -76,7 +74,7 @@
   &:hover:not(:disabled) {
     border-color: $primary;
     color: $primary;
-    box-shadow: 0 0 12px rgba($primary, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -106,8 +104,8 @@
       background: $primary;
       color: $dark-1;
       box-shadow:
-        0 0 20px $primary,
-        0 0 40px $secondary;
+        0 4px 14px rgba(0, 0, 0, 0.45),
+        0 10px 28px rgba(0, 0, 0, 0.45);
       transform: translateY(-2px);
     }
   
