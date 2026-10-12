@@ -5,7 +5,15 @@
     if (!form || !status) return;
 
     const btn = form.querySelector('.submit-btn');
-    form.addEventListener('submit', () => {
+    form.addEventListener('submit', (event) => {
+        // The form has `novalidate`, so check the required fields here:
+        // without this an empty form was sent and showed the thank-you page.
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            form.reportValidity();
+            return;
+        }
+
         // UI feedback
         btn.textContent = 'Sending…';
         btn.disabled = true;
