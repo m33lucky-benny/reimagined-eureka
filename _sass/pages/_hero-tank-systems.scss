@@ -157,7 +157,7 @@
   background: transparent;
   color: $color-text; // #f5f5f5
   border-color: $primary; // #FF10F0
-  box-shadow: 0 0 0 rgba(255, 16, 240, 0);
+  box-shadow: none;
 
   &:hover,
   &:focus-visible {

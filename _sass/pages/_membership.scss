@@ -259,7 +259,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
   &:hover:not(.disabled-plan) {
     border-color: $membership-accent;
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(255, 0, 110, 0.2);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
   }
 
   @media (max-width: 768px) {
@@ -313,7 +313,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
     border-radius: 20px;
     font-weight: 800;
     font-size: 0.875rem;
-    box-shadow: 0 4px 12px rgba(255, 0, 110, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -631,7 +631,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
   box-shadow: 0 6px 20px $gold-glow;
 
   &:hover {
-    box-shadow: 0 8px 28px rgba(255, 209, 0, 0.5);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
     background: linear-gradient(
       135deg,
       lighten($gold-color, 5%),
@@ -771,7 +771,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
     box-shadow: 0 6px 20px $gold-glow;
   }
   50% {
-    box-shadow: 0 8px 32px rgba(255, 209, 0, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
   }
 }
 
