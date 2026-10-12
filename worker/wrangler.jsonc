@@ -1,0 +1,24 @@
+{
+ "name": "whatsapp-gallery",
+ "main": "index.js",
+ "compatibility_date": "2026-01-01",
+ "workers_dev": true,
+ "keep_vars": true,
+ "kv_namespaces": [
+  {
+   "binding": "CLIENTS",
+   "id": "30cab90747e745f58188fb9ca4c66bfc"
+  },
+  {
+   "binding": "EVENTS",
+   "id": "ad71d24b1bb24045ae1886b1a43b739e"
+  },
+  {
+   "binding": "PENDING",
+   "id": "cc54e054595048e2b24b867fb1e3d426"
+  }
+ ],
+ "vars": {
+  "ZERNIO_ACCOUNT_ID": "6ac9baf39e1b165267e87c56"
+ }
+}
