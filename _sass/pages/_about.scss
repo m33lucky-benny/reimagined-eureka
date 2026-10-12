@@ -4,19 +4,19 @@
 // ============================================================================
 
 // Brand color tokens
-$about-bg: $dark-1 !default; // #0a0a0a
-$about-surface: $surface-2 !default; // #2a2a2a
-$about-surface-light: $surface-1 !default; // #1a1a1a
-$about-accent: $secondary !default; // #ff006e (borders, fills)
-$about-accent-text: $secondary-text !default; // #ff6aa6 (text on dark)
-$about-accent-2: $primary !default; // #ff10f0
+$about-bg: $dark-1 !default; // #07181b
+$about-surface: $surface-2 !default; // #143238
+$about-surface-light: $surface-1 !default; // #0d2327
+$about-accent: $secondary !default; // #f2644f (borders, fills)
+$about-accent-text: $secondary-text !default; // #ff8a7a (text on dark)
+$about-accent-2: $primary !default; // #ff6f61
 $about-text: $color-text !default; // #f5f5f5
-$about-text-muted: $muted !default; // #888888
-$about-border: $border !default; // #333333
+$about-text-muted: $muted !default; // #8fb0b0
+$about-border: $border !default; // #24474d
 
 // Specialty colors
 $gold-badge: #ffd100;
-$blue-badge: #2563eb;
+$blue-badge: #0d7f74;
 
 // ============================================================================
 // Hero Section
@@ -90,7 +90,7 @@ $blue-badge: #2563eb;
     gap: 1rem;
     margin-bottom: 2rem;
     padding: 1rem;
-    background: rgba(255, 0, 110, 0.1);
+    background: rgba(255, 111, 97, 0.1);
     border: 2px solid $about-accent;
     border-radius: 12px;
 
@@ -192,8 +192,8 @@ $blue-badge: #2563eb;
 }
 
 .variety-card {
-  background: rgba(255, 0, 110, 0.05);
-  border: 2px solid rgba(255, 0, 110, 0.2);
+  background: rgba(255, 111, 97, 0.05);
+  border: 2px solid rgba(255, 111, 97, 0.2);
   border-radius: 14px;
   padding: 1.75rem;
   text-align: center;
@@ -201,7 +201,7 @@ $blue-badge: #2563eb;
 
   &:hover {
     border-color: $about-accent;
-    background: rgba(255, 0, 110, 0.08);
+    background: rgba(255, 111, 97, 0.08);
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
   }
@@ -229,8 +229,8 @@ $blue-badge: #2563eb;
 }
 
 .quality-guarantee {
-  background: rgba(255, 16, 240, 0.05);
-  border: 1px solid rgba(255, 16, 240, 0.2);
+  background: rgba(255, 111, 97, 0.05);
+  border: 1px solid rgba(255, 111, 97, 0.2);
   border-radius: 12px;
   padding: 1.5rem;
   margin-top: 2rem;
@@ -279,7 +279,7 @@ $blue-badge: #2563eb;
     border-color: $gold-badge;
     background: linear-gradient(
       135deg,
-      rgba(26, 26, 26, 1) 0%,
+      rgba(13, 35, 39, 1) 0%,
       rgba(255, 209, 0, 0.03) 100%
     );
 
@@ -294,7 +294,7 @@ $blue-badge: #2563eb;
         $gold-badge,
         lighten($gold-badge, 10%)
       );
-      color: #1a1a1a;
+      color: #0d2327;
     }
   }
 
@@ -336,7 +336,7 @@ $blue-badge: #2563eb;
       color: rgba(245, 245, 245, 0.8);
       display: flex;
       align-items: center;
-      border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+      border-bottom: 1px solid rgba(36, 71, 77, 0.3);
 
       &:last-child {
         border-bottom: none;
@@ -354,8 +354,8 @@ $blue-badge: #2563eb;
 }
 
 .tank-philosophy {
-  background: rgba(255, 0, 110, 0.03);
-  border: 1px solid rgba(255, 0, 110, 0.15);
+  background: rgba(255, 111, 97, 0.03);
+  border: 1px solid rgba(255, 111, 97, 0.15);
   border-radius: 12px;
   padding: 1.5rem;
   margin-top: 2rem;
@@ -427,8 +427,8 @@ $blue-badge: #2563eb;
     border-color: $about-accent;
     background: linear-gradient(
       135deg,
-      rgba(42, 42, 42, 1) 0%,
-      rgba(255, 0, 110, 0.05) 100%
+      rgba(20, 50, 56, 1) 0%,
+      rgba(255, 111, 97, 0.05) 100%
     );
   }
 
@@ -436,7 +436,7 @@ $blue-badge: #2563eb;
     border-color: $gold-badge;
     background: linear-gradient(
       135deg,
-      rgba(42, 42, 42, 1) 0%,
+      rgba(20, 50, 56, 1) 0%,
       rgba(255, 209, 0, 0.03) 100%
     );
 
@@ -451,7 +451,7 @@ $blue-badge: #2563eb;
         $gold-badge,
         lighten($gold-badge, 10%)
       );
-      color: #1a1a1a;
+      color: #0d2327;
     }
   }
 
@@ -517,7 +517,7 @@ $blue-badge: #2563eb;
     margin-top: 1rem;
     padding: 0.6rem 1.25rem;
     background: linear-gradient(135deg, $gold-badge, lighten($gold-badge, 10%));
-    color: #1a1a1a;
+    color: #0d2327;
     text-decoration: none;
     border-radius: 10px;
     font-weight: 700;
@@ -540,8 +540,8 @@ $blue-badge: #2563eb;
   padding: 3rem 1.5rem;
   background: linear-gradient(
     135deg,
-    rgba(42, 42, 42, 1) 0%,
-    rgba(255, 0, 110, 0.08) 100%
+    rgba(20, 50, 56, 1) 0%,
+    rgba(255, 111, 97, 0.08) 100%
   );
   border-radius: 20px;
   border: 2px solid $about-accent;
@@ -574,7 +574,7 @@ $blue-badge: #2563eb;
         color: rgba(245, 245, 245, 0.8);
         line-height: 1.6;
         position: relative;
-        border-bottom: 1px solid rgba(255, 0, 110, 0.1);
+        border-bottom: 1px solid rgba(255, 111, 97, 0.1);
 
         &:last-child {
           border-bottom: none;
@@ -610,8 +610,8 @@ $blue-badge: #2563eb;
   }
 
   .mission-focus {
-    background: rgba(255, 0, 110, 0.05);
-    border: 1px solid rgba(255, 0, 110, 0.2);
+    background: rgba(255, 111, 97, 0.05);
+    border: 1px solid rgba(255, 111, 97, 0.2);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -655,7 +655,7 @@ $blue-badge: #2563eb;
   .truth-statement {
     text-align: center;
     padding: 1.5rem;
-    background: rgba(255, 16, 240, 0.05);
+    background: rgba(255, 111, 97, 0.05);
     border: 1px dashed $about-accent-2;
     border-radius: 12px;
     margin-top: 2rem;
@@ -737,7 +737,7 @@ $blue-badge: #2563eb;
     li {
       padding: 0.75rem 0;
       color: rgba(245, 245, 245, 0.85);
-      border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+      border-bottom: 1px solid rgba(36, 71, 77, 0.3);
 
       &:last-child {
         border-bottom: none;
@@ -843,14 +843,14 @@ $blue-badge: #2563eb;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 
     &:hover {
-      background: rgba(255, 0, 110, 0.05);
+      background: rgba(255, 111, 97, 0.05);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
     }
   }
 
   &.gold-cta {
     background: linear-gradient(135deg, $gold-badge, lighten($gold-badge, 10%));
-    color: #1a1a1a;
+    color: #0d2327;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 
     &:hover {
@@ -909,6 +909,6 @@ $blue-badge: #2563eb;
   .tank-option,
   .service-card {
     page-break-inside: avoid;
-    border: 1px solid #333;
+    border: 1px solid #24474d;
   }
 }
