@@ -149,7 +149,6 @@ canonical_url: https://ebiya.sg/about/
       <p>
         Delivery is for members. Everyone else collects at the shop.
       </p>
-      <a href="/membership/" class="service-link">Learn about VIP Membership</a>
     </div>
     
     <div class="service-card">
@@ -261,15 +260,8 @@ canonical_url: https://ebiya.sg/about/
       🦐 Browse Available Shrimp
     </a>
     
-    <a href="/membership/" class="cta-button gold-cta">
-      🥇 Join VIP Membership
-    </a>
   </div>
   
-  <p class="cta-benefits">
-    For personalized advice, priority access to new stock, and exclusive member pricing, 
-    consider joining our <a href="/membership/">VIP Membership program</a>.
-  </p>
 </section>
 
 <!-- Canonical and Meta -->
