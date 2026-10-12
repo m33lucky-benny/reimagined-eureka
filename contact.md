@@ -36,4 +36,4 @@ permalink: /contact/
 
 </div>
 
-<script src="{{ '/assets/js/contact-form.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/contact-form.js' | relative_url }}?v=20261012" defer></script>
