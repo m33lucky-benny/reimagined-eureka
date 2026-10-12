@@ -252,27 +252,6 @@ Avoid complex aquascapes that trap waste early on.
 
 ---
 
-## Want This Setup Done Right the First Time?
-
-If you’re thinking:
-
-> *“I understand this… but I don’t want to guess or lose shrimp.”*
-
-That’s why **ebiyaSG Membership** exists.
-
-### Members Get:
-- ✔️ Proven Caridina setup blueprint  
-- ✔️ Singapore-specific parameter targets  
-- ✔️ Tropical temperature management strategies  
-- ✔️ Ongoing guidance as your tank matures  
-- ✔️ Support **before shrimp die**, not after  
-
-Instead of buying shrimp twice, you build the tank **once**, properly.
-
-👉 **[Learn more about the ebiyaSG Membership](https://ebiya.sg/membership/)**
-
----
-
 
 
 

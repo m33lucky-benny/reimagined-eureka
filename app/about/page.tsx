@@ -184,9 +184,6 @@ export default function AboutPage() {
             <Link className="cta-button secondary-cta" href="/shrimp">
               Browse Available Shrimp
             </Link>
-            <Link className="cta-button gold-cta" href="/membership">
-              View Gold Membership
-            </Link>
           </div>
         </section>
       </FadeIn>

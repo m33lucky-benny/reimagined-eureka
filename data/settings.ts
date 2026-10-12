@@ -3,7 +3,6 @@ export const navItems = [
   { title: 'Quick Help', url: '/faq' },
   { title: 'Shrimps', url: '/shrimp' },
   { title: 'Blog', url: '/blog' },
-  { title: 'Membership', url: '/membership' },
   { title: 'Contact Us', url: '/contact' },
 ] as const;
 

@@ -126,29 +126,6 @@ Use two beakers for each buffer solution: one containing pure buffer for calibra
 - **Dimensions:** Approximately 153 × 29 × 16 mm
 - **Weight:** Approximately 52g
 
-## Membership Benefits: Professional Calibration Services
-
-While calibrating your pH pen at home is straightforward, many users prefer professional calibration services to ensure maximum accuracy. Consider joining our membership program for exclusive benefits:
-
-### What's Included in Membership
-
-- **Free pH pen calibration service** - Bring your pH meter for professional calibration anytime
-- **Priority technical support** - Get expert help with troubleshooting and maintenance questions
-- **Discounted buffer solutions** - Save on pH 4.01, 6.86, and 10.01 calibration buffers
-- **Annual electrode inspection** - We check your electrode condition and storage fluid levels
-- **Calibration reminder notifications** - Never miss your recalibration schedule
-- **Extended warranty coverage** - Additional protection for your pH testing equipment
-
-### Why Choose Professional Calibration
-
-Even with the detailed instructions provided in this guide, [professional calibration services](https://atlas-scientific.com/blog/how-to-calibrate-ph-meter/) offer several advantages. Our technicians use laboratory-grade buffer solutions, ensuring your pH pen meets the highest standards. This is particularly valuable for applications requiring very high testing accuracy such as scientific research, pharmaceutical testing, or precision aquaculture where even small pH variations can impact sensitive species like crystal red shrimp.
-
-Professional calibration also includes electrode health assessment - we can detect early signs of electrode degradation that might not be obvious during home calibration. Members receive detailed calibration certificates documenting traceability to international standards, which can be important for regulatory compliance or quality assurance records.
-
-### How to Get Started
-
-Visit our website or contact us to learn more about membership tiers and pricing. Most members find that the free calibration services alone pay for the annual membership fee, especially if you use multiple pH meters or require frequent recalibration due to [intensive electrode use](https://www.horiba.com/sgp/water-quality/support/technical-tips/electrodes/ph-electrode-care-and-maintenance-procedures/).
-
 ## Choosing a pH Pen with Backlit Display
 
 When selecting a pH test pen, consider models with backlit LCD displays for significantly improved readability. A backlit screen makes it much easier to read pH values in various lighting conditions, especially in dim environments like indoor aquariums, greenhouses, or when working outdoors during early morning or evening hours.

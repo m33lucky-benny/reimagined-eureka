@@ -369,16 +369,6 @@ A stable shrimp tank is built slowly—and maintained gently.
 
 ---
 
-## Should You Follow a Guided Setup?
-
-If you want to avoid common mistakes and get your tank right the first time:
-
-- 👉 [**ebiyaSG Shrimp Membership**](https://ebiya.sg/membership/) – Step-by-step Caridina setup guidance with ongoing support
-
-It is designed specifically for Singapore conditions and helps beginners avoid the most common (and costly) mistakes.
-
----
-
 ## Final Thoughts
 
 Keeping Caridina shrimp in Singapore is absolutely achievable—even for beginners—when water parameters are controlled properly.
