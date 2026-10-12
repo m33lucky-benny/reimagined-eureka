@@ -174,7 +174,7 @@
 //   }
   
 //   .required {
-//     color: #ff4fd8;
+//     color: #ff8a7a;
 //     margin-left: 0.15em;
 //   }
   
@@ -212,8 +212,8 @@
   
 //     &:focus {
 //       outline: none;
-//       border-color: #ff4fd8;
-//       box-shadow: 0 0 0 3px rgba(255, 79, 216, 0.25);
+//       border-color: #ff8a7a;
+//       box-shadow: 0 0 0 3px rgba(255, 138, 122, 0.25);
 //       background: rgba(0, 0, 0, 0.5);
 //     }
 //   }
@@ -260,9 +260,9 @@
 //     }
   
 //     input:checked + .checkbox-ui {
-//       border-color: #ff4fd8;
-//       background: #ff4fd8;
-//       box-shadow: 0 0 0 3px rgba(255, 79, 216, 0.35);
+//       border-color: #ff8a7a;
+//       background: #ff8a7a;
+//       box-shadow: 0 0 0 3px rgba(255, 138, 122, 0.35);
 //     }
   
 //     input:checked + .checkbox-ui::after {
@@ -311,8 +311,8 @@
 //     font-size: 0.8rem;
   
 //     background: transparent;
-//     color: #ff4fd8;
-//     border: 2px solid #ff4fd8;
+//     color: #ff8a7a;
+//     border: 2px solid #ff8a7a;
   
 //     transition:
 //       transform 0.2s ease,
@@ -321,9 +321,9 @@
 //       color 0.2s ease;
   
 //     &:hover:not(:disabled) {
-//       background: #ff4fd8;
+//       background: #ff8a7a;
 //       color: #000;
-//       box-shadow: 0 12px 35px rgba(255, 79, 216, 0.45);
+//       box-shadow: 0 12px 35px rgba(255, 138, 122, 0.45);
 //       transform: translateY(-1px);
 //     }
   

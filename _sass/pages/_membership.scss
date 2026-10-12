@@ -4,13 +4,13 @@
 // ============================================================================
 
 // Brand color tokens (ensure these are imported from main variables)
-$membership-bg: $dark-1 !default; // #0a0a0a
-$membership-surface: $surface-2 !default; // #2a2a2a
-$membership-accent: $secondary !default; // #ff006e
-$membership-accent-2: $primary !default; // #ff10f0
+$membership-bg: $dark-1 !default; // #07181b
+$membership-surface: $surface-2 !default; // #143238
+$membership-accent: $secondary !default; // #f2644f
+$membership-accent-2: $primary !default; // #ff6f61
 $membership-text: $color-text !default; // #f5f5f5
-$membership-text-muted: $muted !default; // #888888
-$membership-border: $border !default; // #333333
+$membership-text-muted: $muted !default; // #8fb0b0
+$membership-border: $border !default; // #24474d
 
 // Additional colors for membership tiers
 $standard-color: #9ca3af; // Silver/gray for standard
@@ -114,7 +114,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
 
 .problem-item {
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 0, 110, 0.2);
+  border: 1px solid rgba(255, 111, 97, 0.2);
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
@@ -194,14 +194,14 @@ $gold-glow: rgba(255, 209, 0, 0.3);
 }
 
 .solution-item {
-  background: rgba(255, 0, 110, 0.05);
-  border: 1px solid rgba(255, 0, 110, 0.2);
+  background: rgba(255, 111, 97, 0.05);
+  border: 1px solid rgba(255, 111, 97, 0.2);
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.2s ease;
 
   &:hover {
-    background: rgba(255, 0, 110, 0.08);
+    background: rgba(255, 111, 97, 0.08);
     border-color: $membership-accent;
     transform: translateY(-2px);
   }
@@ -283,8 +283,8 @@ $gold-glow: rgba(255, 209, 0, 0.3);
   border-color: $gold-color;
   background: linear-gradient(
     135deg,
-    rgba(42, 42, 42, 1) 0%,
-    rgba(42, 42, 42, 0.95) 50%,
+    rgba(20, 50, 56, 1) 0%,
+    rgba(20, 50, 56, 0.95) 50%,
     rgba(255, 209, 0, 0.05) 100%
   );
 
@@ -437,7 +437,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
     display: inline-block;
     padding: 0.4rem 0.85rem;
     background: linear-gradient(135deg, #ffd100, #ffed4e);
-    color: #1a1a1a; // High contrast
+    color: #0d2327; // High contrast
     font-weight: 800;
     font-size: 0.875rem;
     border-radius: 20px;
@@ -517,7 +517,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
     line-height: 1.6;
     display: flex;
     align-items: flex-start;
-    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+    border-bottom: 1px solid rgba(36, 71, 77, 0.3);
 
     &:last-child {
       border-bottom: none;
@@ -627,7 +627,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
 
 .gold-cta {
   background: linear-gradient(135deg, $gold-color, lighten($gold-color, 10%));
-  color: #1a1a1a; // High contrast on gold
+  color: #0d2327; // High contrast on gold
   box-shadow: 0 6px 20px $gold-glow;
 
   &:hover {
@@ -663,8 +663,8 @@ $gold-glow: rgba(255, 209, 0, 0.3);
   max-width: 800px;
   margin: 4rem auto;
   padding: 2rem 1.5rem;
-  background: rgba(255, 0, 110, 0.03);
-  border: 1px solid rgba(255, 0, 110, 0.2);
+  background: rgba(255, 111, 97, 0.03);
+  border: 1px solid rgba(255, 111, 97, 0.2);
   border-radius: 16px;
 
   h2 {
@@ -685,7 +685,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
     color: rgba(245, 245, 245, 0.85);
     line-height: 1.6;
     position: relative;
-    border-bottom: 1px solid rgba(255, 0, 110, 0.1);
+    border-bottom: 1px solid rgba(255, 111, 97, 0.1);
 
     &:last-child {
       border-bottom: none;
@@ -712,8 +712,8 @@ $gold-glow: rgba(255, 209, 0, 0.3);
   text-align: center;
   background: linear-gradient(
     135deg,
-    rgba(42, 42, 42, 1) 0%,
-    rgba(255, 0, 110, 0.05) 100%
+    rgba(20, 50, 56, 1) 0%,
+    rgba(255, 111, 97, 0.05) 100%
   );
   border-radius: 20px;
   border: 2px solid $membership-accent;
@@ -806,7 +806,7 @@ $gold-glow: rgba(255, 209, 0, 0.3);
 
   .plan-card {
     page-break-inside: avoid;
-    border: 1px solid #333;
+    border: 1px solid #24474d;
   }
 
   .cta-button {

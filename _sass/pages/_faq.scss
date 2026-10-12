@@ -25,7 +25,7 @@
 
   h1 {
     font-size: 2.5em;
-    color: $primary; // #FF10F0 - neon pink
+    color: $primary; // #ff6f61 - neon pink
     margin-bottom: 10px;
     font-weight: 700;
     line-height: 1.2;
@@ -33,7 +33,7 @@
 
   p {
     font-size: 1.1em;
-    color: $color-text; // #f5f5f5 - improved contrast from #888888
+    color: $color-text; // #f5f5f5 - improved contrast from #8fb0b0
     margin-bottom: 16px;
     line-height: 1.6;
   }
@@ -48,13 +48,13 @@
   font-size: 0.95em;
 
   .inline-link {
-    color: $primary; // #FF10F0
+    color: $primary; // #ff6f61
     text-decoration: underline;
     transition: color 0.2s ease;
 
     &:hover,
     &:focus {
-      color: $secondary; // #FF006E
+      color: $secondary; // #f2644f
       text-decoration: none;
     }
   }
@@ -71,8 +71,8 @@
 .category-title {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: $secondary; // #FF006E - hot pink
-  border-bottom: 3px solid $primary; // #FF10F0
+  color: $secondary; // #f2644f - hot pink
+  border-bottom: 3px solid $primary; // #ff6f61
   padding-bottom: 10px;
   font-weight: 700;
   line-height: 1.3;
@@ -86,17 +86,17 @@
   margin-bottom: 12px;
   border-radius: 8px;
   overflow: hidden;
-  background: $surface-1; // #1a1a1a
-  border: 1px solid $border; // #333333
+  background: $surface-1; // #0d2327
+  border: 1px solid $border; // #24474d
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: $primary; // #FF10F0
+    border-color: $primary; // #ff6f61
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
   }
 
   &.active {
-    border-color: $secondary; // #FF006E
+    border-color: $secondary; // #f2644f
   }
 }
 
@@ -105,7 +105,7 @@
 // ============================================================================
 
 .faq-question {
-  background: $surface-1; // #1a1a1a
+  background: $surface-1; // #0d2327
   color: $color-text; // #f5f5f5 - high contrast
   padding: 16px 20px;
   width: 100%;
@@ -122,8 +122,8 @@
 
   &:hover,
   &:focus {
-    background: $surface-2; // #2a2a2a
-    outline: 2px solid $primary; // #FF10F0
+    background: $surface-2; // #143238
+    outline: 2px solid $primary; // #ff6f61
     outline-offset: -2px;
   }
 
@@ -142,7 +142,7 @@
 // ============================================================================
 
 .faq-icon {
-  color: $primary; // #FF10F0
+  color: $primary; // #ff6f61
   font-size: 1.5em;
   font-weight: 300;
   transition:
@@ -154,7 +154,7 @@
 
   .faq-item.active & {
     transform: rotate(45deg);
-    color: $secondary; // #FF006E
+    color: $secondary; // #f2644f
   }
 }
 
@@ -176,7 +176,7 @@
 .faq-answer {
   display: none;
   overflow: hidden;
-  background: $surface-2; // #2a2a2a
+  background: $surface-2; // #143238
   color: $color-text; // #f5f5f5 - high contrast
   line-height: 1.7;
 
@@ -198,13 +198,13 @@
 
   // Answer links
   a {
-    color: $primary; // #FF10F0
+    color: $primary; // #ff6f61
     text-decoration: underline;
     transition: color 0.2s ease;
 
     &:hover,
     &:focus {
-      color: $secondary; // #FF006E
+      color: $secondary; // #f2644f
       text-decoration: none;
     }
   }
@@ -224,8 +224,8 @@
 
   // Code blocks in answers
   code {
-    background: $surface-1; // #1a1a1a
-    color: $primary; // #FF10F0
+    background: $surface-1; // #0d2327
+    color: $primary; // #ff6f61
     padding: 2px 6px;
     border-radius: 3px;
     font-size: 0.9em;
@@ -233,7 +233,7 @@
 
   // Strong text
   strong {
-    color: $primary; // #FF10F0
+    color: $primary; // #ff6f61
     font-weight: 700;
   }
 }
@@ -329,7 +329,7 @@
 
   .faq-item {
     page-break-inside: avoid;
-    border: 1px solid #333;
+    border: 1px solid #24474d;
   }
 
   .faq-answer {

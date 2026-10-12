@@ -8,29 +8,29 @@
 
    :root {
     /* Core brand */
-    --color-dark-1: #0a0a0a;     /* background */
-    --color-dark-2: #1f2937;
+    --color-dark-1: #07181b;     /* background */
+    --color-dark-2: #0e2a2f;
     --color-light: #f9fafb;
   
-    --color-primary: #ff10f0;   /* neon pink */
-    --color-primary-2: #2563eb; /* blue accent */
-    --color-secondary: #ff006e; /* hot pink */
-    --color-secondary-text: #ff6aa6; /* hot pink, lightened for text on dark surfaces (4.5:1 on #2a2a2a) */
+    --color-primary: #ff6f61;   /* neon pink */
+    --color-primary-2: #0d7f74; /* blue accent */
+    --color-secondary: #f2644f; /* hot pink */
+    --color-secondary-text: #ff8a7a; /* hot pink, lightened for text on dark surfaces (4.5:1 on #143238) */
   
     /* Text */
     --color-text: #f5f5f5;      /* off-white */
-    --color-muted: #888888;
+    --color-muted: #8fb0b0;
   
     /* Surfaces */
-    --color-surface-1: #1a1a1a;
-    --color-surface-2: #2a2a2a;
+    --color-surface-1: #0d2327;
+    --color-surface-2: #143238;
   
     /* UI */
-    --color-border: #333333;
+    --color-border: #24474d;
   
     /* Special / Partner brand (Kieron) */
     --color-kieron-1: #32cd32; /* lime green */
-    --color-kieron-2: #ff00ff; /* neon pink */
+    --color-kieron-2: #ff6f61; /* neon pink */
     --color-kieron-3: #00813d; /* subway green */
     --color-kieron-4: #ffd100; /* subway yellow */
   }
@@ -40,33 +40,33 @@
      ====================================================== */
   
   /* Core brand */
-  $dark-1: #0a0a0a;
-  $dark-2: #1f2937;
+  $dark-1: #07181b;
+  $dark-2: #0e2a2f;
   $light: #f9fafb;
   
-  $primary: #ff10f0;     /* neon pink */
-  $primary-2: #2563eb;   /* blue accent */
-  $secondary: #ff006e;   /* hot pink */
-  $secondary-text: #ff6aa6; /* hot pink for text: 4.5:1+ on #2a2a2a */
+  $primary: #ff6f61;     /* neon pink */
+  $primary-2: #0d7f74;   /* blue accent */
+  $secondary: #f2644f;   /* hot pink */
+  $secondary-text: #ff8a7a; /* hot pink for text: 4.5:1+ on #143238 */
   
   /* Text */
   $color-text: #f5f5f5;  /* off-white */
-  $muted: #888888;
+  $muted: #8fb0b0;
   
   /* Surfaces */
-  $surface-1: #1a1a1a;
-  $surface-2: #2a2a2a;
+  $surface-1: #0d2327;
+  $surface-2: #143238;
   
   /* UI */
-  $border: #333333;
+  $border: #24474d;
   
   /* Partner / Special */
   $kieron-1: #32cd32;
-  $kieron-2: #ff00ff;
+  $kieron-2: #ff6f61;
   $kieron-3: #00813d;
   $kieron-4: #ffd100;
   
   /* Links */
   $color-link: $secondary-text;
-  $color-link-hover: #ff9cc4;
+  $color-link-hover: #ffb3a8;
   

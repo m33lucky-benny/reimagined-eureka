@@ -61,7 +61,7 @@
 
     // Add urgency styling when low
     if (currentSlots <= 20) {
-      slotsElement.style.color = "#ff006e";
+      slotsElement.style.color = "#f2644f";
       slotsElement.style.fontWeight = "900";
     }
 
