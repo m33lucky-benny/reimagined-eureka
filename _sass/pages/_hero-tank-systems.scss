@@ -37,18 +37,6 @@
   margin-bottom: 24px;
   letter-spacing: -0.02em;
 
-  // Gradient text effect (optional enhancement)
-  background: linear-gradient(135deg, $primary 0%, $secondary 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-
-  // Fallback for browsers that don't support background-clip
-  @supports not (background-clip: text) {
-    background: none;
-    color: $primary;
-  }
-
   @media (min-width: 768px) {
     font-size: 3.5em;
     margin-bottom: 28px;
@@ -148,19 +136,19 @@
   background: $primary; // #FF10F0
   color: $dark-1; // #0a0a0a - high contrast
   border-color: $primary;
-  box-shadow: 0 4px 16px rgba(255, 16, 240, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
 
   &:hover,
   &:focus-visible {
     background: $secondary; // #FF006E
     border-color: $secondary;
-    box-shadow: 0 6px 24px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
     transform: translateY(-2px);
   }
 
   &:active {
     transform: translateY(0);
-    box-shadow: 0 2px 8px rgba(255, 16, 240, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -169,14 +157,14 @@
   background: transparent;
   color: $color-text; // #f5f5f5
   border-color: $primary; // #FF10F0
-  box-shadow: 0 0 0 rgba(255, 16, 240, 0);
+  box-shadow: none;
 
   &:hover,
   &:focus-visible {
     background: rgba(255, 16, 240, 0.1);
     border-color: $secondary; // #FF006E
     color: $primary;
-    box-shadow: 0 4px 16px rgba(255, 16, 240, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
     transform: translateY(-2px);
   }
 

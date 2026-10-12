@@ -37,8 +37,9 @@
     border: 1px solid #d1d5db;
     font-size: 0.95rem;
 
-    &:focus {
-      outline: none;
+    &:focus-visible {
+      outline: 3px solid rgba($primary, 0.7);
+      outline-offset: 2px;
       border-color: #111;
     }
   }

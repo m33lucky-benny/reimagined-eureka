@@ -73,13 +73,13 @@ $tank-text-muted: $muted !default; // #888888
   &:hover {
     border-color: $tank-accent;
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(255, 0, 110, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   }
 
   &.selected {
     border-color: $tank-accent;
     background: rgba(255, 0, 110, 0.08); // Slightly lighter for selected state
-    box-shadow: 0 4px 16px rgba(255, 0, 110, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
   }
 
   h3 {
@@ -246,12 +246,12 @@ $tank-text-muted: $muted !default; // #888888
   font-size: 1rem;
   border-radius: 12px;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(255, 0, 110, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
   transition: all 0.2s ease;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
     background: lighten($tank-accent, 5%);
   }
 
@@ -312,12 +312,12 @@ $tank-text-muted: $muted !default; // #888888
   text-decoration: none;
   background: linear-gradient(180deg, lighten($tank-accent, 10%), $tank-accent);
   color: $dark-1; // High contrast
-  box-shadow: 0 6px 20px rgba(255, 0, 110, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
   transition: all 0.2s ease;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
   }
 
   &:active {
