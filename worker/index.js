@@ -466,6 +466,9 @@ async function handleText(m, client, env, deps, gh, say) {
     } catch {
     }
   }
+  // This number also serves the Synthwork leads assistant. Plain text with no photo
+  // waiting is not for this bot, so it stays silent and leaves the chat alone.
+  if (!pending) return;
   if (reply.kind === "other") {
     await say(HELP);
     return;

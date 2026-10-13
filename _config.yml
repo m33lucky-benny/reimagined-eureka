@@ -65,3 +65,4 @@ whatsapp:
 exclude:
   - README.md
   - howto-folders
+  - worker   # the WhatsApp bot's code: not a page of the site

@@ -12,6 +12,23 @@ Receives WhatsApp messages from Zernio, saves the photo to this repo's
   expect to regenerate it.
 - No secrets are in this file. They are Worker secrets (see below).
 
+## Sharing the number with the Synthwork leads assistant (2026-10-12)
+
+The same WhatsApp number also serves the Synthwork leads assistant (a second Zernio
+webhook, "synthwork leads"). The message decides which bot answers:
+
+- **This bot** answers a photo, and the replies while a photo is waiting (a number, YES, NO).
+- **Plain text with no photo waiting gets no answer from this bot** (it used to send the
+  help text). That text may be a lead talking to the leads assistant.
+- The leads assistant only answers chats whose first message carries a lead's "Ref".
+
+`index.js` is now **version 8** (deployed 2026-10-12). Deploy from this folder with plain
+Wrangler, which is signed in on the Mac mini as bennywithtv@gmail.com:
+`npx wrangler versions upload`, check the new version's bindings, then
+`npx wrangler versions deploy <version-id>@100% -y`. `wrangler.jsonc` here lists the three
+KV namespaces and the plain variable; secrets are inherited. Roll back to version 7 with
+`npx wrangler versions deploy 33bf4a0d-8ba9-4da5-884b-fc7fa8edc6a1@100% -y`.
+
 ## Flow
 1. Zernio webhook "whatsapp gallery" (event `message.received`) POSTs to `/webhook`,
    signed with HMAC-SHA256 hex of the body in `X-Zernio-Signature`
