@@ -78,7 +78,8 @@ several seconds to go live: a 401 immediately afterwards is normal.
 - The count is saved in the incoming JSON (`qty`, `plus`), then in `_data/gallery.yml` by
   `scripts/publish_photo.py`, and shown as a badge on the photo by `_includes/stock-badge.html`.
 - Plain text with no photo, `<type name> <number>` (for example `red devils 2`), changes the count on
-  the NEWEST photo of that type. The Worker sends `repository_dispatch` event `update-stock`
+  EVERY photo of that type (the number belongs to the type; a new photo with no number takes the type's
+  current count, a new photo with a number sets it for all). The Worker sends `repository_dispatch` event `update-stock`
   (`client_payload`: `type`, `qty`, `plus`); `.github/workflows/update-stock.yml` runs
   `scripts/update_stock.py`. `0` shows "Sold out". If there is no photo of that type the workflow fails
   (see the Actions tab); the Worker has already replied "will update".
