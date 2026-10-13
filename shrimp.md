@@ -44,8 +44,8 @@ schema_type: ImageGallery
     {% if published_photos.size > 0 %}
     <section class="gallery-section gallery-section--latest" aria-labelledby="gallery-latest">
       <h2 class="gallery-section-title" id="gallery-latest">Latest</h2>
-      <div class="shrimp-gallery shrimp-gallery--latest">
-        {% for entry in published_photos limit: 8 %}
+      <div class="shrimp-gallery shrimp-gallery--latest" tabindex="0" role="region" aria-label="Latest photos, scroll sideways for more">
+        {% for entry in published_photos limit: 12 %}
           <figure class="shrimp-item" data-full-src="{{ '/assets/shrimps/' | append: entry.file | append: '.jpg' | relative_url }}">
             {% include stock-badge.html entry=entry %}
             <img
