@@ -1,0 +1,8 @@
+{%- comment -%} Stock badge for a gallery photo. Pass entry=entry. qty 0 = sold out; plus = "at least". {%- endcomment -%}
+{%- if include.entry.qty != nil -%}
+  {%- if include.entry.qty == 0 -%}
+<span class="stock-badge stock-badge--out">Sold out</span>
+  {%- else -%}
+<span class="stock-badge">{{ include.entry.qty }}{% if include.entry.plus %}+{% endif %} available</span>
+  {%- endif -%}
+{%- endif -%}

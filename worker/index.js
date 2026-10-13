@@ -76,6 +76,24 @@ function matchType(caption, types) {
   return tie ? null : best;
 }
 __name(matchType, "matchType");
+// "red devils 4" / "red devils total 4" / "red devils 30+" / "30++" / "30 plus":
+// a number at the END of the caption is the stock count (plus = "at least").
+// Prices ($40, S$40), "3pcs", "x3" and decimals are not counts.
+function parseStock(caption) {
+  const text = typeof caption === "string" ? caption.trim() : "";
+  const m = text.match(/^(.*?)(?:^|\s+)(?:total\s+)?(\d{1,4})\s*(\+{1,2}|plus)?\s*$/i);
+  if (!m) return { name: text, qty: null, plus: false };
+  const before = m[1];
+  if (/[$\d.,]$/.test(before)) return { name: text, qty: null, plus: false };
+  return { name: before.trim(), qty: Number(m[2]), plus: Boolean(m[3]) };
+}
+__name(parseStock, "parseStock");
+function stockText(qty, plus) {
+  if (qty === null || qty === void 0) return "";
+  if (qty === 0) return "sold out";
+  return `${qty}${plus ? "+" : ""} available`;
+}
+__name(stockText, "stockText");
 function parseReply(text) {
   if (typeof text !== "string") return { kind: "other" };
   const t = text.trim().replace(/[.!\s]+$/g, "").toLowerCase();
@@ -359,6 +377,8 @@ function metaJson(p) {
       caption: p.caption,
       type: p.type ? p.type.slug : null,
       type_name: p.type ? p.type.name : null,
+      qty: Number.isInteger(p.qty) ? p.qty : null,
+      plus: p.plus === true,
       sender: p.senderMasked,
       received: p.received,
       message_id: p.messageId,
@@ -407,13 +427,17 @@ async function handlePhoto(m, client, env, deps, zernio, gh, say) {
     await say("Sorry, that file is not a photo I can use (JPEG, PNG or WebP).");
     return;
   }
-  const caption = sanitiseText(m.text || "");
-  const type = matchType(caption, client.types);
+  const rawCaption = sanitiseText(m.text || "");
+  const stock = parseStock(rawCaption);
+  const caption = stock.qty !== null && stock.name ? stock.name : rawCaption;
+  const type = matchType(rawCaption, client.types);
   const id = makeId(deps.now(), deps.randomHex());
   const pending = {
     id,
     ext: sniffed.ext,
     caption,
+    qty: stock.qty,
+    plus: stock.plus,
     type: type ? { slug: type.slug, name: type.name } : null,
     senderMasked: maskPhone(m.phone),
     received: deps.now().toISOString(),
@@ -443,8 +467,9 @@ async function handlePhoto(m, client, env, deps, zernio, gh, say) {
   }
   await env.PENDING.put(pendingKey, JSON.stringify(pending), { expirationTtl: DAY });
   if (type) {
-    const cap = caption ? ` "${caption}"` : "";
-    await say(`Got it: ${type.name}${cap}. Reply YES to publish, or NO to cancel.`);
+    const cap = caption && caption.toLowerCase() !== type.name.toLowerCase() ? ` "${caption}"` : "";
+    const st = stockText(pending.qty, pending.plus);
+    await say(`Got it: ${type.name}${cap}${st ? " (" + st + ")" : ""}. Reply YES to publish, or NO to cancel.`);
   } else {
     if (client.types.length === 0) {
       await say("Got your photo. Reply YES to publish, or NO to cancel.");
@@ -464,6 +489,20 @@ async function handleText(m, client, env, deps, gh, say) {
     try {
       pending = JSON.parse(raw);
     } catch {
+    }
+  }
+  // "red devils 2" with no photo: change the count on the newest photo of that type.
+  if (reply.kind === "other") {
+    const upd = parseStock(sanitiseText(m.text || ""));
+    const utype = upd.qty !== null && upd.name ? matchType(upd.name, client.types) : null;
+    if (utype) {
+      const ok2 = await gh.dispatch("update-stock", { type: utype.slug, qty: upd.qty, plus: upd.plus });
+      if (!ok2) {
+        await say("Sorry, I could not update the count just now. Please send it again in a moment.");
+        return;
+      }
+      await say(`${utype.name}: ${stockText(upd.qty, upd.plus)}. The site will update in a few minutes.`);
+      return;
     }
   }
   // This number also serves the Synthwork leads assistant. Plain text with no photo
@@ -502,8 +541,9 @@ ${typeList(client.types)}`);
     }
     pending.jsonSha = sha;
     await env.PENDING.put(pendingKey, JSON.stringify(pending), { expirationTtl: DAY });
-    const cap = pending.caption ? ` "${pending.caption}"` : "";
-    await say(`Got it: ${chosen.name}${cap}. Reply YES to publish, or NO to cancel.`);
+    const cap = pending.caption && pending.caption.toLowerCase() !== chosen.name.toLowerCase() ? ` "${pending.caption}"` : "";
+    const st = stockText(pending.qty, pending.plus);
+    await say(`Got it: ${chosen.name}${cap}${st ? " (" + st + ")" : ""}. Reply YES to publish, or NO to cancel.`);
     return;
   }
   if (!pending.type && client.types.length > 0) {

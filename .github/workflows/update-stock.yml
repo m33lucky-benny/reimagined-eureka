@@ -1,0 +1,60 @@
+# Changes the stock count shown on the newest photo of one type.
+# The WhatsApp Worker sends repository_dispatch "update-stock" with
+# client_payload {type, qty, plus} when the owner texts e.g. "red devils 2".
+name: Update stock count from WhatsApp
+
+on:
+  repository_dispatch:
+    types: [update-stock]
+  workflow_dispatch:
+    inputs:
+      type:
+        description: "Type slug, like red-devils"
+        required: true
+      qty:
+        description: "Number available (0 = sold out)"
+        required: true
+      plus:
+        description: "At least this many (30+)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+# One at a time, so two updates never race on _data/gallery.yml.
+concurrency:
+  group: publish-photo
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Update the count
+        env:
+          TYPE: ${{ github.event.client_payload.type || inputs.type }}
+          QTY: ${{ github.event.client_payload.qty || inputs.qty }}
+          PLUS: ${{ github.event.client_payload.plus || inputs.plus }}
+        run: |
+          args=(--type "$TYPE" --qty "$QTY")
+          if [ "$PLUS" = "true" ]; then args+=(--plus); fi
+          python3 scripts/update_stock.py "${args[@]}"
+
+      - name: Commit to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/gallery.yml
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "Update stock count via WhatsApp"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
