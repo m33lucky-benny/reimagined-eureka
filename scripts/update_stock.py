@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Change the stock count of the newest gallery photo of one type.
+"""Change the stock count of a type: every gallery photo of that type shows the new number.
 
 Edits _data/gallery.yml in place (text edit: comments and other entries are
 left alone). Called by .github/workflows/update-stock.yml when the WhatsApp
@@ -13,53 +13,15 @@ import os
 import re
 import sys
 
+from stock_yaml import set_stock
+
 TYPE_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 GALLERY = os.path.join("_data", "gallery.yml")
 
 
 def update_text(text, ptype, qty, plus):
-    lines = text.split("\n")
-    starts = [i for i, l in enumerate(lines) if re.match(r"^\s*-\s+file:", l)]
-    if not starts:
-        raise ValueError("no entries in gallery.yml")
-    blocks = []
-    for n, s in enumerate(starts):
-        e = starts[n + 1] if n + 1 < len(starts) else len(lines)
-        blocks.append((s, e))
-
-    def entry_type(b):
-        for l in lines[b[0]:b[1]]:
-            m = re.match(r"^\s*(?:-\s+)?type:\s*[\"']?([a-z0-9-]+)[\"']?\s*$", l)
-            if m:
-                return m.group(1)
-        return None
-
-    def entry_date(b):
-        for l in lines[b[0]:b[1]]:
-            m = re.match(r"^\s*(?:-\s+)?date:\s*(\d{4}-\d{2}-\d{2})", l)
-            if m:
-                return m.group(1)
-        return ""
-
-    mine = [b for b in blocks if entry_type(b) == ptype]
-    if not mine:
-        raise ValueError(f"no photo of type {ptype}")
-    # newest by date; later in the file wins a tie
-    target = max(enumerate(mine), key=lambda t: (entry_date(t[1]), t[0]))[1]
-    s, e = target
-    body = [l for l in lines[s:e] if not re.match(r"^\s*(?:-\s+)?(qty|plus):", l)]
-    ind = re.match(r"^(\s*)-", body[0]).group(1) + "  "
-    new = [f"{ind}qty: {qty}"] + ([f"{ind}plus: true"] if plus else [])
-    # keep a trailing blank line (if any) after the new lines
-    at = len(body)
-    while at > 1 and body[at - 1].strip() == "":
-        at -= 1
-    # insert right after the caption line when present, else at the end of the entry
-    cap = next((i for i, l in enumerate(body) if re.match(r"^\s*caption:", l)), None)
-    if cap is not None:
-        at = cap + 1
-    body[at:at] = new
-    return "\n".join(lines[:s] + body + lines[e:])
+    """Every photo of the type gets the same count."""
+    return set_stock(text, ptype, qty, plus)
 
 
 def main(argv=None):

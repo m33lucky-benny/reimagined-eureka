@@ -1,4 +1,4 @@
-# Changes the stock count shown on the newest photo of one type.
+# Changes the stock count of one type: every photo of that type shows it.
 # The WhatsApp Worker sends repository_dispatch "update-stock" with
 # client_payload {type, qty, plus} when the owner texts e.g. "red devils 2".
 name: Update stock count from WhatsApp

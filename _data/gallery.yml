@@ -21,6 +21,8 @@
 - file: "fancy-red-tigers-20261013-114428-5b52c8"
   type: "fancy-red-tigers"
   caption: "Fancy Red Tigers"
+  qty: 30
+  plus: true
   date: 2026-10-13
   published: true
 - file: "fancy-red-tigers-20261013-114515-1c16bb"

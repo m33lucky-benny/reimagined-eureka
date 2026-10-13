@@ -20,6 +20,8 @@ import os
 import re
 import sys
 
+from stock_yaml import set_stock, type_stock
+
 try:
     from PIL import Image, ImageOps
 except ImportError:  # pragma: no cover
@@ -208,10 +210,16 @@ def publish(pid, incoming_dir="incoming", repo_root=".", today=None):
 
     # The site template appends ".jpg" and "-320.jpg" itself, so `file` is the bare slug.
     if not already_in_gallery(gallery_text, slug):
+        if qty is None:
+            inherited = type_stock(gallery_text, ptype)  # same type, same count
+            if inherited:
+                qty, plus = inherited
         new_text = append_gallery_yaml(
             gallery_text,
             {"file": slug, "type": ptype, "caption": caption, "qty": qty, "plus": plus, "date": date, "published": True},
         )
+        if qty is not None:
+            new_text = set_stock(new_text, ptype, qty, plus)  # a new number applies to every photo of the type
         os.makedirs(os.path.dirname(gallery_path), exist_ok=True)
         tmp = gallery_path + ".tmp"
         with open(tmp, "w", encoding="utf-8") as f:
