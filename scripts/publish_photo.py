@@ -65,6 +65,17 @@ def yaml_quote(value):
     return s.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
+def stock_lines(ind, entry):
+    """Optional stock count: `qty` (0 = sold out) and `plus` (30+ means at least 30)."""
+    qty = entry.get("qty")
+    if qty is None:
+        return ""
+    out = f"{ind}  qty: {int(qty)}\n"
+    if entry.get("plus"):
+        out += f"{ind}  plus: true\n"
+    return out
+
+
 def append_gallery_yaml(existing, entry):
     """Append one entry, leaving existing text (comments, entries) untouched."""
     lines = existing.split("\n")
@@ -77,6 +88,7 @@ def append_gallery_yaml(existing, entry):
         f"{ind}- file: {yaml_quote(entry['file'])}\n"
         f"{ind}  type: {yaml_quote(entry['type'])}\n"
         f"{ind}  caption: {yaml_quote(entry['caption'])}\n"
+        f"{stock_lines(ind, entry)}"
         f"{ind}  date: {entry['date']}\n"
         f"{ind}  published: {'true' if entry.get('published', True) else 'false'}\n"
     )
@@ -173,6 +185,10 @@ def publish(pid, incoming_dir="incoming", repo_root=".", today=None):
     if meta.get("id") not in (None, pid):
         raise PublishError("id in json does not match")
     caption = sanitise_caption(meta.get("caption", ""))
+    qty = meta.get("qty")
+    if isinstance(qty, bool) or not isinstance(qty, int) or not 0 <= qty <= 9999:
+        qty = None
+    plus = meta.get("plus") is True and qty is not None
 
     received = str(meta.get("received", ""))
     m = re.match(r"^(\d{4}-\d{2}-\d{2})", received)
@@ -194,7 +210,7 @@ def publish(pid, incoming_dir="incoming", repo_root=".", today=None):
     if not already_in_gallery(gallery_text, slug):
         new_text = append_gallery_yaml(
             gallery_text,
-            {"file": slug, "type": ptype, "caption": caption, "date": date, "published": True},
+            {"file": slug, "type": ptype, "caption": caption, "qty": qty, "plus": plus, "date": date, "published": True},
         )
         os.makedirs(os.path.dirname(gallery_path), exist_ok=True)
         tmp = gallery_path + ".tmp"

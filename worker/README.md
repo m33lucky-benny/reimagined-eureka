@@ -69,3 +69,17 @@ A sender with no `CLIENTS` entry is silently ignored.
 `~/rotate-zernio-webhook-secret.sh` on the owner's Mac mini changes it on the
 Worker, on Zernio and in the local `.env` together. A Worker secret takes
 several seconds to go live: a 401 immediately afterwards is normal.
+
+
+## Stock counts (added 2026-10-13)
+- A number at the END of a photo caption is the stock count: `red devils 4`, `red devils total 4`.
+  `30+`, `30++` and `30 plus` mean "at least 30" (`plus`). Prices (`$40`, `S$40`), `3pcs`, `x3` and
+  decimals are not counts. The caption saved for the site is the name without the number.
+- The count is saved in the incoming JSON (`qty`, `plus`), then in `_data/gallery.yml` by
+  `scripts/publish_photo.py`, and shown as a badge on the photo by `_includes/stock-badge.html`.
+- Plain text with no photo, `<type name> <number>` (for example `red devils 2`), changes the count on
+  the NEWEST photo of that type. The Worker sends `repository_dispatch` event `update-stock`
+  (`client_payload`: `type`, `qty`, `plus`); `.github/workflows/update-stock.yml` runs
+  `scripts/update_stock.py`. `0` shows "Sold out". If there is no photo of that type the workflow fails
+  (see the Actions tab); the Worker has already replied "will update".
+- Tests: `node --test worker/stock.test.mjs` (signed fake events, stubbed fetch).

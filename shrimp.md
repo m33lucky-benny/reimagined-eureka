@@ -47,6 +47,7 @@ schema_type: ImageGallery
       <div class="shrimp-gallery shrimp-gallery--latest">
         {% for entry in published_photos limit: 8 %}
           <figure class="shrimp-item" data-full-src="{{ '/assets/shrimps/' | append: entry.file | append: '.jpg' | relative_url }}">
+            {% include stock-badge.html entry=entry %}
             <img
               src="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-320.jpg' | relative_url }}"
               srcset="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-320.jpg' | relative_url }} 320w,
@@ -73,6 +74,7 @@ schema_type: ImageGallery
         <div class="shrimp-gallery">
           {% for entry in type_photos %}
           <figure class="shrimp-item" data-full-src="{{ '/assets/shrimps/' | append: entry.file | append: '.jpg' | relative_url }}">
+            {% include stock-badge.html entry=entry %}
             <img
               src="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-320.jpg' | relative_url }}"
               srcset="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-320.jpg' | relative_url }} 320w,

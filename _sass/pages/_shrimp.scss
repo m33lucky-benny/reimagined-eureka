@@ -144,6 +144,28 @@
         0 8px 24px rgba(0, 0, 0, 0.45);
     }
 
+    // Stock count over a corner of the photo
+    .stock-badge {
+      position: absolute;
+      top: 0.4rem;
+      left: 0.4rem;
+      z-index: 1;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: $secondary;
+      color: $dark-1;
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1.4;
+      pointer-events: none;
+
+      &--out {
+        background: rgba($dark-1, 0.85);
+        color: $color-text;
+        border: 1px solid $border;
+      }
+    }
+
     figcaption {
       margin-top: 0.5rem;
       font-size: 0.85rem;
