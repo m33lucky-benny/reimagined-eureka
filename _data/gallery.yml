@@ -32,3 +32,8 @@
   plus: true
   date: 2026-10-13
   published: true
+- file: "crs-20261013-132052-c0b289"
+  type: "crs"
+  caption: "CRS, 20"
+  date: 2026-10-13
+  published: true
