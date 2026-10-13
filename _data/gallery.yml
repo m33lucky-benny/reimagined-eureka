@@ -3,6 +3,7 @@
 - file: blue-king-kong-2026-10-11
   type: blue-king-kong
   caption: "Blue King Kong"
+  qty: 20
   date: 2026-10-11
   published: true
 - file: "red-devils-20261013-111821-98be5d"
@@ -35,6 +36,12 @@
 - file: "crs-20261013-132052-c0b289"
   type: "crs"
   caption: "CRS"
+  qty: 20
+  date: 2026-10-13
+  published: true
+- file: "blue-king-kong-20261013-133116-60b46c"
+  type: "blue-king-kong"
+  caption: "Blue King Kong"
   qty: 20
   date: 2026-10-13
   published: true
