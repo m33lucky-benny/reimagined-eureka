@@ -59,7 +59,7 @@ function setup() {
 }
 
 let n = 0;
-async function send(env, { text, photo = false }) {
+async function send(env, { text, photo = false, sentAt }) {
   n += 1;
   const body = JSON.stringify({
     event: "message.received",
@@ -70,6 +70,7 @@ async function send(env, { text, photo = false }) {
       direction: "incoming",
       text,
       conversationId: "conv1",
+      sentAt,
       accountId: "acct1",
       sender: { phoneNumber: PHONE },
       attachments: photo ? [{ type: "image", mimeType: "image/jpeg", url: "/api/v1/whatsapp/media/abc" }] : [],
@@ -175,4 +176,31 @@ test("bad signature is rejected", async () => {
     { waitUntil() {} },
   );
   assert.equal(res.status, 401);
+});
+
+test("a comma, colon or dash between the name and the number still works", async () => {
+  for (const text of ["CRS, 20", "CRS: 20", "CRS - 20", "CRS,20"]) {
+    const { env, calls } = setup();
+    env.CLIENTS._m.set(PHONE, JSON.stringify({ repo: "o/r", branch: "incoming", types: [...TYPES, { slug: "crs", name: "CRS" }] }));
+    await send(env, { text, photo: true });
+    const json = JSON.parse(Buffer.from(calls.puts.find((p) => p.url.endsWith(".json")).body.content, "base64").toString());
+    assert.equal(json.qty, 20, text);
+    assert.equal(json.caption, "CRS", text);
+    assert.equal(json.type, "crs", text);
+  }
+  const { env, calls } = setup();
+  await send(env, { text: "Red devils 1,5", photo: true });
+  const json = JSON.parse(Buffer.from(calls.puts.find((p) => p.url.endsWith(".json")).body.content, "base64").toString());
+  assert.equal(json.qty, null);
+});
+
+test("a late 'no' that was sent BEFORE the photo is ignored", async () => {
+  const { env, calls } = setup();
+  await send(env, { text: "Red devils 4", photo: true, sentAt: "2026-10-13T11:52:08.000Z" });
+  const before = calls.replies.length;
+  await send(env, { text: "no", sentAt: "2026-10-13T11:51:32.000Z" });
+  assert.equal(calls.replies.length, before, "stale reply must be silent");
+  assert.ok(await env.PENDING.get("pending:" + PHONE), "photo still waiting");
+  await send(env, { text: "yes", sentAt: "2026-10-13T11:52:35.000Z" });
+  assert.equal(calls.dispatches.at(-1).event_type, "publish-photo");
 });

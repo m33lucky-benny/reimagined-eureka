@@ -81,11 +81,12 @@ __name(matchType, "matchType");
 // Prices ($40, S$40), "3pcs", "x3" and decimals are not counts.
 function parseStock(caption) {
   const text = typeof caption === "string" ? caption.trim() : "";
-  const m = text.match(/^(.*?)(?:^|\s+)(?:total\s+)?(\d{1,4})\s*(\+{1,2}|plus)?\s*$/i);
+  // The name and the number may be split by spaces, a comma, a colon or a dash: "CRS, 20", "CRS: 20".
+  const m = text.match(/^(.*?)(?:^|[\s,:;\-\u2013\u2014]+)(?:total\s+)?(\d{1,4})\s*(\+{1,2}|plus)?\s*$/i);
   if (!m) return { name: text, qty: null, plus: false };
   const before = m[1];
-  if (/[$\d.,]$/.test(before)) return { name: text, qty: null, plus: false };
-  return { name: before.trim(), qty: Number(m[2]), plus: Boolean(m[3]) };
+  if (/[$\d]$/.test(before)) return { name: text, qty: null, plus: false };
+  return { name: before.replace(/[\s,:;\-\u2013\u2014]+$/, "").trim(), qty: Number(m[2]), plus: Boolean(m[3]) };
 }
 __name(parseStock, "parseStock");
 function stockText(qty, plus) {
@@ -442,6 +443,7 @@ async function handlePhoto(m, client, env, deps, zernio, gh, say) {
     senderMasked: maskPhone(m.phone),
     received: deps.now().toISOString(),
     messageId: m.messageId.slice(0, 120),
+    sentAt: typeof m.sentAt === "string" ? m.sentAt : "",
     conversationId: m.conversationId,
     accountId: m.accountId,
     photoSha: null,
@@ -508,6 +510,11 @@ async function handleText(m, client, env, deps, gh, say) {
   // This number also serves the Synthwork leads assistant. Plain text with no photo
   // waiting is not for this bot, so it stays silent and leaves the chat alone.
   if (!pending) return;
+  if (reply.kind !== "other" && pending.sentAt && m.sentAt) {
+    const photoAt = Date.parse(pending.sentAt);
+    const replyAt = Date.parse(m.sentAt);
+    if (!Number.isNaN(photoAt) && !Number.isNaN(replyAt) && replyAt < photoAt) return;
+  }
   if (reply.kind === "other") {
     await say(HELP);
     return;
