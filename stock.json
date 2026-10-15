@@ -1,0 +1,18 @@
+---
+layout: null
+permalink: /stock.json
+sitemap: false
+---
+{%- comment -%} Public stock list for the WhatsApp bot: one entry per type, count = the latest counted photo of that type. {%- endcomment -%}
+{"updated": {{ site.time | date_to_xmlschema | jsonify }},
+ "types": [
+{%- for type in site.data.gallery_types -%}
+  {%- assign photos = site.data.gallery | where: "type", type.slug | where: "published", true -%}
+  {%- assign qty = nil -%}
+  {%- assign plus = false -%}
+  {%- for p in photos -%}
+    {%- if p.qty != nil -%}{%- assign qty = p.qty -%}{%- assign plus = p.plus | default: false -%}{%- endif -%}
+  {%- endfor -%}
+  {"slug": {{ type.slug | jsonify }}, "name": {{ type.name | jsonify }}, "note": {{ type.note | default: "" | jsonify }}, "photos": {{ photos.size }}, "qty": {% if qty == nil %}null{% else %}{{ qty }}{% endif %}, "plus": {{ plus }}}{% unless forloop.last %},{% endunless %}
+{%- endfor -%}
+ ]}

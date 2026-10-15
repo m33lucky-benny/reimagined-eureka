@@ -591,6 +591,49 @@ var OPTIN_WINDOW_MS = 24 * 60 * 60 * 1e3;
 var LEAD_REF = /\bref\s+[a-z0-9]{4,10}\b/i;
 var YES_RE = /^\s*(yes|y)\s*[.!]*\s*$/i;
 var STOP_RE = /^\s*(stop|unsubscribe)\s*[.!]*\s*$/i;
+var STOCK_URL_DEFAULT = "https://ebiya.sg/stock.json";
+var MAX_ANSWERS_PER_DAY = 10;
+async function loadStock(env, deps) {
+  try {
+    const r = await deps.fetch(env.STOCK_URL || STOCK_URL_DEFAULT, { headers: { accept: "application/json" } });
+    if (!r.ok) return null;
+    const j = await r.json();
+    if (!j || !Array.isArray(j.types)) return null;
+    return j.types.filter((t) => t && typeof t.slug === "string" && typeof t.name === "string");
+  } catch {
+    return null;
+  }
+}
+__name(loadStock, "loadStock");
+// A direct stock question ("do you have red devils?") is answered from the website's numbers.
+// Only when the message clearly names ONE type; otherwise stay silent and the owner answers.
+function stockAnswer(text, types) {
+  if (!types || types.length === 0) return null;
+  const t = matchType(text, types);
+  if (!t) return null;
+  const note = typeof t.note === "string" ? t.note.trim() : "";
+  const qty = Number.isInteger(t.qty) ? t.qty : null;
+  if (/not for sale/i.test(note)) return `${t.name}: not for sale yet.`;
+  if (qty === 0) return `${t.name}: sold out right now.`;
+  if (qty !== null) return `${t.name}: ${stockText(qty, t.plus === true)}, as on our site. Collection is by appointment: tell us when you would like to come.`;
+  if (note) return `${t.name}: ${note.replace(/[.!\s]+$/, "")}.`;
+  if (t.photos > 0) return `We have ${t.name} on our site, but I do not have a count. We will reply to confirm.`;
+  return null;
+}
+__name(stockAnswer, "stockAnswer");
+async function answerStock(m, env, deps, text) {
+  if (!text || text.length > 200) return null;
+  const types = await loadStock(env, deps);
+  const ans = stockAnswer(text, types);
+  if (!ans) return null;
+  const day = deps.now().toISOString().slice(0, 10);
+  const key = `ans:${m.phone}:${day}`;
+  const n = Number(await env.PENDING.get(key) || 0);
+  if (n >= MAX_ANSWERS_PER_DAY) return null;
+  await env.PENDING.put(key, String(n + 1), { expirationTtl: 2 * DAY });
+  return ans;
+}
+__name(answerStock, "answerStock");
 async function handleContact(m, env, deps) {
   const text = (m.text || "").trim();
   if (!text && m.attachments.length === 0) return;
@@ -610,7 +653,8 @@ async function handleContact(m, env, deps) {
     }
     await env.DB.prepare("INSERT OR IGNORE INTO contacts (phone, status, first_seen_at, prompted_at, prompt_text, last_inbound_at) VALUES (?, 'pending', ?, ?, ?, ?)").bind(m.phone, now, now, prompt, now).run();
     await log("prompted", prompt);
-    await say(prompt);
+    const first = await answerStock(m, env, deps, text);
+    await say(first ? `${first}\n\n${prompt}` : prompt);
     return;
   }
   await env.DB.prepare("UPDATE contacts SET last_inbound_at = ? WHERE phone = ?").bind(now, m.phone).run();
@@ -626,6 +670,11 @@ async function handleContact(m, env, deps) {
     await env.DB.prepare("UPDATE contacts SET status = 'subscribed', consent_at = ?, consent_message_id = ?, consent_source = 'whatsapp-reply' WHERE phone = ?").bind(now, m.messageId.slice(0, 120), m.phone).run();
     await log("subscribed", text);
     await say(OPTIN_THANKS);
+    return;
+  }
+  if (row.status !== "ignored" && !STOP_RE.test(text) && !YES_RE.test(text)) {
+    const ans = await answerStock(m, env, deps, text);
+    if (ans) await say(ans);
   }
 }
 __name(handleContact, "handleContact");

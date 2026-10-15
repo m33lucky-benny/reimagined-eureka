@@ -114,3 +114,16 @@ Mark a number as not a shrimp customer (the bot never asks it):
 npx wrangler d1 execute ebiya-contacts --remote --command "UPDATE contacts SET status='ignored' WHERE phone='+65...'"
 ```
 Tests: `node --test worker/crm.test.mjs` (uses node:sqlite as a stand-in for D1).
+
+## Answering stock questions (added 2026-10-15)
+A message from a non-staff number that clearly names ONE type ("do you have red devils?", "CRS ada?") is answered from
+the site's public `https://ebiya.sg/stock.json` (type, count, plus, note, photos; built from `_data/gallery.yml` and
+`_data/gallery_types.yml`, refreshed on every site build; override the URL with the `STOCK_URL` variable).
+- New person: the answer and the opt-in question go in ONE message. Pending, subscribed and unsubscribed numbers get the
+  answer only (STOP means no updates, not "do not answer me"). Numbers marked `ignored` (leads) get nothing.
+- Wording: `<Type>: <n>[+] available, as on our site. Collection is by appointment: tell us when you would like to come.`;
+  `sold out right now`; a "Not for sale" note wins over a count; no count but photos -> "I do not have a count. We will
+  reply to confirm"; no photos and no note -> silent.
+- Silent when no single type is named, when the message is longer than 200 characters, when stock.json cannot be read,
+  or after 10 answers to the same number in a day.
+- Tests: `node --test worker/answer.test.mjs`.
