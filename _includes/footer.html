@@ -38,6 +38,11 @@
       {% endif %}
     {% endfor %}
 
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      <a href="{{ '/terms/' | relative_url }}">Terms</a>
+    </nav>
+
     <p class="footer-copy">
       © {{ site.time | date: "%Y" }} {{ site.title }}
     </p>

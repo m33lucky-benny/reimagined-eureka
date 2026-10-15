@@ -38,3 +38,20 @@
     border-top: 1px solid var(--color-border);
   }
   
+
+  .footer-legal {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+
+    a {
+      color: var(--color-muted);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+
+      &:hover,
+      &:focus-visible {
+        color: var(--color-text);
+      }
+    }
+  }
