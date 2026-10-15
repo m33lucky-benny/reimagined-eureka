@@ -108,7 +108,7 @@ test("a type with no photos yet, a note, and a type with no count", async () => 
   const { env, replies } = setup();
   setStatus(env, P, "subscribed");
   await send(env, P, "orange boa?");
-  assert.match(replies.at(-1), /Orange boa: Not for sale yet\./);
+  assert.match(replies.at(-1), /Orange boa: not for sale yet\./);
   await send(env, P, "white spectra?");
   assert.equal(replies.length, 1, "no photos and no note: silent");
   await send(env, P, "blue king kong?");
