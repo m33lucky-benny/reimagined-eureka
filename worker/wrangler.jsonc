@@ -18,6 +18,13 @@
    "id": "cc54e054595048e2b24b867fb1e3d426"
   }
  ],
+ "d1_databases": [
+  {
+   "binding": "DB",
+   "database_name": "ebiya-contacts",
+   "database_id": "726df8a0-14d6-47b1-9c8f-d073c2e557b3"
+  }
+ ],
  "vars": {
   "ZERNIO_ACCOUNT_ID": "6ac9baf39e1b165267e87c56"
  }
