@@ -329,7 +329,23 @@ async function receive(request, env, deps) {
   if (!env.ZERNIO_ACCOUNT_ID || m.accountId !== env.ZERNIO_ACCOUNT_ID) return ok;
   if (!m.phone) return ok;
   const raw_client = await env.CLIENTS.get(m.phone);
-  if (!raw_client) return ok;
+  if (!raw_client) {
+    // Not staff: a customer messaging the shop. Opt-in list, only when a D1 database is bound.
+    if (!env.DB) return ok;
+    const ckey = "evt:" + String(ev.eventId).slice(0, 100);
+    if (await env.EVENTS.get(ckey)) return ok;
+    await env.EVENTS.put(ckey, "1", { expirationTtl: DAY });
+    const cwork = /* @__PURE__ */ __name(async () => {
+      try {
+        await handleContact(m, env, deps);
+      } catch (e) {
+        await env.EVENTS.delete(ckey).catch(() => {
+        });
+        console.log("contact processing failed", e && e.message);
+      }
+    }, "cwork");
+    return { response: ok.response, work: cwork };
+  }
   let client;
   try {
     client = JSON.parse(raw_client);
@@ -567,6 +583,52 @@ ${typeList(client.types)}`);
   await say("Published, it will show in a few minutes.");
 }
 __name(handleText, "handleText");
+// ---- Opt-in list (the "CRM"): people who message the shop first -------------------------
+var OPTIN_PROMPT = "Want updates when new shrimp are available from ebiya.sg? Reply YES. Reply STOP any time.";
+var OPTIN_THANKS = "Thanks, you're on the list for ebiya.sg updates. Reply STOP any time.";
+var OPTOUT_DONE = "You're unsubscribed. We won't send you updates.";
+var OPTIN_WINDOW_MS = 24 * 60 * 60 * 1e3;
+var LEAD_REF = /\bref\s+[a-z0-9]{4,10}\b/i;
+var YES_RE = /^\s*(yes|y)\s*[.!]*\s*$/i;
+var STOP_RE = /^\s*(stop|unsubscribe)\s*[.!]*\s*$/i;
+async function handleContact(m, env, deps) {
+  const text = (m.text || "").trim();
+  if (!text && m.attachments.length === 0) return;
+  const now = deps.now().toISOString();
+  const zernio = new Zernio(env, deps.fetch);
+  const say = /* @__PURE__ */ __name((t) => zernio.reply(m.conversationId, m.accountId, t), "say");
+  const prompt = env.OPTIN_PROMPT || OPTIN_PROMPT;
+  const log = /* @__PURE__ */ __name((event, t) => env.DB.prepare("INSERT INTO consent_log (phone, event, text, message_id, at) VALUES (?, ?, ?, ?, ?)").bind(m.phone, event, t.slice(0, 500), m.messageId.slice(0, 120), now).run(), "log");
+  const row = await env.DB.prepare("SELECT phone, status, prompted_at FROM contacts WHERE phone = ?").bind(m.phone).first();
+  if (!row) {
+    // STOP or YES from someone we never asked is not for this bot (the number is shared): stay silent.
+    if (STOP_RE.test(text) || YES_RE.test(text)) return;
+    // A lead answering the Synthwork outreach email carries "Ref XXXXXX": not a shrimp customer.
+    if (LEAD_REF.test(text)) {
+      await env.DB.prepare("INSERT OR IGNORE INTO contacts (phone, status, first_seen_at, last_inbound_at) VALUES (?, 'ignored', ?, ?)").bind(m.phone, now, now).run();
+      return;
+    }
+    await env.DB.prepare("INSERT OR IGNORE INTO contacts (phone, status, first_seen_at, prompted_at, prompt_text, last_inbound_at) VALUES (?, 'pending', ?, ?, ?, ?)").bind(m.phone, now, now, prompt, now).run();
+    await log("prompted", prompt);
+    await say(prompt);
+    return;
+  }
+  await env.DB.prepare("UPDATE contacts SET last_inbound_at = ? WHERE phone = ?").bind(now, m.phone).run();
+  if (STOP_RE.test(text) && (row.status === "pending" || row.status === "subscribed")) {
+    await env.DB.prepare("UPDATE contacts SET status = 'unsubscribed', unsubscribed_at = ? WHERE phone = ?").bind(now, m.phone).run();
+    await log("unsubscribed", text);
+    await say(OPTOUT_DONE);
+    return;
+  }
+  if (YES_RE.test(text) && row.status === "pending") {
+    const promptedAt = Date.parse(row.prompted_at || "");
+    if (Number.isNaN(promptedAt) || deps.now().getTime() - promptedAt > OPTIN_WINDOW_MS) return;
+    await env.DB.prepare("UPDATE contacts SET status = 'subscribed', consent_at = ?, consent_message_id = ?, consent_source = 'whatsapp-reply' WHERE phone = ?").bind(now, m.messageId.slice(0, 120), m.phone).run();
+    await log("subscribed", text);
+    await say(OPTIN_THANKS);
+  }
+}
+__name(handleContact, "handleContact");
 function defaultDeps() {
   return { fetch: /* @__PURE__ */ __name((...a) => fetch(...a), "fetch"), now: /* @__PURE__ */ __name(() => /* @__PURE__ */ new Date(), "now"), randomHex: /* @__PURE__ */ __name(() => randomHex(3), "randomHex") };
 }

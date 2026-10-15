@@ -84,3 +84,33 @@ several seconds to go live: a 401 immediately afterwards is normal.
   `scripts/update_stock.py`. `0` shows "Sold out". If there is no photo of that type the workflow fails
   (see the Actions tab); the Worker has already replied "will update".
 - Tests: `node --test worker/stock.test.mjs` (signed fake events, stubbed fetch).
+
+## Opt-in list (added 2026-10-15; broadcasts are NOT built)
+Who gets asked: anyone who messages the shop number and is not on the `CLIENTS` staff list, once, on their first message.
+- First message -> the bot asks: "Want updates when new shrimp are available from ebiya.sg? Reply YES. Reply STOP any time."
+  (override with the `OPTIN_PROMPT` variable). Stored as `pending` with the exact wording shown.
+- Exact `YES` (or `Y`) within 24 hours of the question -> `subscribed`, with the time and the message id kept as evidence.
+- `STOP` / `UNSUBSCRIBE` from a pending or subscribed contact -> `unsubscribed`, confirmed. They are not asked again.
+- Left alone (status `ignored`, no reply): a first message containing a lead reference such as `Ref J6DJU8`
+  (the Synthwork leads assistant shares this number). `YES`/`STOP` from someone never asked is ignored.
+- Nothing is sent to the list. Sending broadcasts is on hold (owner, 2026-10-15).
+- Needs a D1 database bound as `DB`. Without it the Worker behaves exactly as before.
+
+Set up (once, with the owner's word, live changes):
+```bash
+cd worker
+npx wrangler d1 create ebiya-contacts                       # note the database_id it prints
+npx wrangler d1 execute ebiya-contacts --remote --file schema.sql
+# add to wrangler.jsonc:  "d1_databases": [{ "binding": "DB", "database_name": "ebiya-contacts", "database_id": "<id>" }]
+npx wrangler versions upload && npx wrangler versions deploy <version-id>@100% -y
+```
+See the list:
+```bash
+npx wrangler d1 execute ebiya-contacts --remote --command "SELECT phone, status, consent_at, first_seen_at FROM contacts ORDER BY first_seen_at DESC"
+npx wrangler d1 execute ebiya-contacts --remote --command "SELECT status, COUNT(*) FROM contacts GROUP BY status"
+```
+Mark a number as not a shrimp customer (the bot never asks it):
+```bash
+npx wrangler d1 execute ebiya-contacts --remote --command "UPDATE contacts SET status='ignored' WHERE phone='+65...'"
+```
+Tests: `node --test worker/crm.test.mjs` (uses node:sqlite as a stand-in for D1).
