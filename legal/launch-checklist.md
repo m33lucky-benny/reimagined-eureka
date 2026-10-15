@@ -16,7 +16,8 @@ General information, not legal advice. A Singapore lawyer should review the draf
 | Client work | no | |
 
 ## 1. Business structure
-- TODO (owner decision): the business is a **sole proprietorship**, not a Pte Ltd (ACRA profile, registered 18-12-2025). The SOP assumes a company; with a sole proprietorship the owner is personally liable. Read the terms' liability cap with that in mind.
+- TODO (owner decision): the business is a **sole proprietorship**, not a Pte Ltd (official ACRA business profile dated 11 Oct 2026, registered 18 Dec 2025). The SOP assumes a company; with a sole proprietorship the owner is personally liable. Read the terms' liability cap with that in mind.
+- DONE: principal place of business changed on 11 Oct 2026 to the shop address (55 Changi Road, #B1-01, Millage, Singapore 419709), which now matches the website and is published in the footer, privacy and terms.
 - Needs human check: 2FA on Zernio and the Meta business account (2FA on Cloudflare, GitHub and Google was confirmed on 2026-10-04 per the notes).
 
 ## 2. Terms of Use
@@ -54,7 +55,7 @@ General information, not legal advice. A Singapore lawyer should review the draf
 Everything else on this checklist is DONE or a human check.
 
 ## Human actions
-1. Decide whether to publish the registered address (it may be a home address). Meta business verification may want it on the site.
+1. (Resolved 2026-10-15) The registered business address is now the shop address and is published. The owner's personal address in the ACRA profile is not.
 2. Have a Singapore lawyer review privacy.md and terms.md.
 3. Decide on insurance and the sole-proprietorship risk.
 4. Confirm the DPO details and the email to publish.

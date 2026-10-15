@@ -66,5 +66,6 @@ These terms are governed by Singapore law. The Singapore courts have exclusive j
 ## 13. Contact
 
 Ebiya.SG, UEN 53515433W
+55 Changi Road, #B1-01, Millage, Singapore 419709
 Email: [bennyyuen@consultant.com](mailto:bennyyuen@consultant.com)
 WhatsApp: [+65 8900 2228](https://wa.me/6589002228)
