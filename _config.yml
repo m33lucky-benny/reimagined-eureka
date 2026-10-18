@@ -24,7 +24,7 @@ business:
   name: "Ebiya.SG"
   url: "https://ebiya.sg"
   image: "/assets/images/ebiya-logo.webp"
-  telephone: "+65 8900 2228"
+  telephone: "+65 6042 5590"
   email: "bennyyuen@consultant.com"
   priceRange: "$$$"
 
@@ -57,7 +57,7 @@ plugins:
 # =========================
 whatsapp:
   enabled: true
-  phone: "6589002228"
+  phone: "6560425590"
 
 # =========================
 # 🚫 EXCLUDES

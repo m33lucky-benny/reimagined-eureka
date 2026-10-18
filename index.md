@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Caridina and Neocaridina Shrimp in Singapore
-description: Caridina and Neocaridina shrimp bred in Singapore. Collect at 55 Changi Road by appointment. Message us on WhatsApp at +65 8900 2228.
+description: Caridina and Neocaridina shrimp bred in Singapore. Collect at 55 Changi Road by appointment. Message us on WhatsApp at +65 6042 5590.
 keywords: caridina shrimp Singapore, neocaridina shrimp Singapore, blue king kong shrimp, fancy red tiger shrimp, white spectra shrimp, buy shrimp Singapore
 permalink: /
 ---
@@ -20,7 +20,7 @@ permalink: /
 
   <!-- Call-to-Action Buttons -->
   <div class="hero-cta-row">
-    <a class="btn btn-primary" href="https://wa.me/6589002228" target="_blank" rel="noopener" aria-label="Message ebiya.sg on WhatsApp">
+    <a class="btn btn-primary" href="https://wa.me/6560425590" target="_blank" rel="noopener" aria-label="Message ebiya.sg on WhatsApp">
       Message us on WhatsApp
     </a>
     <a class="btn btn-ghost" href="/shrimp/" aria-label="See our shrimp">
@@ -35,7 +35,7 @@ permalink: /
     </p>
     <p>
       <strong>Collection:</strong> 55 Changi Road, #B1-01, Singapore, on Tuesday and Thursday,
-      1pm to 6pm, by appointment. Message us on WhatsApp at +65 8900 2228 to arrange a time.
+      1pm to 6pm, by appointment. Message us on WhatsApp at +65 6042 5590 to arrange a time.
       Payment is on collection, by PayNow or cash. Delivery is for members.
     </p>
   </div>

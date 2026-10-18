@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact Ebiya.sg
-description: Contact Ebiya.sg, a Singapore breeder of Caridina and Neocaridina shrimp. Collection at 55 Changi Road by appointment. Message us on WhatsApp +65 8900 2228 to book.
+description: Contact Ebiya.sg, a Singapore breeder of Caridina and Neocaridina shrimp. Collection at 55 Changi Road by appointment. Message us on WhatsApp +65 6042 5590 to book.
 keywords: caridina shrimp Singapore, neocaridina shrimp Singapore, shrimp breeder Singapore, Ebiya.sg, shrimp collection Changi Road
 permalink: /contact/
 ---
@@ -15,7 +15,7 @@ permalink: /contact/
     </p>
 
     <p class="contact-description">
-      <strong>WhatsApp:</strong> <a href="https://wa.me/6589002228">+65 8900 2228</a><br>
+      <strong>WhatsApp:</strong> <a href="https://wa.me/6560425590">+65 6042 5590</a><br>
       <strong>Instagram:</strong> <a href="https://instagram.com/ebiyasg">@ebiyasg</a><br>
       <strong>TikTok:</strong> <a href="https://tiktok.com/@ebiya.sg">@ebiya.sg</a>
     </p>

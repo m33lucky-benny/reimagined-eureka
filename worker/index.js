@@ -591,6 +591,8 @@ var OPTIN_WINDOW_MS = 24 * 60 * 60 * 1e3;
 var LEAD_REF = /\bref\s+[a-z0-9]{4,10}\b/i;
 var YES_RE = /^\s*(yes|y)\s*[.!]*\s*$/i;
 var STOP_RE = /^\s*(stop|unsubscribe)\s*[.!]*\s*$/i;
+var HUMAN_RE = /^\s*(human|a human|person|a person|agent|staff|talk to (a )?(human|person|someone)|speak to (a )?(human|person|someone))\s*[.!?]*\s*$/i;
+var HANDOFF = "Thanks. A person will reply here when they can. For something urgent, message us on WhatsApp at +65 8900 2228: https://wa.me/6589002228";
 var STOCK_URL_DEFAULT = "https://ebiya.sg/stock.json";
 var MAX_ANSWERS_PER_DAY = 10;
 async function loadStock(env, deps) {
@@ -643,6 +645,12 @@ async function handleContact(m, env, deps) {
   const prompt = env.OPTIN_PROMPT || OPTIN_PROMPT;
   const log = /* @__PURE__ */ __name((event, t) => env.DB.prepare("INSERT INTO consent_log (phone, event, text, message_id, at) VALUES (?, ?, ?, ?, ?)").bind(m.phone, event, t.slice(0, 500), m.messageId.slice(0, 120), now).run(), "log");
   const row = await env.DB.prepare("SELECT phone, status, prompted_at FROM contacts WHERE phone = ?").bind(m.phone).first();
+  if (HUMAN_RE.test(text) && !LEAD_REF.test(text) && (!row || row.status !== "ignored")) {
+    // Asking for a person: no opt-in prompt, no stock answer. The owner answers in the Zernio inbox.
+    await log("asked_human", text);
+    await say(env.HANDOFF_REPLY || HANDOFF);
+    return;
+  }
   if (!row) {
     // STOP or YES from someone we never asked is not for this bot (the number is shared): stay silent.
     if (STOP_RE.test(text) || YES_RE.test(text)) return;

@@ -144,3 +144,24 @@ test("YES and STOP are still handled as before", async () => {
   await send(env, P, "stop");
   assert.match(replies.at(-1), /unsubscribed/);
 });
+
+test("HUMAN gets the handoff reply, no opt-in question, nothing stored as a contact", async () => {
+  const { env, replies } = setup();
+  await send(env, P, "Human");
+  assert.equal(replies.length, 1);
+  assert.match(replies[0], /A person will reply here/);
+  assert.match(replies[0], /wa\.me\/6589002228/);
+  assert.equal(env.DB._db.prepare("SELECT COUNT(*) AS c FROM contacts WHERE phone = ?").get(P).c, 0);
+  assert.equal(env.DB._db.prepare("SELECT event FROM consent_log WHERE phone = ?").get(P).event, "asked_human");
+  await send(env, P, "talk to a person");
+  assert.equal(replies.length, 2);
+});
+
+test("HUMAN from an ignored lead number stays silent; a sentence containing 'human' is not a handoff", async () => {
+  const { env, replies } = setup();
+  setStatus(env, P, "ignored");
+  await send(env, P, "human");
+  assert.equal(replies.length, 0);
+  await send(env, "+6597654321", "are these human grade? red devils?");
+  assert.ok(!replies.some((r) => /A person will reply/.test(r)));
+});
