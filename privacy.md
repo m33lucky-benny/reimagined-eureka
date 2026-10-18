@@ -84,4 +84,4 @@ We may update this policy. The version and date at the top show which one is cur
 Yuen Yew Meng, Ebiya.SG (UEN 53515433W)
 55 Changi Road, #B1-01, Millage, Singapore 419709
 Email: [bennyyuen@consultant.com](mailto:bennyyuen@consultant.com)
-WhatsApp: [+65 8900 2228](https://wa.me/6589002228)
+WhatsApp: [+65 6042 5590](https://wa.me/6560425590)

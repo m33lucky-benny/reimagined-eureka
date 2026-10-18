@@ -19,12 +19,12 @@ export const siteConfig = {
   description: 'Singapore\'s premier Caridina shrimp specialist — custom tank systems, premium shrimp, and expert guidance.',
   whatsapp: {
     enabled: true,
-    phone: '6589002228',
+    phone: '6560425590',
     message: 'Hi, I\'m interested in Caridina shrimp / tank setup.',
   },
   business: {
     address: '55 Changi Road #B1-01, Singapore 419709',
-    telephone: '+65 8900 2228',
+    telephone: '+65 6042 5590',
     email: 'bennyyuen@consultant.com',
     openingHours: 'Mon-Fri 9am-6pm',
   },

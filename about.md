@@ -122,7 +122,7 @@ canonical_url: https://ebiya.sg/about/
   <div class="offering-block">
     <h3>🔧 Tanks</h3>
     <p class="offering-intro">
-      Tanks come in two sizes: 60 x 30 cm (recommended for beginners due to higher water stability) and 45 x 30 cm (compact option for experienced keepers). Message us on WhatsApp at +65 8900 2228 for details.
+      Tanks come in two sizes: 60 x 30 cm (recommended for beginners due to higher water stability) and 45 x 30 cm (compact option for experienced keepers). Message us on WhatsApp at +65 6042 5590 for details.
     </p>
   </div>
 </section>
@@ -138,7 +138,7 @@ canonical_url: https://ebiya.sg/about/
       <p class="service-badge">By Appointment</p>
       <p>
         Collect at the shop at 55 Changi Road, #B1-01, Singapore, by appointment. 
-        Message us on WhatsApp at +65 8900 2228 to arrange a time.
+        Message us on WhatsApp at +65 6042 5590 to arrange a time.
       </p>
     </div>
     
@@ -223,7 +223,7 @@ canonical_url: https://ebiya.sg/about/
         Located at <strong>55 Changi Road, #B1-01, Singapore</strong>.
       </p>
       <p class="location-note">
-        Collection is by appointment, Tuesday and Thursday, 1pm to 6pm. Message us on WhatsApp at +65 8900 2228 first.
+        Collection is by appointment, Tuesday and Thursday, 1pm to 6pm. Message us on WhatsApp at +65 6042 5590 first.
       </p>
     </div>
     
@@ -236,7 +236,7 @@ canonical_url: https://ebiya.sg/about/
         </li>
         <li>
           <strong>WhatsApp:</strong> 
-          <a href="https://wa.me/6589002228" target="_blank" rel="noopener">+65 8900 2228</a>
+          <a href="https://wa.me/6560425590" target="_blank" rel="noopener">+65 6042 5590</a>
         </li>
         <li>
           <strong>TikTok:</strong> 
@@ -389,7 +389,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "Do you offer delivery for shrimp and tanks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Collection is at the shop at 55 Changi Road, #B1-01, by appointment: message us on WhatsApp at +65 8900 2228. Delivery is for members. We do not ship."
+        "text": "Collection is at the shop at 55 Changi Road, #B1-01, by appointment: message us on WhatsApp at +65 6042 5590. Delivery is for members. We do not ship."
       }
     },
     {
@@ -397,7 +397,7 @@ canonical_url: https://ebiya.sg/about/
       "name": "What tank sizes do you recommend for Caridina breeding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tanks come in two sizes: 60 x 30 cm (recommended for beginners due to higher water stability) and 45 x 30 cm (compact option for experienced keepers). Message us on WhatsApp at +65 8900 2228 for details."
+        "text": "Tanks come in two sizes: 60 x 30 cm (recommended for beginners due to higher water stability) and 45 x 30 cm (compact option for experienced keepers). Message us on WhatsApp at +65 6042 5590 for details."
       }
     }
   ]

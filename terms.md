@@ -23,7 +23,7 @@ This site shows the shrimp we breed and sell, how to collect them and how to con
 
 ## 3. Ordering and collection
 
-- Message us on WhatsApp at +65 8900 2228 to ask about stock and arrange a time.
+- Message us on WhatsApp at +65 6042 5590 to ask about stock and arrange a time.
 - Collection is by appointment at the address, on the days and during the hours shown on the [Contact page]({{ '/contact/' | relative_url }}). These can change.
 - Payment is on collection, by PayNow or cash.
 
@@ -68,4 +68,4 @@ These terms are governed by Singapore law. The Singapore courts have exclusive j
 Ebiya.SG, UEN 53515433W
 55 Changi Road, #B1-01, Millage, Singapore 419709
 Email: [bennyyuen@consultant.com](mailto:bennyyuen@consultant.com)
-WhatsApp: [+65 8900 2228](https://wa.me/6589002228)
+WhatsApp: [+65 6042 5590](https://wa.me/6560425590)

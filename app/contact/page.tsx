@@ -96,7 +96,7 @@ export default function ContactPage() {
 
       <FadeIn delay={0.3} className="contact-details">
         <div className="contact-info">
-          <p><strong>Phone / WhatsApp:</strong> +65 8900 2228</p>
+          <p><strong>Phone / WhatsApp:</strong> +65 6042 5590</p>
           <p><strong>Email:</strong> <a href={`mailto:${siteConfig.business.email}`}>{siteConfig.business.email}</a></p>
           <p><strong>Address:</strong> {siteConfig.business.address}</p>
           <p><strong>Hours:</strong> {siteConfig.business.openingHours}</p>
