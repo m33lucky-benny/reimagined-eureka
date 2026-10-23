@@ -223,7 +223,7 @@ canonical_url: https://ebiya.sg/about/
         Located at <strong>55 Changi Road, #B1-01, Singapore</strong>.
       </p>
       <p class="location-note">
-        Collection is by appointment, Tuesday and Thursday, 1pm to 6pm. Message us on WhatsApp at +65 6042 5590 first.
+        Collection is by appointment, Tuesday, 1pm to 6pm. Message us on WhatsApp at +65 6042 5590 first.
       </p>
     </div>
     
@@ -310,7 +310,7 @@ canonical_url: https://ebiya.sg/about/
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Tuesday", "Thursday"],
+    "dayOfWeek": ["Tuesday"],
     "opens": "13:00",
     "closes": "18:00",
     "description": "By appointment only"
