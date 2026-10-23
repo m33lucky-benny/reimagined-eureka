@@ -1,0 +1,18 @@
+# Facts shown on each shrimp type page (/shrimp/<slug>/). Only text already published
+# on the site (shrimp.md "About Our Shrimp", the FAQ) goes here: add a line only when the
+# owner has stated it. Missing keys are simply left out of the page.
+fancy-red-tigers:
+  description: "Red and white banding with bold, irregular stripes across the body."
+  price_from: 60
+blue-king-kong:
+  description: "Black body with white bands that have a blue tint."
+  price_from: 40
+white-spectra:
+  description: "Pale, cream-white body."
+  price_from: 60
+orange-boa:
+  price_from: 60
+neocaridina:
+  description: "Neocaridina is a different group from Caridina and is not kept with it."
+crs:
+  description: "CRS stands for Crystal Red Shrimp, a Caridina variety."
