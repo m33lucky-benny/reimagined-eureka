@@ -34,7 +34,7 @@ permalink: /
       Red devils are not for sale yet.
     </p>
     <p>
-      <strong>Collection:</strong> 55 Changi Road, #B1-01, Singapore, on Tuesday and Thursday,
+      <strong>Collection:</strong> 55 Changi Road, #B1-01, Singapore, on Tuesday,
       1pm to 6pm, by appointment. Message us on WhatsApp at +65 6042 5590 to arrange a time.
       Payment is on collection, by PayNow or cash. Delivery is for members.
     </p>

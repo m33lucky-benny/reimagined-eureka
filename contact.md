@@ -21,7 +21,7 @@ permalink: /contact/
     </p>
 
     <p class="contact-description">
-      <strong>Collection:</strong> 55 Changi Road, #B1-01, Singapore. Tuesday and Thursday, 1pm to 6pm, by appointment. Please message us on WhatsApp first to book a time.<br>
+      <strong>Collection:</strong> 55 Changi Road, #B1-01, Singapore. Tuesday, 1pm to 6pm, by appointment. Please message us on WhatsApp first to book a time.<br>
       <strong>Payment:</strong> on collection, by PayNow or cash.<br>
       <strong>Delivery:</strong> for members.
     </p>
