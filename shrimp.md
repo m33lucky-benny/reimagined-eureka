@@ -107,6 +107,7 @@ schema_type: ImageGallery
   <div class="gallery-info">
     <h2>About Our Shrimp</h2>
     <p>ebiya.sg is a shrimp-breeding business in Singapore. We breed and sell Caridina shrimp, and we also sell Neocaridina.</p>
+    <p>Our Caridina shrimp are <em>Caridina cantonensis</em>.</p>
 
     <h3>What We Breed and Sell</h3>
     <ul>
