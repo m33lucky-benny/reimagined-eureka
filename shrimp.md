@@ -120,6 +120,7 @@ schema_type: ImageGallery
     </ul>
 
     <h3>Prices and Collection</h3>
+    <p>Sizes we sell: juveniles are less than 1 cm, and young adults are about 1 cm or more.</p>
     <p>Prices are per piece, and the price varies by individual shrimp. There is no minimum order. We are not GST-registered, so prices have no GST.</p>
     <p>Payment is on collection, by PayNow or cash. Collection is at 55 Changi Road, #B1-01, on Tuesday from 1pm to 6pm, by appointment. Message us on WhatsApp at <a href="https://wa.me/6560425590">+65 6042 5590</a> to book a time.</p>
 
