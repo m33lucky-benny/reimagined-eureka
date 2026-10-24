@@ -115,7 +115,7 @@ schema_type: ImageGallery
       <li><strong><a href="{{ '/shrimp/blue-king-kong/' | relative_url }}">Blue king kong</a>:</strong> Black body with white bands that have a blue tint. From S$40 each.</li>
       <li><strong>White spectra:</strong> Pale, cream-white body. From S$60 each.</li>
       <li><strong>Orange boa:</strong> From S$60 each.</li>
-      <li><strong><a href="{{ '/shrimp/neocaridina/' | relative_url }}">Neocaridina</a></strong></li>
+      <li><strong><a href="{{ '/shrimp/neocaridina/' | relative_url }}">Neocaridina</a>:</strong> Cherry and yellow top.</li>
       <li><strong><a href="{{ '/shrimp/crs/' | relative_url }}">CRS</a></strong> (Crystal Red Shrimp)</li>
       <li><strong>Red devils:</strong> Solid red body with large white eyes. Not for sale yet.</li>
     </ul>

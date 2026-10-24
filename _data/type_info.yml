@@ -18,6 +18,7 @@ orange-boa:
   price_from: 60
 neocaridina:
   description: "Neocaridina is a different group from Caridina and is not kept with it."
+  varieties: "Cherry and yellow top"
 crs:
   species: "Caridina cantonensis"
   description: "CRS stands for Crystal Red Shrimp, a Caridina variety."

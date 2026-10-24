@@ -18,6 +18,9 @@
     {%- if info.description %}
     <p class="gallery-description">{{ info.description }}</p>
     {%- endif %}
+    {%- if info.varieties %}
+    <p class="gallery-description">Varieties we sell: {{ info.varieties | downcase }}.</p>
+    {%- endif %}
     {%- if info.species %}
     <p class="gallery-description">Species: <em>{{ info.species }}</em>.</p>
     {%- endif %}
