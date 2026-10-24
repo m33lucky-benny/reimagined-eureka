@@ -21,6 +21,9 @@
     {%- if info.varieties %}
     <p class="gallery-description">Varieties we sell: {{ info.varieties | downcase }}.</p>
     {%- endif %}
+    {%- if info.origin %}
+    <p class="gallery-description">{{ info.origin }}</p>
+    {%- endif %}
     {%- if info.species %}
     <p class="gallery-description">Species: <em>{{ info.species }}</em>.</p>
     {%- endif %}
@@ -30,7 +33,7 @@
   <div class="shrimp-gallery">
     {%- for entry in photos %}
     <figure class="shrimp-item">
-      {% include stock-badge.html entry=entry %}
+      {%- unless info.not_for_sale %}{% include stock-badge.html entry=entry %}{% endunless %}
       <a href="{{ '/assets/shrimps/' | append: entry.file | append: '.jpg' | relative_url }}">
         <img
           src="{{ '/assets/shrimps-optimized/' | append: entry.file | append: '-640.jpg' | relative_url }}"
@@ -49,6 +52,7 @@
   <div class="gallery-info">
     <h2>Price and availability</h2>
     {%- if type.note != "" %}<p>{{ type.note }}.</p>{% endif %}
+    {%- unless info.not_for_sale %}
     {%- if info.price_from %}
     <p>From S${{ info.price_from }} each. Prices are per piece, and the price varies by individual shrimp. There is no minimum order. We are not GST-registered, so prices have no GST.</p>
     {%- else %}
@@ -61,9 +65,14 @@
 
     <h2>How to buy</h2>
     <p>Message us on WhatsApp at <a href="https://wa.me/6560425590">+65 6042 5590</a> to ask about {{ type.name }} and book a time. Collection is at 55 Changi Road, #B1-01, on Tuesday from 1pm to 6pm, by appointment. Payment is on collection, by PayNow or cash.</p>
+    {%- else %}
+    <p>You can message us on WhatsApp at <a href="https://wa.me/6560425590">+65 6042 5590</a> with questions.</p>
+    {%- endunless %}
 
+    {%- unless info.not_for_sale %}
     <h2>Looking after them</h2>
     <p>Read our <a href="{{ '/faq/' | relative_url }}">shrimp care FAQ</a> and the <a href="{{ '/blog/' | relative_url }}">care guides</a> before your shrimp come home.</p>
+    {%- endunless %}
 
     <h2>Other shrimp we breed</h2>
     <ul>

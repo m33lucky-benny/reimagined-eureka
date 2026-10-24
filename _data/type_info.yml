@@ -22,3 +22,8 @@ neocaridina:
 crs:
   species: "Caridina cantonensis"
   description: "CRS stands for Crystal Red Shrimp, a Caridina variety."
+red-devils:
+  species: "Caridina cantonensis"
+  description: "Solid red body with large white eyes."
+  origin: "Red devils are the offspring of our fancy red tiger tank."
+  not_for_sale: true

@@ -117,7 +117,7 @@ schema_type: ImageGallery
       <li><strong>Orange boa:</strong> From S$60 each.</li>
       <li><strong><a href="{{ '/shrimp/neocaridina/' | relative_url }}">Neocaridina</a>:</strong> Cherry and yellow top.</li>
       <li><strong><a href="{{ '/shrimp/crs/' | relative_url }}">CRS</a></strong> (Crystal Red Shrimp)</li>
-      <li><strong>Red devils:</strong> Solid red body with large white eyes. Not for sale yet.</li>
+      <li><strong><a href="{{ '/shrimp/red-devils/' | relative_url }}">Red devils</a>:</strong> Solid red body with large white eyes. Not for sale yet.</li>
     </ul>
 
     <h3>Prices and Collection</h3>
