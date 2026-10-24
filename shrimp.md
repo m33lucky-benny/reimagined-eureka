@@ -120,6 +120,13 @@ schema_type: ImageGallery
       <li><strong><a href="{{ '/shrimp/red-devils/' | relative_url }}">Red devils</a>:</strong> Solid red body with large white eyes. Not for sale yet.</li>
     </ul>
 
+    <h3>Guides</h3>
+    <ul>
+      <li><a href="{{ '/buy-shrimp-singapore-ebiya/' | relative_url }}">How to buy shrimp from ebiya.sg</a></li>
+      <li><a href="{{ '/shrimp-sizes-juvenile-young-adult/' | relative_url }}">What size are our shrimp?</a></li>
+      <li><a href="{{ '/one-tank-many-looks-caridina/' | relative_url }}">One tank, many looks</a></li>
+    </ul>
+
     <h3>Prices and Collection</h3>
     <p>Sizes we sell: juveniles are less than 1 cm, and young adults are about 1 cm or more.</p>
     <p>Prices are per piece, and the price varies by individual shrimp. There is no minimum order. We are not GST-registered, so prices have no GST.</p>
