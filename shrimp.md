@@ -122,9 +122,12 @@ schema_type: ImageGallery
 
     <h3>Guides</h3>
     <ul>
-      <li><a href="{{ '/buy-shrimp-singapore-ebiya/' | relative_url }}">How to buy shrimp from ebiya.sg</a></li>
-      <li><a href="{{ '/shrimp-sizes-juvenile-young-adult/' | relative_url }}">What size are our shrimp?</a></li>
+      <li><a href="{{ '/caridina-shrimp-care-guide/' | relative_url }}">Caridina shrimp care guide (all guides)</a></li>
+      <li><a href="{{ '/buy-shrimp-singapore-ebiya/' | relative_url }}">How to buy shrimp from ebiya.sg (prices, sizes, collection)</a></li>
       <li><a href="{{ '/one-tank-many-looks-caridina/' | relative_url }}">One tank, many looks</a></li>
+      <li><a href="{{ '/2025-05-21-best-caridina-shrimp-tank/' | relative_url }}">The best shrimp tank setup for Caridina</a></li>
+      <li><a href="{{ '/2025-12-20-shrimp-tank-water-parameters-for-singapore/' | relative_url }}">Water parameters for Caridina in Singapore</a></li>
+      <li><a href="{{ '/7-shrimp-tank-accessories-that-actually-matter/' | relative_url }}">7 shrimp tank accessories you need in Singapore</a></li>
     </ul>
 
     <h3>Prices and Collection</h3>

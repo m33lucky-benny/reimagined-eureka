@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "One Tank, Many Looks: What Happens When You Mix Caridina Colours"
-description: "Why Caridina babies can look different from their parents when colours are kept together, with fancy red tigers and red devils as the example."
+title: "One Tank, Many Looks: Why Caridina Shrimp Babies Change Colour"
+description: "Why Caridina cantonensis babies can look different from their parents when colours share one tank. A Singapore breeder's example: red devils from a fancy red tiger tank."
+keywords: "caridina cantonensis colours, fancy red tiger shrimp, red devil shrimp, shrimp breeding singapore, caridina shrimp singapore, mixing shrimp colours"
 date: 2026-10-24
 author: ebiyaSG
 categories: [Breeding]
@@ -31,6 +32,10 @@ Our [red devils](/shrimp/red-devils/) came out of our fancy red tiger tank. They
 
 Do not mix Caridina with Neocaridina. See our guide to the [best Caridina shrimp tank](/2025-05-21-best-caridina-shrimp-tank/).
 
+## Our breeding setup
+
+How we set up a breeding tank (tank size, soil, filtration, water and temperature) is in [best aquarium setups for Caridina shrimp](/2025-03-01-best-aquarium-setup-for-caridina-shrimp/), with a case study of a tank we run. The water we aim for is in [shrimp tank water parameters for Caridina in Singapore](/2025-12-20-shrimp-tank-water-parameters-for-singapore/).
+
 ## See our shrimp
 
-Our [fancy red tigers](/shrimp/fancy-red-tigers/) and [blue king kong](/shrimp/blue-king-kong/) are on our [shrimp page](/shrimp/). Message us on WhatsApp at [+65 6042 5590](https://wa.me/6560425590) to ask about them.
+Our [fancy red tigers](/shrimp/fancy-red-tigers/) and [blue king kong](/shrimp/blue-king-kong/) are on our [shrimp page](/shrimp/). Message us on WhatsApp at [+65 6042 5590](https://wa.me/6560425590) to ask about them. Prices, sizes and collection are in [how to buy shrimp from ebiya.sg](/buy-shrimp-singapore-ebiya/).
