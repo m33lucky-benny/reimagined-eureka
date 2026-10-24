@@ -67,3 +67,4 @@ exclude:
   - howto-folders
   - worker   # the WhatsApp bot's code: not a page of the site
   - legal    # launch checklist and log: kept in the repo, not pages of the site
+  - docs     # content plans (hub and spokes): kept in the repo, not pages of the site

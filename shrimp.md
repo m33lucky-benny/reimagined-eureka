@@ -107,18 +107,31 @@ schema_type: ImageGallery
   <div class="gallery-info">
     <h2>About Our Shrimp</h2>
     <p>ebiya.sg is a shrimp-breeding business in Singapore. We breed and sell Caridina shrimp, and we also sell Neocaridina.</p>
+    <p>Our Caridina shrimp are <em>Caridina cantonensis</em>.</p>
 
     <h3>What We Breed and Sell</h3>
     <ul>
-      <li><strong>Fancy red tigers:</strong> Red and white banding with bold, irregular stripes across the body. From S$60 each.</li>
-      <li><strong>Blue king kong:</strong> Black body with white bands that have a blue tint. From S$40 each.</li>
+      <li><strong><a href="{{ '/shrimp/fancy-red-tigers/' | relative_url }}">Fancy red tigers</a>:</strong> Red and white banding with bold, irregular stripes across the body. From S$60 each.</li>
+      <li><strong><a href="{{ '/shrimp/blue-king-kong/' | relative_url }}">Blue king kong</a>:</strong> Black body with white bands that have a blue tint. From S$40 each.</li>
       <li><strong>White spectra:</strong> Pale, cream-white body. From S$60 each.</li>
       <li><strong>Orange boa:</strong> From S$60 each.</li>
-      <li><strong>Neocaridina</strong></li>
-      <li><strong>Red devils:</strong> Solid red body with large white eyes. Not for sale yet.</li>
+      <li><strong><a href="{{ '/shrimp/neocaridina/' | relative_url }}">Neocaridina</a>:</strong> Cherry and yellow top.</li>
+      <li><strong><a href="{{ '/shrimp/crs/' | relative_url }}">CRS</a></strong> (Crystal Red Shrimp)</li>
+      <li><strong><a href="{{ '/shrimp/red-devils/' | relative_url }}">Red devils</a>:</strong> Solid red body with large white eyes. Not for sale yet.</li>
+    </ul>
+
+    <h3>Guides</h3>
+    <ul>
+      <li><a href="{{ '/caridina-shrimp-care-guide/' | relative_url }}">Caridina shrimp care guide (all guides)</a></li>
+      <li><a href="{{ '/buy-shrimp-singapore-ebiya/' | relative_url }}">How to buy shrimp from ebiya.sg (prices, sizes, collection)</a></li>
+      <li><a href="{{ '/one-tank-many-looks-caridina/' | relative_url }}">One tank, many looks</a></li>
+      <li><a href="{{ '/2025-05-21-best-caridina-shrimp-tank/' | relative_url }}">The best shrimp tank setup for Caridina</a></li>
+      <li><a href="{{ '/2025-12-20-shrimp-tank-water-parameters-for-singapore/' | relative_url }}">Water parameters for Caridina in Singapore</a></li>
+      <li><a href="{{ '/7-shrimp-tank-accessories-that-actually-matter/' | relative_url }}">7 shrimp tank accessories you need in Singapore</a></li>
     </ul>
 
     <h3>Prices and Collection</h3>
+    <p>Sizes we sell: juveniles are less than 1 cm, and young adults are about 1 cm or more.</p>
     <p>Prices are per piece, and the price varies by individual shrimp. There is no minimum order. We are not GST-registered, so prices have no GST.</p>
     <p>Payment is on collection, by PayNow or cash. Collection is at 55 Changi Road, #B1-01, on Tuesday from 1pm to 6pm, by appointment. Message us on WhatsApp at <a href="https://wa.me/6560425590">+65 6042 5590</a> to book a time.</p>
 

@@ -252,6 +252,14 @@ Avoid complex aquascapes that trap waste early on.
 
 ---
 
+---
 
+## More from ebiya.sg
 
+- [Best aquarium setups for Caridina shrimp](/2025-03-01-best-aquarium-setup-for-caridina-shrimp/)
+- [Shrimp tank water parameters for Caridina in Singapore](/2025-12-20-shrimp-tank-water-parameters-for-singapore/)
+- [7 shrimp tank accessories you need in Singapore](/7-shrimp-tank-accessories-that-actually-matter/)
+- [How to calibrate a pH test pen](/calibrate-ph-test-pen/)
+- [Shrimp care FAQ](/faq/)
 
+Want shrimp for your tank? ebiya.sg breeds Caridina shrimp in Singapore. See [our shrimp](/shrimp/) and [how to buy](/buy-shrimp-singapore-ebiya/): prices per piece, collection at 55 Changi Road on Tuesday 1pm to 6pm by appointment, WhatsApp [+65 6042 5590](https://wa.me/6560425590).

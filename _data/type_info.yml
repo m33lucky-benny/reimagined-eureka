@@ -1,0 +1,29 @@
+# Facts shown on each shrimp type page (/shrimp/<slug>/). Only text already published
+# on the site (shrimp.md "About Our Shrimp", the FAQ) goes here: add a line only when the
+# owner has stated it. Missing keys are simply left out of the page.
+fancy-red-tigers:
+  species: "Caridina cantonensis"
+  description: "Red and white banding with bold, irregular stripes across the body."
+  price_from: 60
+blue-king-kong:
+  species: "Caridina cantonensis"
+  description: "Black body with white bands that have a blue tint."
+  price_from: 40
+white-spectra:
+  species: "Caridina cantonensis"
+  description: "Pale, cream-white body."
+  price_from: 60
+orange-boa:
+  species: "Caridina cantonensis"
+  price_from: 60
+neocaridina:
+  description: "Neocaridina is a different group from Caridina and is not kept with it."
+  varieties: "Cherry and yellow top"
+crs:
+  species: "Caridina cantonensis"
+  description: "CRS stands for Crystal Red Shrimp, a Caridina variety."
+red-devils:
+  species: "Caridina cantonensis"
+  description: "Solid red body with large white eyes."
+  origin: "Red devils are the offspring of our fancy red tiger tank."
+  not_for_sale: true
