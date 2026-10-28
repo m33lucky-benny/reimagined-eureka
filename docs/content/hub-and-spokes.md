@@ -104,3 +104,14 @@ The five owner posts keep their own text; each ends with a "More from ebiya.sg" 
 - The live page answers 200 and shows the change (assets are cached about 4 hours; a CSS or JS
   change needs a new `?v=` on its tag).
 - Re-ask ChatGPT "Shrimp shop in Singapore" every few weeks and note the date and result here.
+
+## Check log
+
+- 2026-10-28 (weekly task, check pass, no new page): no type gained a photo (white spectra and
+  orange boa still have none in `_data/gallery.yml`), and every "Next spokes" item still needs
+  facts the owner has not given, so no spoke was written. Checked: all 19 pages in the tables
+  plus /, /faq/, /contact/, /blog/ and /llms.txt answer 200 live; all 22 URLs in the live
+  sitemap answer 200; the old number appears nowhere outside worker/ and legal/ (repo and live
+  pages); collection is Tuesday only everywhere; every price matches shrimp.md (S$60 fancy red
+  tigers, white spectra, orange boa; S$40 blue king kong); llms.txt lists every page in the
+  tables; every internal link resolves to a permalink or an asset. Nothing needed fixing.
