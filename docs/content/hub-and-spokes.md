@@ -56,6 +56,7 @@ Posts (spokes of either hub):
 |---|---|---|
 | Shrimp shop in Singapore: how to buy | /buy-shrimp-singapore-ebiya/ | shop |
 | One tank, many looks | /one-tank-many-looks-caridina/ | care |
+| Berried shrimp and shrimplets | /berried-shrimp-shrimplets-caridina/ | care |
 | Best shrimp tank setup for Caridina (owner, 2025) | /2025-05-21-best-caridina-shrimp-tank/ | care |
 | Best aquarium setups for Caridina (owner, 2025) | /2025-03-01-best-aquarium-setup-for-caridina-shrimp/ | care |
 | Water parameters for Caridina in Singapore (owner, 2025) | /2025-12-20-shrimp-tank-water-parameters-for-singapore/ | care |
@@ -78,6 +79,9 @@ The five owner posts keep their own text; each ends with a "More from ebiya.sg" 
 | 2026-10-24 | He breeds "to see if some new patterns or colors will appear"; most hobbyists start with one tank and mixing colours brings new patterns |
 | 2026-10-24 | Fancy red tigers and blue king kong breed better than the boas; boas are one type in several colours (orange, cream, one green). Type name stays "Orange boa" (owner: leave as is) |
 | 2026-10-24 | Counted about 50 fancy red tigers, of which about 20 shrimplets; about 15 boas |
+| 2026-11-02 | Fancy red tigers stay "30+" on the site |
+| 2026-11-02 | Shrimplets: owner "cant count"; no shrimplet counts on any page |
+| 2026-10-20 | Videos of berried females: blue king kong, cream boa, galaxy stardust |
 | 2026-10-23 | Collection is Tuesday only, 1pm to 6pm, by appointment (Google Business Profile matches) |
 
 ## Waiting on the owner
@@ -87,7 +91,6 @@ The five owner posts keep their own text; each ends with a "More from ebiya.sg" 
   difficulty, breeding notes, how he packs and hands over, after-sales.
 - Two advice lines left out of "One tank, many looks" until he confirms them: "one mixed tank is a
   good way to start" and "keep each look in its own tank".
-- Whether to show "about 30" instead of "30+" for fancy red tigers (about 20 of ~50 are shrimplets).
 - Whether ebiya.sg is in Google Search Console, and under which account (not recorded).
 
 ## Next spokes (only when the facts exist)
@@ -95,8 +98,6 @@ The five owner posts keep their own text; each ends with a "More from ebiya.sg" 
 - A page per type for white spectra and orange boa once each has a photo.
 - Fancy red tigers vs blue king kong, once there are more owner facts than one line each.
 - How we pack and hand over shrimp (needs the owner's process).
-- Shrimplets and berried females: what buyers see in our tanks (owner has videos of berried females
-  and counts of shrimplets).
 
 ## Check after each change
 
