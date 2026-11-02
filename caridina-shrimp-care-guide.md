@@ -25,6 +25,7 @@ permalink: /caridina-shrimp-care-guide/
   <h2>3. Breeding and colours</h2>
   <ul>
     <li><a href="{{ '/one-tank-many-looks-caridina/' | relative_url }}">One tank, many looks</a>: why Caridina babies can look different from their parents.</li>
+    <li><a href="{{ '/berried-shrimp-shrimplets-caridina/' | relative_url }}">Berried shrimp and shrimplets</a>: what a berried female is, and the shrimplets in our tanks.</li>
   </ul>
 
   <h2>Quick answers</h2>
