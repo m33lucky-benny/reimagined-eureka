@@ -116,3 +116,12 @@ The five owner posts keep their own text; each ends with a "More from ebiya.sg" 
   pages); collection is Tuesday only everywhere; every price matches shrimp.md (S$60 fancy red
   tigers, white spectra, orange boa; S$40 blue king kong); llms.txt lists every page in the
   tables; every internal link resolves to a permalink or an asset. Nothing needed fixing.
+- 2026-11-04 (weekly task, check pass, no new page): still no photo for white spectra or orange
+  boa in `_data/gallery.yml`, no new owner facts since 2026-11-02, so no spoke was written.
+  Checked: all 15 pages in the tables plus /, /faq/, /contact/, /blog/ and /llms.txt answer 200
+  live; all 23 URLs in the live sitemap answer 200; the old number appears nowhere outside
+  worker/ and legal/ (repo and six live pages); collection is Tuesday only everywhere; every
+  price matches shrimp.md; every internal link resolves to a permalink or an asset. One fix:
+  /about/ (a live page with the shop's own description) was missing from llms.txt, now listed
+  under "Shop and shrimp" with wording from that page. Left out of llms.txt on purpose:
+  /gallery.html (titled "Private Gallery"), /privacy/, /terms/, /blog/ (a post list).
