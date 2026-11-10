@@ -45,3 +45,8 @@
   qty: 20
   date: 2026-10-13
   published: true
+- file: "orange-boa-20261020-120000-0b0a54"
+  type: "orange-boa"
+  caption: "Orange Boa"
+  date: 2026-10-20
+  published: true

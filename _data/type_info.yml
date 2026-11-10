@@ -15,6 +15,7 @@ white-spectra:
   price_from: 60
 orange-boa:
   species: "Caridina cantonensis"
+  description: "Our boas are one type in several colours: orange, cream and green."
   price_from: 60
 neocaridina:
   description: "Neocaridina is a different group from Caridina and is not kept with it."
