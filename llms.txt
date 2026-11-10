@@ -21,6 +21,7 @@ Purpose: ebiya.sg (EBIYA.SG, UEN 53515433W) is a shrimp shop in Singapore that b
 - https://ebiya.sg/shrimp/neocaridina/ : Neocaridina (cherry and yellow top)
 - https://ebiya.sg/shrimp/red-devils/ : red devils (not for sale yet)
 - https://ebiya.sg/contact/ : contact and collection details
+- https://ebiya.sg/about/ : about the shop: Caridina breeder at 55 Changi Road, Singapore, the types we breed and our tanks
 
 ## Care guides
 - https://ebiya.sg/caridina-shrimp-care-guide/ : index of all care guides (start here)
