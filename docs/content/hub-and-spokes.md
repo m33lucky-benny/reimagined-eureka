@@ -44,7 +44,7 @@ Type pages (spokes of the shop hub), all built by `_includes/type-spoke.html` fr
 | Neocaridina | /shrimp/neocaridina/ | live with PR #33 |
 | Red devils | /shrimp/red-devils/ | live with PR #33, not for sale (no price, count or buy steps) |
 | White spectra | not built | waits for a photo on the site |
-| Orange boa | not built | waits for a photo on the site |
+| Orange boa | /shrimp/orange-boa/ | live with PR (2026-11-10), photo IMG_2054 of 20 Oct |
 
 Add a type page: copy `shrimp/crs.md`, change title, description, permalink and `type`, add an
 entry to `_data/type_info.yml` (only owner-stated facts), link it from shrimp.md's type list and
@@ -95,7 +95,7 @@ The five owner posts keep their own text; each ends with a "More from ebiya.sg" 
 
 ## Next spokes (only when the facts exist)
 
-- A page per type for white spectra and orange boa once each has a photo.
+- A type page for white spectra once it has a photo.
 - Fancy red tigers vs blue king kong, once there are more owner facts than one line each.
 - How we pack and hand over shrimp (needs the owner's process).
 
