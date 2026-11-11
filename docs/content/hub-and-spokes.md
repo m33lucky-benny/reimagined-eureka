@@ -44,7 +44,7 @@ Type pages (spokes of the shop hub), all built by `_includes/type-spoke.html` fr
 | Neocaridina | /shrimp/neocaridina/ | live with PR #33 |
 | Red devils | /shrimp/red-devils/ | live with PR #33, not for sale (no price, count or buy steps) |
 | White spectra | not built | waits for a photo on the site |
-| Orange boa | /shrimp/orange-boa/ | live with PR (2026-11-10), photo IMG_2054 of 20 Oct |
+| Orange boa | /shrimp/orange-boa/ | live with PR #37 (2026-11-10), photo IMG_2054 of 20 Oct |
 
 Add a type page: copy `shrimp/crs.md`, change title, description, permalink and `type`, add an
 entry to `_data/type_info.yml` (only owner-stated facts), link it from shrimp.md's type list and
@@ -125,3 +125,12 @@ The five owner posts keep their own text; each ends with a "More from ebiya.sg" 
   /about/ (a live page with the shop's own description) was missing from llms.txt, now listed
   under "Shop and shrimp" with wording from that page. Left out of llms.txt on purpose:
   /gallery.html (titled "Private Gallery"), /privacy/, /terms/, /blog/ (a post list).
+- 2026-11-11 (weekly task, check pass, no new page): white spectra still has no photo in
+  `_data/gallery.yml`, and no new owner facts since 2026-11-02, so no spoke was written.
+  Checked: all 16 pages in the tables plus /, /faq/, /contact/, /blog/, /about/ and /llms.txt
+  answer 200 live; all 24 URLs in the live sitemap answer 200; the old number appears nowhere
+  outside worker/ and legal/; collection is Tuesday only everywhere; every price matches
+  shrimp.md; llms.txt lists every page in the tables; every internal link resolves to a
+  permalink or an asset. One fix: the buy post's price table still sent the Orange boa row to
+  /shrimp/ although /shrimp/orange-boa/ went live with PR #37; it now links the type page.
+  Also corrected the Orange boa row above to name PR #37.
