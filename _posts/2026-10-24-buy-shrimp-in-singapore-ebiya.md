@@ -31,7 +31,7 @@ All our Caridina shrimp are *Caridina cantonensis*, bred in Singapore. Each type
 | Fancy red tigers | from S$60 each | [Fancy red tigers page](/shrimp/fancy-red-tigers/) |
 | Blue king kong | from S$40 each | [Blue king kong page](/shrimp/blue-king-kong/) |
 | White spectra | from S$60 each | [Shrimp page](/shrimp/) |
-| Orange boa | from S$60 each | [Shrimp page](/shrimp/) |
+| Orange boa | from S$60 each | [Orange boa page](/shrimp/orange-boa/) |
 | CRS (Crystal Red Shrimp) | ask on WhatsApp | [CRS page](/shrimp/crs/) |
 | Neocaridina (cherry and yellow top) | ask on WhatsApp | [Neocaridina page](/shrimp/neocaridina/) |
 | Red devils | not for sale yet | [Red devils page](/shrimp/red-devils/) |
